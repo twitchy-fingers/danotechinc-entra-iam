@@ -1,0 +1,12 @@
+// Break-glass sign-in alert
+// Purpose : Fire on ANY sign-in attempt (success or failure) by an emergency access account.
+// Used by : Azure Monitor log alert rule "ALR-BreakGlass-SignIn" (walkthrough Step 12)
+// Why IDs : Object IDs never change; UPNs and display names can be renamed by an attacker.
+// Replace the two GUIDs with the ObjectIds printed by 02-New-BreakGlassAccounts.ps1.
+let BreakGlassIds = dynamic(["00000000-0000-0000-0000-000000000001", "00000000-0000-0000-0000-000000000002"]);
+union isfuzzy=true SigninLogs, AADNonInteractiveUserSignInLogs
+| where UserId in (BreakGlassIds)
+| project TimeGenerated, UserPrincipalName, ResultType, ResultDescription,
+          IPAddress, Location, AppDisplayName, ClientAppUsed,
+          ConditionalAccessStatus, CorrelationId
+| order by TimeGenerated desc

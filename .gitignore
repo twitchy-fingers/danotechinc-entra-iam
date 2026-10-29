@@ -1,0 +1,28 @@
+# Credentials and certificates: never commit
+*.pfx
+*.p12
+*.pem
+*.key
+*.cer
+*.crt
+.env
+.env.*
+secrets/
+*.secret.*
+
+# Local output that may contain tenant data
+output/
+*.local.json
+*.local.csv
+
+# Python
+__pycache__/
+.venv/
+venv/
+*.pyc
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

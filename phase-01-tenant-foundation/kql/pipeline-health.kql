@@ -1,0 +1,12 @@
+// Log pipeline health check
+// Purpose : Confirm each Entra ID log category is arriving in the workspace.
+// Expected: rows for AuditLogs, SigninLogs and AADNonInteractiveUserSignInLogs within
+//           30 minutes of enabling the diagnostic setting. Other tables appear once
+//           their activity exists (e.g. AADProvisioningLogs after Phase 04).
+union withsource=Table isfuzzy=true
+    AuditLogs, SigninLogs, AADNonInteractiveUserSignInLogs,
+    AADServicePrincipalSignInLogs, AADManagedIdentitySignInLogs,
+    AADProvisioningLogs, AADRiskyUsers, AADUserRiskEvents, MicrosoftGraphActivityLogs
+| where TimeGenerated > ago(24h)
+| summarize Events = count(), Latest = max(TimeGenerated) by Table
+| order by Table asc

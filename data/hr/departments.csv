@@ -1,0 +1,12 @@
+DepartmentCode,Department,CostCenter,Division,Headcount,DepartmentHeadUPN
+EXE,Executive Office,CC1000,Corporate,3,daniel.opara@danotechinc.onmicrosoft.com
+FIN,Finance,CC2000,Corporate,18,kwame.asante@danotechinc.onmicrosoft.com
+HR,Human Resources,CC2100,Corporate,12,folasade.adeyemi@danotechinc.onmicrosoft.com
+LEG,Legal & Compliance,CC2200,Corporate,7,akosua.boateng@danotechinc.onmicrosoft.com
+OPS,Operations,CC2300,Corporate,10,jamal.washington@danotechinc.onmicrosoft.com
+MKT,Marketing,CC3000,Go-To-Market,22,charlotte.davies@danotechinc.onmicrosoft.com
+SAL,Sales,CC3100,Go-To-Market,32,marcus.thompson@danotechinc.onmicrosoft.com
+CS,Customer Success,CC3200,Go-To-Market,16,lucia.herrera@danotechinc.onmicrosoft.com
+ENG,Engineering,CC4000,Technology,54,valeria.mendoza@danotechinc.onmicrosoft.com
+IT,Information Technology,CC5000,Technology,16,chukwuemeka.eze@danotechinc.onmicrosoft.com
+SEC,Information Security,CC5100,Technology,10,oliver.hughes@danotechinc.onmicrosoft.com

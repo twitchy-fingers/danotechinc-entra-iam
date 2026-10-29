@@ -1,0 +1,12 @@
+// Changes to break-glass accounts or their exclusion group
+// Purpose : Detect tampering: password resets, method changes, role removal, or someone
+//           being added to GRP-CA-Exclude-BreakGlass (which would exempt them from all CA).
+// Replace the GUIDs with the break-glass ObjectIds and the exclusion group ID.
+let WatchedIds = dynamic(["<bg-01-objectId>", "<bg-02-objectId>", "<exclusion-group-id>"]);
+AuditLogs
+| where TimeGenerated > ago(1d)
+| mv-expand Target = TargetResources
+| where tostring(Target.id) in (WatchedIds)
+| project TimeGenerated, OperationName, Result,
+          Actor = coalesce(tostring(InitiatedBy.user.userPrincipalName), tostring(InitiatedBy.app.displayName)),
+          Target = tostring(Target.displayName), CorrelationId
