@@ -33,15 +33,14 @@ Phase 01 automates this check with a Graph script, so you can re-verify it at an
 
 **Why public:** Branch rulesets and secret scanning are free on public repositories. On private repositories they need a paid GitHub plan. A public repo also doubles as a portfolio. Because this repo will never contain secrets (Step 4 enforces that), public is safe.
 
-```bash
+```powershell
 cd danotechinc-entra-iam
 git init -b main
 git add .
 git commit -m "Phase 00: program charter, HR dataset, conventions"
 
 gh auth login                    # choose GitHub.com, HTTPS, browser login
-gh repo create danotechinc-entra-iam --public --source=. --push \
-  --description "Enterprise IAM program on Microsoft Entra ID for fictional DanotechInc"
+gh repo create danotechinc-entra-iam --public --source=. --push ` --description "Enterprise IAM program on Microsoft Entra ID for fictional DanotechInc"
 ```
 
 ---
@@ -50,12 +49,15 @@ gh repo create danotechinc-entra-iam --public --source=. --push \
 
 **Why:** The repository is the record of how identity is configured. If anyone can push directly to `main`, a change can reach the tenant without a second pair of eyes, which is exactly the "single engineer change" risk in the charter. Requiring a pull request with one approval is the Git equivalent of separation of duties.
 
-Create a ruleset that blocks direct pushes and force-pushes, and requires a reviewed pull request:
+Create a ruleset that blocks direct pushes and force-pushes, and requires a reviewed pull request. 
 
-```bash
-OWNER=$(gh api user --jq .login)
+> **Note** I created a script titled ruleset.json and ran it in PowerShell as follows:
 
-gh api -X POST "repos/$OWNER/danotechinc-entra-iam/rulesets" --input - <<'JSON'
+```powershell
+$OWNER = gh api user --jq .login
+gh api -X POST "repos/$OWNER/danotechinc-entra-iam/rulesets" --input ruleset.json
+
+>Contents of Script:
 {
   "name": "protect-main",
   "target": "branch",
@@ -86,15 +88,8 @@ JSON
 
 **Why:** Phase 01 creates an automation app with a certificate, and later phases handle SAML signing certificates and client IDs. A leaked credential in a public repo is found by scanners within minutes. Push protection blocks the commit *before* it reaches GitHub, which is much better than detecting it afterwards.
 
-```bash
-gh api -X PATCH "repos/$OWNER/danotechinc-entra-iam" --input - <<'JSON'
-{
-  "security_and_analysis": {
-    "secret_scanning": { "status": "enabled" },
-    "secret_scanning_push_protection": { "status": "enabled" }
-  }
-}
-JSON
+```powershell
+gh api -X PATCH "repos/$OWNER/danotechinc-entra-iam" ` -f "security_and_analysis[secret_scanning] [status]=enabled" ` -f "security_and_analysis[secret_scanning_push_protection][status]=enabled"
 ```
 
 The [`.gitignore`](../.gitignore) at the root also excludes certificate files (`*.pfx`, `*.pem`, `*.key`), `.env` files and local output folders. Defence in depth: `.gitignore` prevents accidental staging, push protection catches anything that slips through.
@@ -105,7 +100,7 @@ The [`.gitignore`](../.gitignore) at the root also excludes certificate files (`
 
 **Why:** Milestones let you track progress per phase and give GRC a clean view of what was done when. Closed issues under a milestone become part of the audit trail.
 
-```bash
+```powershell
 phases=(
  "00 Program charter" "01 Tenant foundation" "02 Identity data model" "03 RBAC design"
  "04 JML lifecycle" "05 Groups and app roles" "06 Privileged access"
