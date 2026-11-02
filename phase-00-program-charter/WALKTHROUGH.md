@@ -77,7 +77,6 @@ gh api -X POST "repos/$OWNER/danotechinc-entra-iam/rulesets" --input ruleset.jso
     }
   ]
 }
-JSON
 ```
 
 > **Working solo?** GitHub won't let you approve your own pull request. If you're the only contributor, set `required_approving_review_count` to `0`. You still get the PR record and checks; document that compensating control in an ADR.
