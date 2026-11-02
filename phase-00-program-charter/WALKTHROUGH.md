@@ -101,18 +101,25 @@ The [`.gitignore`](../.gitignore) at the root also excludes certificate files (`
 **Why:** Milestones let you track progress per phase and give GRC a clean view of what was done when. Closed issues under a milestone become part of the audit trail.
 
 ```powershell
-phases=(
- "00 Program charter" "01 Tenant foundation" "02 Identity data model" "03 RBAC design"
- "04 JML lifecycle" "05 Groups and app roles" "06 Privileged access"
- "07 Zero Trust Conditional Access" "08 SSO and federation" "09 Cloud IAM"
- "10 Non-human identities" "11 Agent authorization" "12 Entitlement management"
- "13 Access reviews" "14 Logging and monitoring" "15 Identity operations"
- "16 Identity vulnerability management" "17 Compliance" "18 Capstone"
+$OWNER = gh api user --jq .login
+
+$phases = @(
+  "00 Program charter", "01 Tenant foundation", "02 Identity data model", "03 RBAC design",
+  "04 JML lifecycle", "05 Groups and app roles", "06 Privileged access",
+  "07 Zero Trust Conditional Access", "08 SSO and federation", "09 Cloud IAM",
+  "10 Non-human identities", "11 Agent authorization", "12 Entitlement management",
+  "13 Access reviews", "14 Logging and monitoring", "15 Identity operations",
+  "16 Identity vulnerability management", "17 Compliance", "18 Capstone"
 )
-for p in "${phases[@]}"; do
-  gh api -X POST "repos/$OWNER/danotechinc-entra-iam/milestones" -f title="Phase $p" >/dev/null
-  echo "Created milestone: Phase $p"
-done
+
+foreach ($p in $phases) {
+  gh api -X POST "repos/$OWNER/danotechinc-entra-iam/milestones" -f "title=Phase $p" > $null
+  if ($LASTEXITCODE -eq 0) {
+    Write-Host "Created milestone: Phase $p"
+  } else {
+    Write-Host "FAILED: Phase $p" -ForegroundColor Red
+  }
+}
 ```
 
 ---
@@ -121,7 +128,10 @@ done
 
 **Why:** Labels let you filter work by type and risk. The `risk:high` label is a signal to the reviewer that a change could lock users or admins out, so it deserves a slower, more careful review.
 
-```bash
+```powershell
+$OWNER = gh api user --jq .login
+$env:GH_REPO = "$OWNER/danotechinc-entra-iam"
+
 gh label create "type:config"   --color 1f6feb --description "Tenant configuration change"
 gh label create "type:docs"     --color 8250df --description "Documentation"
 gh label create "type:script"   --color 2da44e --description "Automation script"
@@ -129,16 +139,22 @@ gh label create "type:evidence" --color bf8700 --description "Audit evidence"
 gh label create "risk:high"     --color d1242f --description "Could cause lockout or broad access change"
 gh label create "decision"      --color 0e8a16 --description "Needs or records an ADR"
 ```
-
 ---
 
 ## Step 7: Create a project board
 
 **Why:** A board gives a single view of every phase's work: what's planned, in progress and done.
 
-```bash
-gh auth refresh -s project
-gh project create --owner "$OWNER" --title "DanotechInc IAM Program"
+```powershell
+$OWNER = gh api user --jq .login
+$env:GH_REPO = "$OWNER/danotechinc-entra-iam"
+
+gh label create "type:config"   --color 1f6feb --description "Tenant configuration change"
+gh label create "type:docs"     --color 8250df --description "Documentation"
+gh label create "type:script"   --color 2da44e --description "Automation script"
+gh label create "type:evidence" --color bf8700 --description "Audit evidence"
+gh label create "risk:high"     --color d1242f --description "Could cause lockout or broad access change"
+gh label create "decision"      --color 0e8a16 --description "Needs or records an ADR"
 ```
 
 Then, in the GitHub web UI, link the project to the repository (**Projects → Link a project**) and add a **Milestone** field to the board view.
@@ -149,13 +165,21 @@ Then, in the GitHub web UI, link the project to the repository (**Projects → L
 
 Create one issue per Phase 01 task so the next phase starts with a clear checklist:
 
-```bash
-gh issue create --title "Phase 01: Create and test break-glass accounts" \
-  --milestone "Phase 01 Tenant foundation" --label "type:config,risk:high"
-gh issue create --title "Phase 01: Baseline Conditional Access and disable security defaults" \
-  --milestone "Phase 01 Tenant foundation" --label "type:config,risk:high"
-gh issue create --title "Phase 01: Create Azure subscription and log pipeline" \
-  --milestone "Phase 01 Tenant foundation" --label "type:config"
+```powershell
+$OWNER = gh api user --jq .login
+$env:GH_REPO = "$OWNER/danotechinc-entra-iam"
+
+gh issue create --title "Phase 01: Create and test break-glass accounts" `
+  --milestone "Phase 01 Tenant foundation" --label "type:config,risk:high" `
+  --body "Tracking issue for this task."
+
+gh issue create --title "Phase 01: Baseline Conditional Access and disable security defaults" `
+  --milestone "Phase 01 Tenant foundation" --label "type:config,risk:high" `
+  --body "Tracking issue for this task."
+
+gh issue create --title "Phase 01: Create Azure subscription and log pipeline" `
+  --milestone "Phase 01 Tenant foundation" --label "type:config" `
+  --body "Tracking issue for this task."
 ```
 
 ---
