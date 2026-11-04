@@ -1,0 +1,1857 @@
+{
+  "capturedAt": "2026-11-04T05:26:01.0025916Z",
+  "organization": {
+    "createdDateTime": "2026-10-22T20:51:02Z",
+    "verifiedDomains": [
+      {
+        "isInitial": true,
+        "isDefault": true,
+        "type": "Managed",
+        "capabilities": "Email, OfficeCommunicationsOnline",
+        "name": "danotechinc.onmicrosoft.com"
+      }
+    ],
+    "displayName": "danotech",
+    "id": "fa42eb83-afd2-4d18-ae91-2513cfba7fb3"
+  },
+  "subscribedSkus": [
+    {
+      "consumedUnits": 1,
+      "prepaidUnits": {
+        "suspended": 0,
+        "lockedOut": 0,
+        "warning": 0,
+        "enabled": 25
+      },
+      "skuPartNumber": "Microsoft_Entra_Suite"
+    },
+    {
+      "consumedUnits": 1,
+      "prepaidUnits": {
+        "suspended": 0,
+        "lockedOut": 0,
+        "warning": 0,
+        "enabled": 25
+      },
+      "skuPartNumber": "AAD_PREMIUM_P2"
+    }
+  ],
+  "directorySubscriptions": [
+    {
+      "commerceSubscriptionId": "48031875-70df-4270-9309-e6d2403ed143",
+      "ownerType": null,
+      "totalLicenses": 25,
+      "nextLifecycleDateTime": "2026-11-20T20:53:58Z",
+      "ownerId": null,
+      "status": "Enabled",
+      "skuId": "f9602137-2203-447b-9fff-41b36e08ce5d",
+      "serviceStatus": [
+        {
+          "servicePlanName": "Verifiable_Credentials_Service_Request",
+          "servicePlanId": "aae826b7-14cd-4691-8178-2b312f7072ea",
+          "appliesTo": "Company",
+          "servicePlanType": "VerifiableCredentialsServiceRequest",
+          "provisioningStatus": "Success"
+        },
+        {
+          "servicePlanName": "AAD_PREMIUM_P2",
+          "servicePlanId": "eec0eb4f-6444-4f95-aba0-50c24d67f998",
+          "appliesTo": "User",
+          "servicePlanType": "AADPremiumService",
+          "provisioningStatus": "Success"
+        },
+        {
+          "servicePlanName": "Entra_Premium_Private_Access",
+          "servicePlanId": "f057aab1-b184-49b2-85c0-881b02a405c5",
+          "appliesTo": "User",
+          "servicePlanType": "EntraPremiumPrivateAccess",
+          "provisioningStatus": "Success"
+        },
+        {
+          "servicePlanName": "Entra_Premium_Internet_Access",
+          "servicePlanId": "8d23cb83-ab07-418f-8517-d7aca77307dc",
+          "appliesTo": "User",
+          "servicePlanType": "EntraPremiumInternetAccess",
+          "provisioningStatus": "Success"
+        },
+        {
+          "servicePlanName": "Entra_Identity_Governance",
+          "servicePlanId": "e866a266-3cff-43a3-acca-0c90a7e00c8b",
+          "appliesTo": "User",
+          "servicePlanType": "AADPremiumService",
+          "provisioningStatus": "Success"
+        }
+      ],
+      "isTrial": true,
+      "createdDateTime": "2026-10-22T20:53:58Z",
+      "id": "93ce1e17-514c-478a-961c-78200b0d38c8",
+      "ownerTenantId": null,
+      "skuPartNumber": "Microsoft_Entra_Suite"
+    },
+    {
+      "commerceSubscriptionId": "f0330563-d2c2-499b-9a67-b88019421193",
+      "ownerType": null,
+      "totalLicenses": 25,
+      "nextLifecycleDateTime": "2026-12-22T00:00:00Z",
+      "ownerId": null,
+      "status": "Enabled",
+      "skuId": "84a661c4-e949-4bd2-a560-ed7766fcaf2b",
+      "serviceStatus": [
+        {
+          "servicePlanName": "EXCHANGE_S_FOUNDATION",
+          "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318",
+          "appliesTo": "Company",
+          "servicePlanType": "Exchange",
+          "provisioningStatus": "Success"
+        },
+        {
+          "servicePlanName": "ADALLOM_S_DISCOVERY",
+          "servicePlanId": "932ad362-64a8-4783-9106-97849a1a30b9",
+          "appliesTo": "User",
+          "servicePlanType": "Adallom",
+          "provisioningStatus": "Success"
+        },
+        {
+          "servicePlanName": "MFA_PREMIUM",
+          "servicePlanId": "8a256a2b-b617-496d-b51b-e76466e88db0",
+          "appliesTo": "User",
+          "servicePlanType": "MultiFactorService",
+          "provisioningStatus": "Success"
+        },
+        {
+          "servicePlanName": "AAD_PREMIUM",
+          "servicePlanId": "41781fb2-bc02-4b7c-bd55-b576c07bb09d",
+          "appliesTo": "User",
+          "servicePlanType": "AADPremiumService",
+          "provisioningStatus": "Success"
+        },
+        {
+          "servicePlanName": "AAD_PREMIUM_P2",
+          "servicePlanId": "eec0eb4f-6444-4f95-aba0-50c24d67f998",
+          "appliesTo": "User",
+          "servicePlanType": "AADPremiumService",
+          "provisioningStatus": "Success"
+        }
+      ],
+      "isTrial": true,
+      "createdDateTime": "2026-10-22T00:00:00Z",
+      "id": "1826de2f-e48d-477a-aba7-3baeef220573",
+      "ownerTenantId": null,
+      "skuPartNumber": "AAD_PREMIUM_P2"
+    }
+  ],
+  "securityDefaults": {
+    "displayName": "Security Defaults",
+    "securityDefaultsUpsell": null,
+    "description": "Security defaults is a set of basic identity security mechanisms recommended by Microsoft. When enabled, these recommendations will be automatically enforced in your organization. Administrators and users will be better protected from common identity related attacks.",
+    "isEnabled": true,
+    "controlTypes": [],
+    "id": "00000000-0000-0000-0000-000000000005",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/identitySecurityDefaultsEnforcementPolicy/$entity"
+  },
+  "authorizationPolicy": {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authorizationPolicy/$entity",
+    "displayName": "Authorization Policy",
+    "guestUserRoleId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
+    "allowedToSignUpEmailBasedSubscriptions": true,
+    "allowInvitesFrom": "everyone",
+    "id": "authorizationPolicy",
+    "allowedToUseSSPR": true,
+    "blockMsolPowerShell": false,
+    "description": "Used to manage authorization related settings across the company.",
+    "defaultUserRolePermissions": {
+      "allowedToCreateSecurityGroups": true,
+      "allowedToCreateApps": true,
+      "allowedToReadOtherUsers": true,
+      "allowedToReadBitlockerKeysForOwnedDevice": true,
+      "allowedToCreateTenants": true,
+      "permissionGrantPoliciesAssigned": [
+        "ManagePermissionGrantsForSelf.microsoft-user-default-recommended",
+        "ManagePermissionGrantsForSelf.microsoft-user-default-allow-consent-apps",
+        "ManagePermissionGrantsForOwnedResource.microsoft-dynamically-managed-permissions-for-team",
+        "ManagePermissionGrantsForOwnedResource.microsoft-dynamically-managed-permissions-for-chat"
+      ]
+    },
+    "allowEmailVerifiedUsersToJoinOrganization": true,
+    "allowUserConsentForRiskyApps": null
+  },
+  "conditionalAccess": null,
+  "roleAssignments": {
+    "principalId": "5b8cfa89-9747-4819-b8db-703c809b0247",
+    "directoryScopeId": "/",
+    "principalOrganizationId": "fa42eb83-afd2-4d18-ae91-2513cfba7fb3",
+    "id": "lAPpYvVpN0KRkAEhdxReEIn6jFtHlxlIuNtwPICbAkc-1",
+    "roleDefinitionId": "62e90394-69f5-4237-9190-012177145e10",
+    "principal": {
+      "authorizationInfo": {
+        "certificateUserIds": []
+      },
+      "assignedLicenses": [
+        {
+          "disabledPlans": [],
+          "skuId": "f9602137-2203-447b-9fff-41b36e08ce5d"
+        },
+        {
+          "disabledPlans": [],
+          "skuId": "84a661c4-e949-4bd2-a560-ed7766fcaf2b"
+        }
+      ],
+      "otherMails": [
+        "dannieopara@gmail.com"
+      ],
+      "externalUserState": null,
+      "onPremisesUserPrincipalName": null,
+      "creationType": null,
+      "state": "ca",
+      "preferredLanguage": "en",
+      "onPremisesSyncEnabled": null,
+      "securityIdentifier": "S-1-12-1-1535965833-1209636679-1014029240-1191353216",
+      "surname": "Opara",
+      "onPremisesProvisioningErrors": [],
+      "mailNickname": "dopara",
+      "employeeType": null,
+      "isLicenseReconciliationNeeded": false,
+      "isResourceAccount": null,
+      "identityParentId": null,
+      "signInSessionsValidFromDateTime": "2026-10-22T20:51:03Z",
+      "onPremisesSamAccountName": null,
+      "employeeOrgData": null,
+      "preferredDataLocation": null,
+      "mobilePhone": null,
+      "imAddresses": [],
+      "@odata.type": "#microsoft.graph.user",
+      "passwordPolicies": null,
+      "id": "5b8cfa89-9747-4819-b8db-703c809b0247",
+      "identities": [
+        {
+          "issuer": "danotechinc.onmicrosoft.com",
+          "signInType": "userPrincipalName",
+          "issuerAssignedId": "daniel.opara@danotechinc.onmicrosoft.com"
+        }
+      ],
+      "externalUserStateChangeDateTime": null,
+      "employeeLeaveDateTime": null,
+      "accountEnabled": true,
+      "officeLocation": null,
+      "serviceProvisioningErrors": [],
+      "consentProvidedForMinor": null,
+      "onPremisesLastSyncDateTime": null,
+      "postalCode": "92879-8537",
+      "givenName": "Daniel",
+      "jobTitle": null,
+      "showInAddressList": null,
+      "refreshTokensValidFromDateTime": "2026-10-22T20:51:03Z",
+      "deletedDateTime": null,
+      "country": null,
+      "displayName": "Daniel Opara",
+      "legalAgeGroupClassification": null,
+      "employeeHireDate": null,
+      "userType": "Member",
+      "employeeId": null,
+      "ageGroup": null,
+      "usageLocation": "US",
+      "onPremisesImmutableId": null,
+      "onPremisesDomainName": null,
+      "faxNumber": null,
+      "department": null,
+      "passwordProfile": null,
+      "mail": null,
+      "assignedPlans": [
+        {
+          "capabilityStatus": "Enabled",
+          "servicePlanId": "eec0eb4f-6444-4f95-aba0-50c24d67f998",
+          "assignedDateTime": "2026-10-22T20:54:19Z",
+          "service": "AADPremiumService"
+        },
+        {
+          "capabilityStatus": "Enabled",
+          "servicePlanId": "8d23cb83-ab07-418f-8517-d7aca77307dc",
+          "assignedDateTime": "2026-10-22T20:54:19Z",
+          "service": "EntraPremiumInternetAccess"
+        },
+        {
+          "capabilityStatus": "Enabled",
+          "servicePlanId": "e866a266-3cff-43a3-acca-0c90a7e00c8b",
+          "assignedDateTime": "2026-10-22T20:54:19Z",
+          "service": "AADPremiumService"
+        },
+        {
+          "capabilityStatus": "Enabled",
+          "servicePlanId": "f057aab1-b184-49b2-85c0-881b02a405c5",
+          "assignedDateTime": "2026-10-22T20:54:19Z",
+          "service": "EntraPremiumPrivateAccess"
+        },
+        {
+          "capabilityStatus": "Enabled",
+          "servicePlanId": "932ad362-64a8-4783-9106-97849a1a30b9",
+          "assignedDateTime": "2026-10-22T21:00:55Z",
+          "service": "Adallom"
+        },
+        {
+          "capabilityStatus": "Enabled",
+          "servicePlanId": "8a256a2b-b617-496d-b51b-e76466e88db0",
+          "assignedDateTime": "2026-10-22T21:00:55Z",
+          "service": "MultiFactorService"
+        },
+        {
+          "capabilityStatus": "Enabled",
+          "servicePlanId": "41781fb2-bc02-4b7c-bd55-b576c07bb09d",
+          "assignedDateTime": "2026-10-22T21:00:55Z",
+          "service": "AADPremiumService"
+        }
+      ],
+      "agentIdentityBlueprintId": null,
+      "provisionedPlans": [],
+      "createdDateTime": "2026-10-22T20:51:03Z",
+      "businessPhones": [
+        "9515195153"
+      ],
+      "onPremisesExtensionAttributes": {
+        "extensionAttribute12": null,
+        "extensionAttribute13": null,
+        "extensionAttribute7": null,
+        "extensionAttribute9": null,
+        "extensionAttribute4": null,
+        "extensionAttribute11": null,
+        "extensionAttribute14": null,
+        "extensionAttribute2": null,
+        "extensionAttribute1": null,
+        "extensionAttribute15": null,
+        "extensionAttribute6": null,
+        "extensionAttribute8": null,
+        "extensionAttribute3": null,
+        "extensionAttribute5": null,
+        "extensionAttribute10": null
+      },
+      "streetAddress": "2271 Collett Ave",
+      "onPremisesSecurityIdentifier": null,
+      "onPremisesDistinguishedName": null,
+      "companyName": null,
+      "city": "Corona",
+      "externalUserConvertedOn": null,
+      "proxyAddresses": [],
+      "userPrincipalName": "daniel.opara@danotechinc.onmicrosoft.com"
+    }
+  },
+  "roleDefinitions": [
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "62e90394-69f5-4237-9190-012177145e10",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('62e90394-69f5-4237-9190-012177145e10')/inheritsPermissionsFrom",
+      "displayName": "Global Administrator",
+      "id": "62e90394-69f5-4237-9190-012177145e10"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('10dae51f-b6af-4016-8d66-8c2a99b929b3')/inheritsPermissionsFrom",
+      "displayName": "Guest User",
+      "id": "10dae51f-b6af-4016-8d66-8c2a99b929b3"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "2af84b1e-32c8-42b7-82bc-daa82404023b",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('2af84b1e-32c8-42b7-82bc-daa82404023b')/inheritsPermissionsFrom",
+      "displayName": "Restricted Guest User",
+      "id": "2af84b1e-32c8-42b7-82bc-daa82404023b"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "10dae51f-b6af-4016-8d66-8c2a99b929b3"
+        }
+      ],
+      "templateId": "95e79109-95c0-4d8e-aee3-d01accf2d47b",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('95e79109-95c0-4d8e-aee3-d01accf2d47b')/inheritsPermissionsFrom",
+      "displayName": "Guest Inviter",
+      "id": "95e79109-95c0-4d8e-aee3-d01accf2d47b"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('fe930be7-5e62-47db-91af-98c3a49a38b1')/inheritsPermissionsFrom",
+      "displayName": "User Administrator",
+      "id": "fe930be7-5e62-47db-91af-98c3a49a38b1"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('729827e3-9c14-49f7-bb1b-9608f156bbb8')/inheritsPermissionsFrom",
+      "displayName": "Helpdesk Administrator",
+      "id": "729827e3-9c14-49f7-bb1b-9608f156bbb8"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "f023fd81-a637-4b56-95fd-791ac0226033",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('f023fd81-a637-4b56-95fd-791ac0226033')/inheritsPermissionsFrom",
+      "displayName": "Service Support Administrator",
+      "id": "f023fd81-a637-4b56-95fd-791ac0226033"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('b0f54661-2d74-4c50-afa3-1ec803f12efe')/inheritsPermissionsFrom",
+      "displayName": "Billing Administrator",
+      "id": "b0f54661-2d74-4c50-afa3-1ec803f12efe"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "a0b1b346-4d3e-4e8b-98f8-753987be4970",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('a0b1b346-4d3e-4e8b-98f8-753987be4970')/inheritsPermissionsFrom",
+      "displayName": "User",
+      "id": "a0b1b346-4d3e-4e8b-98f8-753987be4970"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "4ba39ca4-527c-499a-b93d-d9b492c50246",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('4ba39ca4-527c-499a-b93d-d9b492c50246')/inheritsPermissionsFrom",
+      "displayName": "Partner Tier1 Support",
+      "id": "4ba39ca4-527c-499a-b93d-d9b492c50246"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "e00e864a-17c5-4a4b-9c06-f5b95a8d5bd8",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('e00e864a-17c5-4a4b-9c06-f5b95a8d5bd8')/inheritsPermissionsFrom",
+      "displayName": "Partner Tier2 Support",
+      "id": "e00e864a-17c5-4a4b-9c06-f5b95a8d5bd8"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('88d8e3e3-8f55-4a1e-953a-9b9898b8876b')/inheritsPermissionsFrom",
+      "displayName": "Directory Readers",
+      "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "9360feb5-f418-4baa-8175-e2a00bac4301",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('9360feb5-f418-4baa-8175-e2a00bac4301')/inheritsPermissionsFrom",
+      "displayName": "Directory Writers",
+      "id": "9360feb5-f418-4baa-8175-e2a00bac4301"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "29232cdf-9323-42fd-ade2-1d097af3e4de",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('29232cdf-9323-42fd-ade2-1d097af3e4de')/inheritsPermissionsFrom",
+      "displayName": "Exchange Administrator",
+      "id": "29232cdf-9323-42fd-ade2-1d097af3e4de"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('f28a1f50-f6e7-4571-818b-6a12f2af6b6c')/inheritsPermissionsFrom",
+      "displayName": "SharePoint Administrator",
+      "id": "f28a1f50-f6e7-4571-818b-6a12f2af6b6c"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "75941009-915a-4869-abe7-691bff18279e",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('75941009-915a-4869-abe7-691bff18279e')/inheritsPermissionsFrom",
+      "displayName": "Skype for Business Administrator",
+      "id": "75941009-915a-4869-abe7-691bff18279e"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "d405c6df-0af8-4e3b-95e4-4d06e542189e",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('d405c6df-0af8-4e3b-95e4-4d06e542189e')/inheritsPermissionsFrom",
+      "displayName": "Device Users",
+      "id": "d405c6df-0af8-4e3b-95e4-4d06e542189e"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('9f06204d-73c1-4d4c-880a-6edb90606fd8')/inheritsPermissionsFrom",
+      "displayName": "Azure AD Joined Device Local Administrator",
+      "id": "9f06204d-73c1-4d4c-880a-6edb90606fd8"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "9c094953-4995-41c8-84c8-3ebb9b32c93f",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('9c094953-4995-41c8-84c8-3ebb9b32c93f')/inheritsPermissionsFrom",
+      "displayName": "Device Join",
+      "id": "9c094953-4995-41c8-84c8-3ebb9b32c93f"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "c34f683f-4d5a-4403-affd-6615e00e3a7f",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('c34f683f-4d5a-4403-affd-6615e00e3a7f')/inheritsPermissionsFrom",
+      "displayName": "Workplace Device Join",
+      "id": "c34f683f-4d5a-4403-affd-6615e00e3a7f"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "17315797-102d-40b4-93e0-432062caca18",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('17315797-102d-40b4-93e0-432062caca18')/inheritsPermissionsFrom",
+      "displayName": "Compliance Administrator",
+      "id": "17315797-102d-40b4-93e0-432062caca18"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "d29b2b05-8046-44ba-8758-1e26182fcf32",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('d29b2b05-8046-44ba-8758-1e26182fcf32')/inheritsPermissionsFrom",
+      "displayName": "Directory Synchronization Accounts",
+      "id": "d29b2b05-8046-44ba-8758-1e26182fcf32"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "2b499bcd-da44-4968-8aec-78e1674fa64d",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('2b499bcd-da44-4968-8aec-78e1674fa64d')/inheritsPermissionsFrom",
+      "displayName": "Device Managers",
+      "id": "2b499bcd-da44-4968-8aec-78e1674fa64d"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3')/inheritsPermissionsFrom",
+      "displayName": "Application Administrator",
+      "id": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "cf1c38e5-3621-4004-a7cb-879624dced7c",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('cf1c38e5-3621-4004-a7cb-879624dced7c')/inheritsPermissionsFrom",
+      "displayName": "Application Developer",
+      "id": "cf1c38e5-3621-4004-a7cb-879624dced7c"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "5d6b6bb7-de71-4623-b4af-96380a352509",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('5d6b6bb7-de71-4623-b4af-96380a352509')/inheritsPermissionsFrom",
+      "displayName": "Security Reader",
+      "id": "5d6b6bb7-de71-4623-b4af-96380a352509"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "194ae4cb-b126-40b2-bd5b-6091b380977d",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('194ae4cb-b126-40b2-bd5b-6091b380977d')/inheritsPermissionsFrom",
+      "displayName": "Security Administrator",
+      "id": "194ae4cb-b126-40b2-bd5b-6091b380977d"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "e8611ab8-c189-46e8-94e1-60213ab1f814",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('e8611ab8-c189-46e8-94e1-60213ab1f814')/inheritsPermissionsFrom",
+      "displayName": "Privileged Role Administrator",
+      "id": "e8611ab8-c189-46e8-94e1-60213ab1f814"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "3a2c62db-5318-420d-8d74-23affee5d9d5",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('3a2c62db-5318-420d-8d74-23affee5d9d5')/inheritsPermissionsFrom",
+      "displayName": "Intune Administrator",
+      "id": "3a2c62db-5318-420d-8d74-23affee5d9d5"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "158c047a-c907-4556-b7ef-446551a6b5f7",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('158c047a-c907-4556-b7ef-446551a6b5f7')/inheritsPermissionsFrom",
+      "displayName": "Cloud Application Administrator",
+      "id": "158c047a-c907-4556-b7ef-446551a6b5f7"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91')/inheritsPermissionsFrom",
+      "displayName": "Customer LockBox Access Approver",
+      "id": "5c4f9dcd-47dc-4cf7-8c9a-9e4207cbfc91"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "44367163-eba1-44c3-98af-f5787879f96a",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('44367163-eba1-44c3-98af-f5787879f96a')/inheritsPermissionsFrom",
+      "displayName": "Dynamics 365 Administrator",
+      "id": "44367163-eba1-44c3-98af-f5787879f96a"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "a9ea8996-122f-4c74-9520-8edcd192826c",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('a9ea8996-122f-4c74-9520-8edcd192826c')/inheritsPermissionsFrom",
+      "displayName": "Fabric Administrator",
+      "id": "a9ea8996-122f-4c74-9520-8edcd192826c"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('b1be1c3e-b65d-4f19-8427-f6fa0d97feb9')/inheritsPermissionsFrom",
+      "displayName": "Conditional Access Administrator",
+      "id": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "4a5d8f65-41da-4de4-8968-e035b65339cf",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('4a5d8f65-41da-4de4-8968-e035b65339cf')/inheritsPermissionsFrom",
+      "displayName": "Reports Reader",
+      "id": "4a5d8f65-41da-4de4-8968-e035b65339cf"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b')/inheritsPermissionsFrom",
+      "displayName": "Message Center Reader",
+      "id": "790c1fb9-7f7d-4f88-86a1-ef1f95c05c1b"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "7495fdc4-34c4-4d15-a289-98788ce399fd",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('7495fdc4-34c4-4d15-a289-98788ce399fd')/inheritsPermissionsFrom",
+      "displayName": "Azure Information Protection Administrator",
+      "id": "7495fdc4-34c4-4d15-a289-98788ce399fd"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4')/inheritsPermissionsFrom",
+      "displayName": "Desktop Analytics Administrator",
+      "id": "38a96431-2bdf-4b4c-8b6e-5d3d8abac1a4"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "4d6ac14f-3453-41d0-bef9-a3e0c569773a",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('4d6ac14f-3453-41d0-bef9-a3e0c569773a')/inheritsPermissionsFrom",
+      "displayName": "License Administrator",
+      "id": "4d6ac14f-3453-41d0-bef9-a3e0c569773a"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "7698a772-787b-4ac8-901f-60d6b08affd2",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('7698a772-787b-4ac8-901f-60d6b08affd2')/inheritsPermissionsFrom",
+      "displayName": "Cloud Device Administrator",
+      "id": "7698a772-787b-4ac8-901f-60d6b08affd2"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('c4e39bd9-1100-46d3-8c65-fb160da0071f')/inheritsPermissionsFrom",
+      "displayName": "Authentication Administrator",
+      "id": "c4e39bd9-1100-46d3-8c65-fb160da0071f"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('7be44c8a-adaf-4e2a-84d6-ab2649e08a13')/inheritsPermissionsFrom",
+      "displayName": "Privileged Authentication Administrator",
+      "id": "7be44c8a-adaf-4e2a-84d6-ab2649e08a13"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "baf37b3a-610e-45da-9e62-d9d1e5e8914b",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('baf37b3a-610e-45da-9e62-d9d1e5e8914b')/inheritsPermissionsFrom",
+      "displayName": "Teams Communications Administrator",
+      "id": "baf37b3a-610e-45da-9e62-d9d1e5e8914b"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "f70938a0-fc10-4177-9e90-2178f8765737",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('f70938a0-fc10-4177-9e90-2178f8765737')/inheritsPermissionsFrom",
+      "displayName": "Teams Communications Support Engineer",
+      "id": "f70938a0-fc10-4177-9e90-2178f8765737"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "fcf91098-03e3-41a9-b5ba-6f0ec8188a12",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('fcf91098-03e3-41a9-b5ba-6f0ec8188a12')/inheritsPermissionsFrom",
+      "displayName": "Teams Communications Support Specialist",
+      "id": "fcf91098-03e3-41a9-b5ba-6f0ec8188a12"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "69091246-20e8-4a56-aa4d-066075b2a7a8",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('69091246-20e8-4a56-aa4d-066075b2a7a8')/inheritsPermissionsFrom",
+      "displayName": "Teams Administrator",
+      "id": "69091246-20e8-4a56-aa4d-066075b2a7a8"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c')/inheritsPermissionsFrom",
+      "displayName": "Insights Administrator",
+      "id": "eb1f4a8d-243a-41f0-9fbd-c7cdf6c5ef7c"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "ac16e43d-7b2d-40e0-ac05-243ff356ab5b",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('ac16e43d-7b2d-40e0-ac05-243ff356ab5b')/inheritsPermissionsFrom",
+      "displayName": "Message Center Privacy Reader",
+      "id": "ac16e43d-7b2d-40e0-ac05-243ff356ab5b"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "6e591065-9bad-43ed-90f3-e9424366d2f0",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('6e591065-9bad-43ed-90f3-e9424366d2f0')/inheritsPermissionsFrom",
+      "displayName": "External ID User Flow Administrator",
+      "id": "6e591065-9bad-43ed-90f3-e9424366d2f0"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "0f971eea-41eb-4569-a71e-57bb8a3eff1e",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('0f971eea-41eb-4569-a71e-57bb8a3eff1e')/inheritsPermissionsFrom",
+      "displayName": "External ID User Flow Attribute Administrator",
+      "id": "0f971eea-41eb-4569-a71e-57bb8a3eff1e"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "aaf43236-0c0d-4d5f-883a-6955382ac081",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('aaf43236-0c0d-4d5f-883a-6955382ac081')/inheritsPermissionsFrom",
+      "displayName": "B2C IEF Keyset Administrator",
+      "id": "aaf43236-0c0d-4d5f-883a-6955382ac081"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "3edaf663-341e-4475-9f94-5c398ef6c070",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('3edaf663-341e-4475-9f94-5c398ef6c070')/inheritsPermissionsFrom",
+      "displayName": "B2C IEF Policy Administrator",
+      "id": "3edaf663-341e-4475-9f94-5c398ef6c070"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('be2f45a1-457d-42af-a067-6ec1fa63bc45')/inheritsPermissionsFrom",
+      "displayName": "External Identity Provider Administrator",
+      "id": "be2f45a1-457d-42af-a067-6ec1fa63bc45"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "e6d1a23a-da11-4be4-9570-befc86d067a7",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('e6d1a23a-da11-4be4-9570-befc86d067a7')/inheritsPermissionsFrom",
+      "displayName": "Compliance Data Administrator",
+      "id": "e6d1a23a-da11-4be4-9570-befc86d067a7"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('5f2222b1-57c3-48ba-8ad5-d4759f1fde6f')/inheritsPermissionsFrom",
+      "displayName": "Security Operator",
+      "id": "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "74ef975b-6605-40af-a5d2-b9539d836353",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('74ef975b-6605-40af-a5d2-b9539d836353')/inheritsPermissionsFrom",
+      "displayName": "Kaizala Administrator",
+      "id": "74ef975b-6605-40af-a5d2-b9539d836353"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('f2ef992c-3afb-46b9-b7cf-a126ee74c451')/inheritsPermissionsFrom",
+      "displayName": "Global Reader",
+      "id": "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "0964bb5e-9bdb-4d7b-ac29-58e794862a40",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('0964bb5e-9bdb-4d7b-ac29-58e794862a40')/inheritsPermissionsFrom",
+      "displayName": "Search Administrator",
+      "id": "0964bb5e-9bdb-4d7b-ac29-58e794862a40"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "8835291a-918c-4fd7-a9ce-faa49f0cf7d9",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('8835291a-918c-4fd7-a9ce-faa49f0cf7d9')/inheritsPermissionsFrom",
+      "displayName": "Search Editor",
+      "id": "8835291a-918c-4fd7-a9ce-faa49f0cf7d9"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "966707d0-3269-4727-9be2-8c3a10f19b9d",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('966707d0-3269-4727-9be2-8c3a10f19b9d')/inheritsPermissionsFrom",
+      "displayName": "Password Administrator",
+      "id": "966707d0-3269-4727-9be2-8c3a10f19b9d"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('644ef478-e28f-4e28-b9dc-3fdde9aa0b1f')/inheritsPermissionsFrom",
+      "displayName": "Printer Administrator",
+      "id": "644ef478-e28f-4e28-b9dc-3fdde9aa0b1f"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477')/inheritsPermissionsFrom",
+      "displayName": "Printer Technician",
+      "id": "e8cef6f1-e4bd-4ea8-bc07-4b8d950f4477"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "0526716b-113d-4c15-b2c8-68e3c22b9f80",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('0526716b-113d-4c15-b2c8-68e3c22b9f80')/inheritsPermissionsFrom",
+      "displayName": "Authentication Policy Administrator",
+      "id": "0526716b-113d-4c15-b2c8-68e3c22b9f80"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('fdd7a751-b60b-444a-984c-02652fe8fa1c')/inheritsPermissionsFrom",
+      "displayName": "Groups Administrator",
+      "id": "fdd7a751-b60b-444a-984c-02652fe8fa1c"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "11648597-926c-4cf3-9c36-bcebb0ba8dcc",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('11648597-926c-4cf3-9c36-bcebb0ba8dcc')/inheritsPermissionsFrom",
+      "displayName": "Power Platform Administrator",
+      "id": "11648597-926c-4cf3-9c36-bcebb0ba8dcc"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "e3973bdf-4987-49ae-837a-ba8e231c7286",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('e3973bdf-4987-49ae-837a-ba8e231c7286')/inheritsPermissionsFrom",
+      "displayName": "Azure DevOps Administrator",
+      "id": "e3973bdf-4987-49ae-837a-ba8e231c7286"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2')/inheritsPermissionsFrom",
+      "displayName": "Hybrid Identity Administrator",
+      "id": "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "2b745bdf-0803-4d80-aa65-822c4493daac",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('2b745bdf-0803-4d80-aa65-822c4493daac')/inheritsPermissionsFrom",
+      "displayName": "Office Apps Administrator",
+      "id": "2b745bdf-0803-4d80-aa65-822c4493daac"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "d37c8bed-0711-4417-ba38-b4abe66ce4c2",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('d37c8bed-0711-4417-ba38-b4abe66ce4c2')/inheritsPermissionsFrom",
+      "displayName": "Network Administrator",
+      "id": "d37c8bed-0711-4417-ba38-b4abe66ce4c2"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "31e939ad-9672-4796-9c2e-873181342d2d",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('31e939ad-9672-4796-9c2e-873181342d2d')/inheritsPermissionsFrom",
+      "displayName": "Insights Business Leader",
+      "id": "31e939ad-9672-4796-9c2e-873181342d2d"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "3d762c5a-1b6c-493f-843e-55a3b42923d4",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('3d762c5a-1b6c-493f-843e-55a3b42923d4')/inheritsPermissionsFrom",
+      "displayName": "Teams Devices Administrator",
+      "id": "3d762c5a-1b6c-493f-843e-55a3b42923d4"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "c430b396-e693-46cc-96f3-db01bf8bb62a",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('c430b396-e693-46cc-96f3-db01bf8bb62a')/inheritsPermissionsFrom",
+      "displayName": "Attack Simulation Administrator",
+      "id": "c430b396-e693-46cc-96f3-db01bf8bb62a"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f')/inheritsPermissionsFrom",
+      "displayName": "Attack Payload Author",
+      "id": "9c6df0f2-1e7c-4dc3-b195-66dfbd24aa8f"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "75934031-6c7e-415a-99d7-48dbd49e875e",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('75934031-6c7e-415a-99d7-48dbd49e875e')/inheritsPermissionsFrom",
+      "displayName": "Usage Summary Reports Reader",
+      "id": "75934031-6c7e-415a-99d7-48dbd49e875e"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "b5a8dcf3-09d5-43a9-a639-8e29ef291470",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('b5a8dcf3-09d5-43a9-a639-8e29ef291470')/inheritsPermissionsFrom",
+      "displayName": "Knowledge Administrator",
+      "id": "b5a8dcf3-09d5-43a9-a639-8e29ef291470"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "744ec460-397e-42ad-a462-8b3f9747a02c",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('744ec460-397e-42ad-a462-8b3f9747a02c')/inheritsPermissionsFrom",
+      "displayName": "Knowledge Manager",
+      "id": "744ec460-397e-42ad-a462-8b3f9747a02c"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "8329153b-31d0-4727-b945-745eb3bc5f31",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('8329153b-31d0-4727-b945-745eb3bc5f31')/inheritsPermissionsFrom",
+      "displayName": "Domain Name Administrator",
+      "id": "8329153b-31d0-4727-b945-745eb3bc5f31"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "d2562ede-74db-457e-a7b6-544e236ebb61",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('d2562ede-74db-457e-a7b6-544e236ebb61')/inheritsPermissionsFrom",
+      "displayName": "AI Administrator",
+      "id": "d2562ede-74db-457e-a7b6-544e236ebb61"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "1fe13547-53f6-408d-ac04-7f8eed167b38",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('1fe13547-53f6-408d-ac04-7f8eed167b38')/inheritsPermissionsFrom",
+      "displayName": "AI Reader",
+      "id": "1fe13547-53f6-408d-ac04-7f8eed167b38"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "8424c6f0-a189-499e-bbd0-26c1753c96d4",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('8424c6f0-a189-499e-bbd0-26c1753c96d4')/inheritsPermissionsFrom",
+      "displayName": "Attribute Definition Administrator",
+      "id": "8424c6f0-a189-499e-bbd0-26c1753c96d4"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d')/inheritsPermissionsFrom",
+      "displayName": "Attribute Assignment Administrator",
+      "id": "58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "1d336d2c-4ae8-42ef-9711-b3604ce3fc2c",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('1d336d2c-4ae8-42ef-9711-b3604ce3fc2c')/inheritsPermissionsFrom",
+      "displayName": "Attribute Definition Reader",
+      "id": "1d336d2c-4ae8-42ef-9711-b3604ce3fc2c"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "ffd52fa5-98dc-465c-991d-fc073eb59f8f",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('ffd52fa5-98dc-465c-991d-fc073eb59f8f')/inheritsPermissionsFrom",
+      "displayName": "Attribute Assignment Reader",
+      "id": "ffd52fa5-98dc-465c-991d-fc073eb59f8f"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "31392ffb-586c-42d1-9346-e59415a2cc4e",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('31392ffb-586c-42d1-9346-e59415a2cc4e')/inheritsPermissionsFrom",
+      "displayName": "Exchange Recipient Administrator",
+      "id": "31392ffb-586c-42d1-9346-e59415a2cc4e"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('45d8d3c5-c802-45c6-b32a-1d70b5e1e86e')/inheritsPermissionsFrom",
+      "displayName": "Identity Governance Administrator",
+      "id": "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "892c5842-a9a6-463a-8041-72aa08ca3cf6",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('892c5842-a9a6-463a-8041-72aa08ca3cf6')/inheritsPermissionsFrom",
+      "displayName": "Cloud App Security Administrator",
+      "id": "892c5842-a9a6-463a-8041-72aa08ca3cf6"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "32696413-001a-46ae-978c-ce0f6b3620d2",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('32696413-001a-46ae-978c-ce0f6b3620d2')/inheritsPermissionsFrom",
+      "displayName": "Windows Update Deployment Administrator",
+      "id": "32696413-001a-46ae-978c-ce0f6b3620d2"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "11451d60-acb2-45eb-a7d6-43d0f0125c13",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('11451d60-acb2-45eb-a7d6-43d0f0125c13')/inheritsPermissionsFrom",
+      "displayName": "Windows 365 Administrator",
+      "id": "11451d60-acb2-45eb-a7d6-43d0f0125c13"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "3f1acade-1e04-4fbc-9b69-f0302cd84aef",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('3f1acade-1e04-4fbc-9b69-f0302cd84aef')/inheritsPermissionsFrom",
+      "displayName": "Edge Administrator",
+      "id": "3f1acade-1e04-4fbc-9b69-f0302cd84aef"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "810a2642-a034-447f-a5e8-41beaa378541",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('810a2642-a034-447f-a5e8-41beaa378541')/inheritsPermissionsFrom",
+      "displayName": "Yammer Administrator",
+      "id": "810a2642-a034-447f-a5e8-41beaa378541"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "25a516ed-2fa0-40ea-a2d0-12923a21473a",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('25a516ed-2fa0-40ea-a2d0-12923a21473a')/inheritsPermissionsFrom",
+      "displayName": "Authentication Extensibility Administrator",
+      "id": "25a516ed-2fa0-40ea-a2d0-12923a21473a"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "e300d9e7-4a2b-4295-9eff-f1c78b36cc98",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('e300d9e7-4a2b-4295-9eff-f1c78b36cc98')/inheritsPermissionsFrom",
+      "displayName": "Virtual Visits Administrator",
+      "id": "e300d9e7-4a2b-4295-9eff-f1c78b36cc98"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "25df335f-86eb-4119-b717-0ff02de207e9",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('25df335f-86eb-4119-b717-0ff02de207e9')/inheritsPermissionsFrom",
+      "displayName": "Insights Analyst",
+      "id": "25df335f-86eb-4119-b717-0ff02de207e9"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "1501b917-7653-4ff9-a4b5-203eaf33784f",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('1501b917-7653-4ff9-a4b5-203eaf33784f')/inheritsPermissionsFrom",
+      "displayName": "Microsoft Hardware Warranty Administrator",
+      "id": "1501b917-7653-4ff9-a4b5-203eaf33784f"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "281fe777-fb20-4fbb-b7a3-ccebce5b0d96",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('281fe777-fb20-4fbb-b7a3-ccebce5b0d96')/inheritsPermissionsFrom",
+      "displayName": "Microsoft Hardware Warranty Specialist",
+      "id": "281fe777-fb20-4fbb-b7a3-ccebce5b0d96"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "112ca1a2-15ad-4102-995e-45b0bc479a6a",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('112ca1a2-15ad-4102-995e-45b0bc479a6a')/inheritsPermissionsFrom",
+      "displayName": "Tenant Creator",
+      "id": "112ca1a2-15ad-4102-995e-45b0bc479a6a"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "59d46f88-662b-457b-bceb-5c3809e5908f",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('59d46f88-662b-457b-bceb-5c3809e5908f')/inheritsPermissionsFrom",
+      "displayName": "Lifecycle Workflows Administrator",
+      "id": "59d46f88-662b-457b-bceb-5c3809e5908f"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "92b086b3-e367-4ef2-b869-1de128fb986e",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('92b086b3-e367-4ef2-b869-1de128fb986e')/inheritsPermissionsFrom",
+      "displayName": "Viva Goals Administrator",
+      "id": "92b086b3-e367-4ef2-b869-1de128fb986e"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "27460883-1df1-4691-b032-3b79643e5e63",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('27460883-1df1-4691-b032-3b79643e5e63')/inheritsPermissionsFrom",
+      "displayName": "User Experience Success Manager",
+      "id": "27460883-1df1-4691-b032-3b79643e5e63"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "af78dc32-cf4d-46f9-ba4e-4428526346b5",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('af78dc32-cf4d-46f9-ba4e-4428526346b5')/inheritsPermissionsFrom",
+      "displayName": "Permissions Management Administrator",
+      "id": "af78dc32-cf4d-46f9-ba4e-4428526346b5"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "507f53e4-4e52-4077-abd3-d2e1558b6ea2",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('507f53e4-4e52-4077-abd3-d2e1558b6ea2')/inheritsPermissionsFrom",
+      "displayName": "Organizational Messages Writer",
+      "id": "507f53e4-4e52-4077-abd3-d2e1558b6ea2"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "ac434307-12b9-4fa1-a708-88bf58caabc1",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('ac434307-12b9-4fa1-a708-88bf58caabc1')/inheritsPermissionsFrom",
+      "displayName": "Global Secure Access Administrator",
+      "id": "ac434307-12b9-4fa1-a708-88bf58caabc1"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "87761b17-1ed2-4af3-9acd-92a150038160",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('87761b17-1ed2-4af3-9acd-92a150038160')/inheritsPermissionsFrom",
+      "displayName": "Viva Pulse Administrator",
+      "id": "87761b17-1ed2-4af3-9acd-92a150038160"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "dd13091a-6207-4fc0-82ba-3641e056ab95",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('dd13091a-6207-4fc0-82ba-3641e056ab95')/inheritsPermissionsFrom",
+      "displayName": "Extended Directory User Administrator",
+      "id": "dd13091a-6207-4fc0-82ba-3641e056ab95"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "5b784334-f94b-471a-a387-e7219fc49ca2",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('5b784334-f94b-471a-a387-e7219fc49ca2')/inheritsPermissionsFrom",
+      "displayName": "Attribute Log Administrator",
+      "id": "5b784334-f94b-471a-a387-e7219fc49ca2"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "9c99539d-8186-4804-835f-fd51ef9e2dcd",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('9c99539d-8186-4804-835f-fd51ef9e2dcd')/inheritsPermissionsFrom",
+      "displayName": "Attribute Log Reader",
+      "id": "9c99539d-8186-4804-835f-fd51ef9e2dcd"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "1076ac91-f3d9-41a7-a339-dcdf5f480acc",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('1076ac91-f3d9-41a7-a339-dcdf5f480acc')/inheritsPermissionsFrom",
+      "displayName": "Teams Reader",
+      "id": "1076ac91-f3d9-41a7-a339-dcdf5f480acc"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "aa38014f-0993-46e9-9b45-30501a20909d",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('aa38014f-0993-46e9-9b45-30501a20909d')/inheritsPermissionsFrom",
+      "displayName": "Teams Telephony Administrator",
+      "id": "aa38014f-0993-46e9-9b45-30501a20909d"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "963797fb-eb3b-4cde-8ce3-5878b3f32a3f",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('963797fb-eb3b-4cde-8ce3-5878b3f32a3f')/inheritsPermissionsFrom",
+      "displayName": "Dynamics 365 Business Central Administrator",
+      "id": "963797fb-eb3b-4cde-8ce3-5878b3f32a3f"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "8c8b803f-96e1-4129-9349-20738d9f9652",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('8c8b803f-96e1-4129-9349-20738d9f9652')/inheritsPermissionsFrom",
+      "displayName": "Microsoft 365 Migration Administrator",
+      "id": "8c8b803f-96e1-4129-9349-20738d9f9652"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "1a7d78b6-429f-476b-b8eb-35fb715fffd4",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('1a7d78b6-429f-476b-b8eb-35fb715fffd4')/inheritsPermissionsFrom",
+      "displayName": "SharePoint Embedded Administrator",
+      "id": "1a7d78b6-429f-476b-b8eb-35fb715fffd4"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "92ed04bf-c94a-4b82-9729-b799a7a4c178",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('92ed04bf-c94a-4b82-9729-b799a7a4c178')/inheritsPermissionsFrom",
+      "displayName": "Organizational Branding Administrator",
+      "id": "92ed04bf-c94a-4b82-9729-b799a7a4c178"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "e48398e2-f4bb-4074-8f31-4586725e205b",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('e48398e2-f4bb-4074-8f31-4586725e205b')/inheritsPermissionsFrom",
+      "displayName": "Organizational Messages Approver",
+      "id": "e48398e2-f4bb-4074-8f31-4586725e205b"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "ee67aa9c-e510-4759-b906-227085a7fd4d",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('ee67aa9c-e510-4759-b906-227085a7fd4d')/inheritsPermissionsFrom",
+      "displayName": "Microsoft Graph Data Connect Administrator",
+      "id": "ee67aa9c-e510-4759-b906-227085a7fd4d"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "1707125e-0aa2-4d4d-8655-a7c786c76a25",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('1707125e-0aa2-4d4d-8655-a7c786c76a25')/inheritsPermissionsFrom",
+      "displayName": "Microsoft 365 Backup Administrator",
+      "id": "1707125e-0aa2-4d4d-8655-a7c786c76a25"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "a92aed5d-d78a-4d16-b381-09adb37eb3b0",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('a92aed5d-d78a-4d16-b381-09adb37eb3b0')/inheritsPermissionsFrom",
+      "displayName": "On Premises Directory Sync Account",
+      "id": "a92aed5d-d78a-4d16-b381-09adb37eb3b0"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "422218e4-db15-4ef9-bbe0-8afb41546d79",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('422218e4-db15-4ef9-bbe0-8afb41546d79')/inheritsPermissionsFrom",
+      "displayName": "Attribute Provisioning Reader",
+      "id": "422218e4-db15-4ef9-bbe0-8afb41546d79"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "ecb2c6bf-0ab6-418e-bd87-7986f8d63bbe",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('ecb2c6bf-0ab6-418e-bd87-7986f8d63bbe')/inheritsPermissionsFrom",
+      "displayName": "Attribute Provisioning Administrator",
+      "id": "ecb2c6bf-0ab6-418e-bd87-7986f8d63bbe"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "843318fb-79a6-4168-9e6f-aa9a07481cc4",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('843318fb-79a6-4168-9e6f-aa9a07481cc4')/inheritsPermissionsFrom",
+      "displayName": "Global Secure Access Log Reader",
+      "id": "843318fb-79a6-4168-9e6f-aa9a07481cc4"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "9d70768a-0cbc-4b4c-aea3-2e124b2477f4",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('9d70768a-0cbc-4b4c-aea3-2e124b2477f4')/inheritsPermissionsFrom",
+      "displayName": "Organizational Data Source Administrator",
+      "id": "9d70768a-0cbc-4b4c-aea3-2e124b2477f4"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "024906de-61e5-49c8-8572-40335f1e0e10",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('024906de-61e5-49c8-8572-40335f1e0e10')/inheritsPermissionsFrom",
+      "displayName": "People Administrator",
+      "id": "024906de-61e5-49c8-8572-40335f1e0e10"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "2ea5ce4c-b2d8-4668-bd81-3680bd2d227a",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('2ea5ce4c-b2d8-4668-bd81-3680bd2d227a')/inheritsPermissionsFrom",
+      "displayName": "IoT Device Administrator",
+      "id": "2ea5ce4c-b2d8-4668-bd81-3680bd2d227a"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "0ec3f692-38d6-4d14-9e69-0377ca7797ad",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('0ec3f692-38d6-4d14-9e69-0377ca7797ad')/inheritsPermissionsFrom",
+      "displayName": "Viva Glint Tenant Administrator",
+      "id": "0ec3f692-38d6-4d14-9e69-0377ca7797ad"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "78b0ccd1-afc2-4f92-9116-b41aedd09592",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('78b0ccd1-afc2-4f92-9116-b41aedd09592')/inheritsPermissionsFrom",
+      "displayName": "Places Administrator",
+      "id": "78b0ccd1-afc2-4f92-9116-b41aedd09592"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "9d3e04ba-3ee4-4d1b-a3a7-9aef423a09be",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('9d3e04ba-3ee4-4d1b-a3a7-9aef423a09be')/inheritsPermissionsFrom",
+      "displayName": "SharePoint Backup Administrator",
+      "id": "9d3e04ba-3ee4-4d1b-a3a7-9aef423a09be"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "49eb8f75-97e9-4e37-9b2b-6c3ebfcffa31",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('49eb8f75-97e9-4e37-9b2b-6c3ebfcffa31')/inheritsPermissionsFrom",
+      "displayName": "Exchange Backup Administrator",
+      "id": "49eb8f75-97e9-4e37-9b2b-6c3ebfcffa31"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "e93e3737-fa85-474a-aee4-7d3fb86510f3",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('e93e3737-fa85-474a-aee4-7d3fb86510f3')/inheritsPermissionsFrom",
+      "displayName": "Dragon Administrator",
+      "id": "e93e3737-fa85-474a-aee4-7d3fb86510f3"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "99009c4a-3b3f-4957-82a9-9d35e12db77e",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('99009c4a-3b3f-4957-82a9-9d35e12db77e')/inheritsPermissionsFrom",
+      "displayName": "SharePoint Advanced Management Administrator",
+      "id": "99009c4a-3b3f-4957-82a9-9d35e12db77e"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "2fe872fb-daa8-4afc-8f6c-53c4565cfef4",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('2fe872fb-daa8-4afc-8f6c-53c4565cfef4')/inheritsPermissionsFrom",
+      "displayName": "Teams External Collaboration Administrator",
+      "id": "2fe872fb-daa8-4afc-8f6c-53c4565cfef4"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "adb2368d-a9be-41b5-8667-d96778e081b0",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('adb2368d-a9be-41b5-8667-d96778e081b0')/inheritsPermissionsFrom",
+      "displayName": "Agent ID Developer",
+      "id": "adb2368d-a9be-41b5-8667-d96778e081b0"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "0b00bede-4072-4d22-b441-e7df02a1ef63",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('0b00bede-4072-4d22-b441-e7df02a1ef63')/inheritsPermissionsFrom",
+      "displayName": "Authentication Extensibility Password Administrator",
+      "id": "0b00bede-4072-4d22-b441-e7df02a1ef63"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "6b942400-691f-4bf0-9d12-d8a254a2baf5",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('6b942400-691f-4bf0-9d12-d8a254a2baf5')/inheritsPermissionsFrom",
+      "displayName": "Agent Registry Administrator",
+      "id": "6b942400-691f-4bf0-9d12-d8a254a2baf5"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "db506228-d27e-4b7d-95e5-295956d6615f",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('db506228-d27e-4b7d-95e5-295956d6615f')/inheritsPermissionsFrom",
+      "displayName": "Agent ID Administrator",
+      "id": "db506228-d27e-4b7d-95e5-295956d6615f"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "e07494ad-1654-4dd2-922e-6f81a71bf00f",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('e07494ad-1654-4dd2-922e-6f81a71bf00f')/inheritsPermissionsFrom",
+      "displayName": "Purview Workload Content Reader",
+      "id": "e07494ad-1654-4dd2-922e-6f81a71bf00f"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "02d5655b-c1cf-4e5f-98da-5fb919085bf6",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('02d5655b-c1cf-4e5f-98da-5fb919085bf6')/inheritsPermissionsFrom",
+      "displayName": "Purview Workload Content Writer",
+      "id": "02d5655b-c1cf-4e5f-98da-5fb919085bf6"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a')/inheritsPermissionsFrom",
+      "displayName": "Purview Workload Content Administrator",
+      "id": "3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a"
+    },
+    {
+      "inheritsPermissionsFrom": [],
+      "templateId": "fc8ad4e2-40e4-4724-8317-bcda7503ecbf",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('fc8ad4e2-40e4-4724-8317-bcda7503ecbf')/inheritsPermissionsFrom",
+      "displayName": "Customer Delegated Admin Relationship Administrator",
+      "id": "fc8ad4e2-40e4-4724-8317-bcda7503ecbf"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "f42252d9-5400-4d7b-b9ef-cc582dbb8577",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('f42252d9-5400-4d7b-b9ef-cc582dbb8577')/inheritsPermissionsFrom",
+      "displayName": "Entra Backup Reader",
+      "id": "f42252d9-5400-4d7b-b9ef-cc582dbb8577"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "b6a27b2b-f905-4b2e-81b5-0d90e0ef1fdb",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('b6a27b2b-f905-4b2e-81b5-0d90e0ef1fdb')/inheritsPermissionsFrom",
+      "displayName": "Entra Backup Administrator",
+      "id": "b6a27b2b-f905-4b2e-81b5-0d90e0ef1fdb"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "1981f584-96e9-4a6f-95b0-f522373f8fae",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('1981f584-96e9-4a6f-95b0-f522373f8fae')/inheritsPermissionsFrom",
+      "displayName": "Tenant Governance Administrator",
+      "id": "1981f584-96e9-4a6f-95b0-f522373f8fae"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "e0a4caa6-fe82-443f-b92f-d87341d17b2e",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('e0a4caa6-fe82-443f-b92f-d87341d17b2e')/inheritsPermissionsFrom",
+      "displayName": "Tenant Governance Reader",
+      "id": "e0a4caa6-fe82-443f-b92f-d87341d17b2e"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "b8e31d83-1534-480f-9b10-0338ded51b7e",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('b8e31d83-1534-480f-9b10-0338ded51b7e')/inheritsPermissionsFrom",
+      "displayName": "Tenant Governance Relationship Administrator",
+      "id": "b8e31d83-1534-480f-9b10-0338ded51b7e"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "124577f8-48ed-456a-839f-13b419002e33",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('124577f8-48ed-456a-839f-13b419002e33')/inheritsPermissionsFrom",
+      "displayName": "Tenant Governance Relationship Reader",
+      "id": "124577f8-48ed-456a-839f-13b419002e33"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "d35481f7-cda1-4fa2-8344-5a21f7f3724d",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('d35481f7-cda1-4fa2-8344-5a21f7f3724d')/inheritsPermissionsFrom",
+      "displayName": "Entra Customer Lockbox Approver",
+      "id": "d35481f7-cda1-4fa2-8344-5a21f7f3724d"
+    },
+    {
+      "inheritsPermissionsFrom": [
+        {
+          "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+        }
+      ],
+      "templateId": "58f930cc-fcf4-4152-852c-1d7dbf502139",
+      "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/directory/roleDefinitions('58f930cc-fcf4-4152-852c-1d7dbf502139')/inheritsPermissionsFrom",
+      "displayName": "Entra SOC Identity Responder",
+      "id": "58f930cc-fcf4-4152-852c-1d7dbf502139"
+    }
+  ]
+}
