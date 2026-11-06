@@ -3,7 +3,7 @@
 // Used by : Azure Monitor log alert rule "ALR-BreakGlass-SignIn" (walkthrough Step 12)
 // Why IDs : Object IDs never change; UPNs and display names can be renamed by an attacker.
 // Replace the two GUIDs with the ObjectIds printed by 02-New-BreakGlassAccounts.ps1.
-let BreakGlassIds = dynamic(["00000000-0000-0000-0000-000000000001", "00000000-0000-0000-0000-000000000002"]);
+let BreakGlassIds = dynamic(["978d7f0e-53e4-4519-9709-f924d1dc06a6", "e8cf4021-b81f-43c3-b992-06edadc30940"]);
 union isfuzzy=true SigninLogs, AADNonInteractiveUserSignInLogs
 | where UserId in (BreakGlassIds)
 | project TimeGenerated, UserPrincipalName, ResultType, ResultDescription,
