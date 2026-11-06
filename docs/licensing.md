@@ -18,11 +18,11 @@ Recorded in Phase 00 and re-verified with `phase-01-tenant-foundation/scripts/po
 | Phase | Requires | Inside trial window? |
 |---|---|---|
 | 04 Lifecycle Workflows | Entra ID Governance (included in Entra Suite) | |
-| 06 PIM | Entra ID P2 or Governance | |
-| 07 Risk-based Conditional Access | Entra ID P2 | |
-| 12 Entitlement management | Entra ID P2 / Governance | |
-| 13 Access reviews | Entra ID P2 / Governance | |
-| 15 ID Protection | Entra ID P2 | |
+| 06 PIM | Entra ID P2 or Governance |Yes |
+| 07 Risk-based Conditional Access | Entra ID P2 |Yes |
+| 12 Entitlement management | Entra ID P2 / Governance |Yes |
+| 13 Access reviews | Entra ID P2 / Governance |Yes |
+| 15 ID Protection | Entra ID P2 |Yes |
 
 ## Decision
 `<Purchase / re-sequence / accept gap. Link the ADR.>`
