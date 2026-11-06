@@ -1,0 +1,21 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authorizationPolicy/$entity",
+  "displayName": "Authorization Policy",
+  "guestUserRoleId": "2af84b1e-32c8-42b7-82bc-daa82404023b",
+  "allowedToSignUpEmailBasedSubscriptions": false,
+  "allowInvitesFrom": "adminsAndGuestInviters",
+  "id": "authorizationPolicy",
+  "allowedToUseSSPR": true,
+  "blockMsolPowerShell": false,
+  "description": "Used to manage authorization related settings across the company.",
+  "defaultUserRolePermissions": {
+    "allowedToCreateSecurityGroups": false,
+    "allowedToCreateApps": false,
+    "allowedToReadOtherUsers": true,
+    "allowedToReadBitlockerKeysForOwnedDevice": true,
+    "allowedToCreateTenants": false,
+    "permissionGrantPoliciesAssigned": []
+  },
+  "allowEmailVerifiedUsersToJoinOrganization": false,
+  "allowUserConsentForRiskyApps": null
+}
