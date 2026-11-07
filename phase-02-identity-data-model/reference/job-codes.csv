@@ -1,0 +1,74 @@
+JobCode,StandardTitle,JobFamily,DepartmentCode,MinLevel,MaxLevel,AllowedEmployeeTypes,ManagerialRole,Status
+EXE-CEO,Chief Executive Officer,Executive,EXE,L10,L10,Employee,Yes,Active
+EXE-COS,Chief of Staff,Executive,EXE,L8,L8,Employee,Yes,Active
+EXE-EA,Executive Assistant to the CEO,Executive,EXE,L4,L4,Employee,No,Active
+FIN-CFO,Chief Financial Officer,Finance,FIN,L9,L9,Employee,Yes,Active
+HR-CHRO,Chief People Officer,People,HR,L9,L9,Employee,Yes,Active
+LEG-GC,General Counsel,Legal,LEG,L9,L9,Employee,Yes,Active
+OPS-VP,VP Operations,Operations,OPS,L8,L8,Employee,Yes,Active
+MKT-CMO,Chief Marketing Officer,Marketing,MKT,L9,L9,Employee,Yes,Active
+SAL-CRO,Chief Revenue Officer,Sales,SAL,L9,L9,Employee,Yes,Active
+CS-VP,VP Customer Success,Customer Success,CS,L8,L8,Employee,Yes,Active
+ENG-CTO,Chief Technology Officer,Engineering,ENG,L9,L9,Employee,Yes,Active
+IT-CIO,Chief Information Officer,IT,IT,L9,L9,Employee,Yes,Active
+SEC-CISO,Chief Information Security Officer,Security,SEC,L9,L9,Employee,Yes,Active
+IT-IAM-MGR,IAM Manager,IT,IT,L7,L7,Employee,Yes,Active
+IT-IAM-ENG,IAM Engineer,IT,IT,L5,L6,Employee,No,Active
+IT-INF-MGR,Cloud & Infrastructure Manager,IT,IT,L7,L7,Employee,Yes,Active
+IT-SD-LEAD,Service Desk Lead,IT,IT,L6,L6,Employee,Yes,Active
+SEC-SOC-MGR,Security Operations Manager,Security,SEC,L7,L7,Employee,Yes,Active
+SEC-GRC-MGR,GRC Manager,Security,SEC,L7,L7,Employee,Yes,Active
+FIN-CTRL,Financial Controller,Finance,FIN,L7,L7,Employee,Yes,Active
+HR-OPS-MGR,HR Operations Manager,People,HR,L7,L7,Employee,Yes,Active
+SAL-DIR,Director of Sales,Sales,SAL,L7,L7,Employee,Yes,Active
+SAL-OPS-MGR,Sales Operations Manager,Sales,SAL,L6,L6,Employee,Yes,Active
+MKT-DIR,Director of Digital Marketing,Marketing,MKT,L7,L7,Employee,Yes,Active
+ENG-DIR,Director of Engineering,Engineering,ENG,L8,L8,Employee,Yes,Active
+ENG-EM,Engineering Manager,Engineering,ENG,L7,L7,Employee,Yes,Active
+FIN-ACCT-SR,Senior Accountant,Finance,FIN,L5,L5,Employee,No,Active
+FIN-ACCT,Accountant,Finance,FIN,L4,L4,Employee|Intern,No,Active
+FIN-AP,Accounts Payable Specialist,Finance,FIN,L3,L3,Employee,No,Active
+FIN-FPA,Financial Analyst,Finance,FIN,L4,L4,Employee,No,Active
+FIN-PAY,Payroll Specialist,Finance,FIN,L4,L4,Employee,No,Active
+HR-HRBP,HR Business Partner,People,HR,L5,L5,Employee,No,Active
+HR-GEN,HR Generalist,People,HR,L4,L4,Employee,No,Active
+HR-TA,Talent Acquisition Specialist,People,HR,L4,L4,Employee|Intern,No,Active
+HR-HRIS,HRIS Analyst,People,HR,L5,L5,Employee,No,Active
+LEG-CNSL,Corporate Counsel,Legal,LEG,L6,L6,Employee,No,Active
+LEG-COMP,Compliance Analyst,Legal,LEG,L4,L4,Employee,No,Active
+LEG-PRIV,Privacy Officer,Legal,LEG,L6,L6,Employee,No,Active
+LEG-PARA,Paralegal,Legal,LEG,L3,L3,Employee,No,Active
+OPS-BIZ,Business Operations Analyst,Operations,OPS,L4,L4,Employee,No,Active
+OPS-PROC,Procurement Specialist,Operations,OPS,L4,L4,Employee,No,Active
+OPS-FAC,Facilities Coordinator,Operations,OPS,L3,L3,Employee,No,Active
+OPS-VEND,Vendor Manager,Operations,OPS,L5,L5,Employee,No,Active
+MKT-MGR,Marketing Manager,Marketing,MKT,L6,L6,Employee,Yes,Active
+MKT-CONT,Content Strategist,Marketing,MKT,L4,L4,Employee|Contractor|Intern,No,Active
+MKT-DIG,Digital Marketing Specialist,Marketing,MKT,L4,L4,Employee|Contractor|Intern,No,Active
+MKT-DES,Graphic Designer,Marketing,MKT,L4,L4,Employee|Contractor,No,Active
+MKT-WEB,Web Content Manager,Marketing,MKT,L5,L5,Employee,No,Active
+MKT-ANL,Marketing Analyst,Marketing,MKT,L4,L4,Employee,No,Active
+MKT-EVT,Events Coordinator,Marketing,MKT,L3,L3,Employee|Contractor,No,Active
+SAL-AE,Account Executive,Sales,SAL,L5,L5,Employee,No,Active
+SAL-SDR,Sales Development Representative,Sales,SAL,L3,L3,Employee,No,Active
+SAL-SE,Sales Engineer,Sales,SAL,L6,L6,Employee,No,Active
+SAL-OPS,Sales Operations Analyst,Sales,SAL,L4,L4,Employee,No,Active
+CS-CSM,Customer Success Manager,Customer Success,CS,L5,L5,Employee,No,Active
+CS-SUP,Support Engineer,Customer Success,CS,L4,L4,Employee|Contractor,No,Active
+CS-IMP,Implementation Consultant,Customer Success,CS,L5,L5,Employee,No,Active
+ENG-SWE-SR,Senior Software Engineer,Engineering,ENG,L6,L6,Employee,No,Active
+ENG-SWE,Software Engineer,Engineering,ENG,L5,L5,Employee|Contractor|Intern,No,Active
+ENG-DEVOPS,DevOps Engineer,Engineering,ENG,L5,L5,Employee,No,Active
+ENG-SRE,Site Reliability Engineer,Engineering,ENG,L6,L6,Employee,No,Active
+ENG-DATA,Data Engineer,Engineering,ENG,L5,L5,Employee|Contractor,No,Active
+ENG-ML,Machine Learning Engineer,Engineering,ENG,L6,L6,Employee,No,Active
+ENG-QA,QA Engineer,Engineering,ENG,L4,L4,Employee|Contractor|Intern,No,Active
+ENG-PM,Product Manager,Product,ENG,L6,L6,Employee,No,Active
+ENG-UX,UX Designer,Product,ENG,L5,L5,Employee|Contractor,No,Active
+IT-CLOUD,Cloud Engineer,IT,IT,L5,L5,Employee,No,Active
+IT-SYSADM,Systems Administrator,IT,IT,L4,L4,Employee,No,Active
+IT-SD,Service Desk Analyst,IT,IT,L3,L3,Employee|Contractor,No,Active
+SEC-SOC,SOC Analyst,Security,SEC,L4,L4,Employee|Contractor,No,Active
+SEC-DET,Detection Engineer,Security,SEC,L6,L6,Employee,No,Active
+SEC-VULN,Vulnerability Management Engineer,Security,SEC,L5,L5,Employee,No,Active
+SEC-GRC,GRC Analyst,Security,SEC,L4,L4,Employee,No,Active
