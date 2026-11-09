@@ -1,0 +1,832 @@
+[
+  {
+    "roleId": "BR-WORKFORCE",
+    "groupName": "GRP-DYN-ALL-Workforce",
+    "layer": "Birthright",
+    "owner": "Adaeze Nwosu",
+    "description": "Everything every employee, contractor and intern gets on day one",
+    "entitlements": [
+      "CONF-USER",
+      "JSM-PORTAL",
+      "EXP-SUBMITTER"
+    ],
+    "expectedMembers": 194,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "DR-EXE",
+    "groupName": "GRP-DYN-DEPT-Executive",
+    "layer": "Department",
+    "owner": "Daniel Opara",
+    "description": "Department-wide access for Executive Office; employees only because the space is High sensitivity",
+    "entitlements": [
+      "CONF-SPACE-EXE"
+    ],
+    "expectedMembers": 3,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.department -in [\"Executive Office\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "DR-FIN",
+    "groupName": "GRP-DYN-DEPT-Finance",
+    "layer": "Department",
+    "owner": "Kwame Asante",
+    "description": "Department-wide access for Finance",
+    "entitlements": [
+      "CONF-SPACE-FIN"
+    ],
+    "expectedMembers": 18,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.department -in [\"Finance\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "DR-HR",
+    "groupName": "GRP-DYN-DEPT-HumanResources",
+    "layer": "Department",
+    "owner": "Folasade Adeyemi",
+    "description": "Department-wide access for Human Resources; employees only because the space is High sensitivity",
+    "entitlements": [
+      "CONF-SPACE-HR"
+    ],
+    "expectedMembers": 11,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.department -in [\"Human Resources\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "DR-LEG",
+    "groupName": "GRP-DYN-DEPT-Legal",
+    "layer": "Department",
+    "owner": "Akosua Boateng",
+    "description": "Department-wide access for Legal & Compliance; employees only because the space is High sensitivity",
+    "entitlements": [
+      "CONF-SPACE-LEG"
+    ],
+    "expectedMembers": 7,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.department -in [\"Legal & Compliance\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "DR-OPS",
+    "groupName": "GRP-DYN-DEPT-Operations",
+    "layer": "Department",
+    "owner": "Jamal Washington",
+    "description": "Department-wide access for Operations",
+    "entitlements": [
+      "CONF-SPACE-OPS"
+    ],
+    "expectedMembers": 10,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.department -in [\"Operations\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "DR-MKT",
+    "groupName": "GRP-DYN-DEPT-Marketing",
+    "layer": "Department",
+    "owner": "Charlotte Davies",
+    "description": "Department-wide access for Marketing",
+    "entitlements": [
+      "CONF-SPACE-MKT"
+    ],
+    "expectedMembers": 22,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.department -in [\"Marketing\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "DR-SAL",
+    "groupName": "GRP-DYN-DEPT-Sales",
+    "layer": "Department",
+    "owner": "Marcus Thompson",
+    "description": "Department-wide access for Sales",
+    "entitlements": [
+      "CONF-SPACE-SAL"
+    ],
+    "expectedMembers": 30,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.department -in [\"Sales\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "DR-CS",
+    "groupName": "GRP-DYN-DEPT-CustomerSuccess",
+    "layer": "Department",
+    "owner": "Lucía Herrera",
+    "description": "Department-wide access for Customer Success",
+    "entitlements": [
+      "CONF-SPACE-CS"
+    ],
+    "expectedMembers": 15,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.department -in [\"Customer Success\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "DR-ENG",
+    "groupName": "GRP-DYN-DEPT-Engineering",
+    "layer": "Department",
+    "owner": "Valeria Mendoza",
+    "description": "Department-wide access for Engineering",
+    "entitlements": [
+      "CONF-SPACE-ENG"
+    ],
+    "expectedMembers": 52,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.department -in [\"Engineering\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "DR-IT",
+    "groupName": "GRP-DYN-DEPT-IT",
+    "layer": "Department",
+    "owner": "Chukwuemeka Eze",
+    "description": "Department-wide access for Information Technology",
+    "entitlements": [
+      "CONF-SPACE-IT"
+    ],
+    "expectedMembers": 16,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.department -in [\"Information Technology\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "DR-SEC",
+    "groupName": "GRP-DYN-DEPT-Security",
+    "layer": "Department",
+    "owner": "Oliver Hughes",
+    "description": "Department-wide access for Information Security; employees only because the space is High sensitivity",
+    "entitlements": [
+      "CONF-SPACE-SEC"
+    ],
+    "expectedMembers": 9,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.department -in [\"Information Security\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-EXEC-OFFICE",
+    "groupName": "GRP-DYN-JOB-EXEC-OFFICE",
+    "layer": "Job",
+    "owner": "Daniel Opara",
+    "description": "Executive office",
+    "entitlements": [
+      "JIRA-BUSINESS"
+    ],
+    "expectedMembers": 3,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"EXE-CEO\",\"EXE-COS\",\"EXE-EA\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "JR-EXEC-INSIGHT",
+    "groupName": "GRP-DYN-JOB-EXEC-INSIGHT",
+    "layer": "Job",
+    "owner": "Daniel Opara",
+    "description": "Executive revenue insight",
+    "entitlements": [
+      "SF-READONLY"
+    ],
+    "expectedMembers": 3,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"EXE-CEO\",\"EXE-COS\",\"FIN-CFO\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-FIN-AP",
+    "groupName": "GRP-DYN-JOB-FIN-AP",
+    "layer": "Job",
+    "owner": "Rachel Okafor",
+    "description": "Accounts payable",
+    "entitlements": [
+      "EXP-FIN-PAY",
+      "JIRA-BUSINESS"
+    ],
+    "expectedMembers": 4,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"FIN-AP\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-FIN-ACCOUNTING",
+    "groupName": "GRP-DYN-JOB-FIN-ACCOUNTING",
+    "layer": "Job",
+    "owner": "Rachel Okafor",
+    "description": "Accounting",
+    "entitlements": [
+      "EXP-FIN-REVIEW",
+      "SF-READONLY",
+      "JIRA-BUSINESS"
+    ],
+    "expectedMembers": 7,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"FIN-ACCT\",\"FIN-ACCT-SR\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "JR-FIN-CONTROLLER",
+    "groupName": "GRP-DYN-JOB-FIN-CONTROLLER",
+    "layer": "Job",
+    "owner": "Kwame Asante",
+    "description": "Financial controller",
+    "entitlements": [
+      "EXP-FIN-REVIEW",
+      "EXP-FIN-PAY",
+      "SF-READONLY",
+      "JIRA-BUSINESS"
+    ],
+    "expectedMembers": 1,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"FIN-CTRL\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-FIN-FPA",
+    "groupName": "GRP-DYN-JOB-FIN-FPA",
+    "layer": "Job",
+    "owner": "Kwame Asante",
+    "description": "Financial planning and analysis",
+    "entitlements": [
+      "EXP-AUDITOR",
+      "SF-READONLY",
+      "JIRA-BUSINESS"
+    ],
+    "expectedMembers": 4,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"FIN-FPA\",\"FIN-CFO\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-FIN-PAYROLL",
+    "groupName": "GRP-DYN-JOB-FIN-PAYROLL",
+    "layer": "Job",
+    "owner": "Rachel Okafor",
+    "description": "Payroll",
+    "entitlements": [
+      "HRIS-PAYROLL",
+      "JIRA-BUSINESS"
+    ],
+    "expectedMembers": 2,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"FIN-PAY\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-HR-PEOPLE",
+    "groupName": "GRP-DYN-JOB-HR-PEOPLE",
+    "layer": "Job",
+    "owner": "Folasade Adeyemi",
+    "description": "HR people team",
+    "entitlements": [
+      "HRIS-READ",
+      "JIRA-BUSINESS"
+    ],
+    "expectedMembers": 11,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"HR-CHRO\",\"HR-OPS-MGR\",\"HR-HRBP\",\"HR-GEN\",\"HR-TA\",\"HR-HRIS\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-HR-HRIS",
+    "groupName": "GRP-DYN-JOB-HR-HRIS",
+    "layer": "Job",
+    "owner": "Tunde Afolabi",
+    "description": "HR data maintenance",
+    "entitlements": [
+      "HRIS-WRITE"
+    ],
+    "expectedMembers": 2,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"HR-HRIS\",\"HR-OPS-MGR\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-LEGAL",
+    "groupName": "GRP-DYN-JOB-LEGAL",
+    "layer": "Job",
+    "owner": "Akosua Boateng",
+    "description": "Legal team",
+    "entitlements": [
+      "JIRA-BUSINESS"
+    ],
+    "expectedMembers": 7,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"LEG-GC\",\"LEG-CNSL\",\"LEG-COMP\",\"LEG-PRIV\",\"LEG-PARA\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "JR-LEGAL-COMPLIANCE",
+    "groupName": "GRP-DYN-JOB-LEGAL-COMPLIANCE",
+    "layer": "Job",
+    "owner": "Akosua Boateng",
+    "description": "Compliance and privacy",
+    "entitlements": [
+      "EXP-AUDITOR",
+      "SF-READONLY"
+    ],
+    "expectedMembers": 4,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"LEG-GC\",\"LEG-COMP\",\"LEG-PRIV\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-OPS",
+    "groupName": "GRP-DYN-JOB-OPS",
+    "layer": "Job",
+    "owner": "Jamal Washington",
+    "description": "Operations team",
+    "entitlements": [
+      "JIRA-BUSINESS"
+    ],
+    "expectedMembers": 10,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"OPS-VP\",\"OPS-BIZ\",\"OPS-PROC\",\"OPS-FAC\",\"OPS-VEND\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "JR-MKT",
+    "groupName": "GRP-DYN-JOB-MKT",
+    "layer": "Job",
+    "owner": "Charlotte Davies",
+    "description": "Marketing team",
+    "entitlements": [
+      "SF-MKT-USER",
+      "JIRA-BUSINESS",
+      "WP-AUTHOR"
+    ],
+    "expectedMembers": 22,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"MKT-CMO\",\"MKT-DIR\",\"MKT-MGR\",\"MKT-CONT\",\"MKT-DIG\",\"MKT-DES\",\"MKT-WEB\",\"MKT-ANL\",\"MKT-EVT\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "JR-MKT-WEB",
+    "groupName": "GRP-DYN-JOB-MKT-WEB",
+    "layer": "Job",
+    "owner": "Ngozi Balogun",
+    "description": "Website publishing",
+    "entitlements": [
+      "WP-EDITOR"
+    ],
+    "expectedMembers": 4,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"MKT-CMO\",\"MKT-DIR\",\"MKT-WEB\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-SAL-SELLER",
+    "groupName": "GRP-DYN-JOB-SAL-SELLER",
+    "layer": "Job",
+    "owner": "Marcus Thompson",
+    "description": "Sellers",
+    "entitlements": [
+      "SF-SALES-USER"
+    ],
+    "expectedMembers": 23,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"SAL-AE\",\"SAL-SDR\",\"SAL-SE\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "JR-SAL-LEADER",
+    "groupName": "GRP-DYN-JOB-SAL-LEADER",
+    "layer": "Job",
+    "owner": "Marcus Thompson",
+    "description": "Sales leadership and operations",
+    "entitlements": [
+      "SF-SALES-MGR"
+    ],
+    "expectedMembers": 7,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"SAL-CRO\",\"SAL-DIR\",\"SAL-OPS-MGR\",\"SAL-OPS\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-CS",
+    "groupName": "GRP-DYN-JOB-CS",
+    "layer": "Job",
+    "owner": "Lucía Herrera",
+    "description": "Customer success",
+    "entitlements": [
+      "SF-SVC-USER",
+      "JIRA-SM-AGENT",
+      "KC-PORTAL-AGENT"
+    ],
+    "expectedMembers": 15,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"CS-VP\",\"CS-CSM\",\"CS-SUP\",\"CS-IMP\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "JR-ENG-DEV",
+    "groupName": "GRP-DYN-JOB-ENG-DEV",
+    "layer": "Job",
+    "owner": "Valeria Mendoza",
+    "description": "Software engineering",
+    "entitlements": [
+      "GH-MEMBER",
+      "GH-TEAM-ENG",
+      "JIRA-SW-USER",
+      "AZ-DEV-CONTRIB"
+    ],
+    "expectedMembers": 32,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"ENG-CTO\",\"ENG-DIR\",\"ENG-EM\",\"ENG-SWE\",\"ENG-SWE-SR\",\"ENG-QA\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "JR-ENG-PLATFORM",
+    "groupName": "GRP-DYN-JOB-ENG-PLATFORM",
+    "layer": "Job",
+    "owner": "Carlos Gutiérrez",
+    "description": "Platform engineering (DevOps and SRE)",
+    "entitlements": [
+      "GH-MEMBER",
+      "GH-TEAM-PLATFORM",
+      "JIRA-SW-USER",
+      "AZ-DEV-CONTRIB",
+      "AZ-PROD-READER",
+      "AZ-PROD-DEPLOY"
+    ],
+    "expectedMembers": 7,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"ENG-DEVOPS\",\"ENG-SRE\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-ENG-DATA",
+    "groupName": "GRP-DYN-JOB-ENG-DATA",
+    "layer": "Job",
+    "owner": "Siobhan Kelly",
+    "description": "Data and ML engineering",
+    "entitlements": [
+      "GH-MEMBER",
+      "GH-TEAM-DATA",
+      "JIRA-SW-USER",
+      "AZ-DEV-CONTRIB"
+    ],
+    "expectedMembers": 6,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"ENG-DATA\",\"ENG-ML\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "JR-ENG-PRODUCT",
+    "groupName": "GRP-DYN-JOB-ENG-PRODUCT",
+    "layer": "Job",
+    "owner": "Yaw Darko",
+    "description": "Product management and design",
+    "entitlements": [
+      "GH-MEMBER",
+      "JIRA-SW-USER",
+      "SF-READONLY"
+    ],
+    "expectedMembers": 7,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"ENG-PM\",\"ENG-UX\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "JR-IT-LEADER",
+    "groupName": "GRP-DYN-JOB-IT-LEADER",
+    "layer": "Job",
+    "owner": "Chukwuemeka Eze",
+    "description": "IT leadership",
+    "entitlements": [
+      "JIRA-SM-AGENT",
+      "AZ-PROD-READER"
+    ],
+    "expectedMembers": 1,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"IT-CIO\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-IT-IAM",
+    "groupName": "GRP-DYN-JOB-IT-IAM",
+    "layer": "Job",
+    "owner": "Adaeze Nwosu",
+    "description": "Identity and access management",
+    "entitlements": [
+      "JIRA-SM-AGENT",
+      "GH-MEMBER",
+      "AZ-LOG-READER",
+      "ENTRA-GLOBAL-READER"
+    ],
+    "expectedMembers": 4,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"IT-IAM-MGR\",\"IT-IAM-ENG\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-IT-CLOUD",
+    "groupName": "GRP-DYN-JOB-IT-CLOUD",
+    "layer": "Job",
+    "owner": "Babatunde Bakare",
+    "description": "Cloud and infrastructure",
+    "entitlements": [
+      "JIRA-SM-AGENT",
+      "GH-MEMBER",
+      "GH-TEAM-PLATFORM",
+      "AZ-DEV-CONTRIB",
+      "AZ-PROD-READER"
+    ],
+    "expectedMembers": 6,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"IT-INF-MGR\",\"IT-CLOUD\",\"IT-SYSADM\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "JR-IT-SERVICEDESK",
+    "groupName": "GRP-DYN-JOB-IT-SERVICEDESK",
+    "layer": "Job",
+    "owner": "Grace Robinson",
+    "description": "Service desk",
+    "entitlements": [
+      "JIRA-SM-AGENT"
+    ],
+    "expectedMembers": 5,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"IT-SD-LEAD\",\"IT-SD\"]) -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+  },
+  {
+    "roleId": "JR-SEC-SOC",
+    "groupName": "GRP-DYN-JOB-SEC-SOC",
+    "layer": "Job",
+    "owner": "Priya Sharma",
+    "description": "Security operations",
+    "entitlements": [
+      "AZ-LOG-READER",
+      "ENTRA-SEC-READER",
+      "GH-TEAM-SEC",
+      "JIRA-SM-AGENT"
+    ],
+    "expectedMembers": 5,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"SEC-SOC-MGR\",\"SEC-SOC\",\"SEC-DET\",\"SEC-VULN\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-SEC-SOC-LIMITED",
+    "groupName": "GRP-DYN-JOB-SEC-SOC-LIMITED",
+    "layer": "Job",
+    "owner": "Priya Sharma",
+    "description": "Security operations (contractor)",
+    "entitlements": [
+      "AZ-LOG-READER",
+      "JIRA-SM-AGENT"
+    ],
+    "expectedMembers": 1,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"SEC-SOC\"]) -and (user.employeeType -in [\"Contractor\"])"
+  },
+  {
+    "roleId": "JR-SEC-GRC",
+    "groupName": "GRP-DYN-JOB-SEC-GRC",
+    "layer": "Job",
+    "owner": "Nana Agyeman",
+    "description": "Governance, risk and compliance",
+    "entitlements": [
+      "EXP-AUDITOR",
+      "AZ-LOG-READER",
+      "ENTRA-GLOBAL-READER"
+    ],
+    "expectedMembers": 4,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.extensionAttribute1 -in [\"SEC-CISO\",\"SEC-GRC-MGR\",\"SEC-GRC\"]) -and (user.employeeType -in [\"Employee\"])"
+  },
+  {
+    "roleId": "JR-PEOPLE-MANAGER",
+    "groupName": "GRP-DYN-JOB-PeopleManagers",
+    "layer": "Job",
+    "owner": "Folasade Adeyemi",
+    "description": "Anyone with direct reports (derived IsPeopleManager)",
+    "entitlements": [
+      "EXP-APPROVER"
+    ],
+    "expectedMembers": 29,
+    "membershipType": "Dynamic",
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.employeeType -in [\"Employee\"]) -and (user.extensionAttribute4 -eq \"PeopleManager\")"
+  },
+  {
+    "roleId": "PR-GLOBAL-ADMIN",
+    "groupName": "GRP-ROLE-PIM-GLOBAL-ADMIN",
+    "layer": "Privileged",
+    "owner": "Oliver Hughes",
+    "description": "Plus 2 break-glass accounts (not HR records, permanent)",
+    "entitlements": [
+      "ENTRA-GA"
+    ],
+    "expectedMembers": 1,
+    "membershipType": "Assigned (role-assignable, PIM-eligible)",
+    "members": [
+      "DT01001"
+    ]
+  },
+  {
+    "roleId": "PR-PRIV-ROLE-ADMIN",
+    "groupName": "GRP-ROLE-PIM-PRIV-ROLE-ADMIN",
+    "layer": "Privileged",
+    "owner": "Oliver Hughes",
+    "description": "Eligible through PIM; activated just-in-time (Phase 06)",
+    "entitlements": [
+      "ENTRA-PRIV-ROLE-ADMIN"
+    ],
+    "expectedMembers": 1,
+    "membershipType": "Assigned (role-assignable, PIM-eligible)",
+    "members": [
+      "DT01014"
+    ]
+  },
+  {
+    "roleId": "PR-IAM-ADMIN",
+    "groupName": "GRP-ROLE-PIM-IAM-ADMIN",
+    "layer": "Privileged",
+    "owner": "Adaeze Nwosu",
+    "description": "Eligible through PIM; activated just-in-time (Phase 06)",
+    "entitlements": [
+      "ENTRA-USER-ADMIN",
+      "ENTRA-CA-ADMIN",
+      "ENTRA-APP-ADMIN",
+      "ENTRA-IG-ADMIN"
+    ],
+    "expectedMembers": 4,
+    "membershipType": "Assigned (role-assignable, PIM-eligible)",
+    "members": [
+      "DT01014",
+      "DT01015",
+      "DT01016",
+      "DT01017"
+    ]
+  },
+  {
+    "roleId": "PR-HELPDESK",
+    "groupName": "GRP-ROLE-PIM-HELPDESK",
+    "layer": "Privileged",
+    "owner": "Grace Robinson",
+    "description": "Service desk contractor DT01192 deliberately excluded (policy AC-07)",
+    "entitlements": [
+      "ENTRA-HELPDESK-ADMIN"
+    ],
+    "expectedMembers": 4,
+    "membershipType": "Assigned (role-assignable, PIM-eligible)",
+    "members": [
+      "DT01019",
+      "DT01190",
+      "DT01191",
+      "DT01193"
+    ]
+  },
+  {
+    "roleId": "PR-SEC-OPERATOR",
+    "groupName": "GRP-ROLE-PIM-SEC-OPERATOR",
+    "layer": "Privileged",
+    "owner": "Priya Sharma",
+    "description": "Eligible through PIM; activated just-in-time (Phase 06)",
+    "entitlements": [
+      "ENTRA-SEC-OPERATOR"
+    ],
+    "expectedMembers": 2,
+    "membershipType": "Assigned (role-assignable, PIM-eligible)",
+    "members": [
+      "DT01020",
+      "DT01197"
+    ]
+  },
+  {
+    "roleId": "PR-SF-ADMIN",
+    "groupName": "GRP-ROLE-PIM-SF-ADMIN",
+    "layer": "Privileged",
+    "owner": "Fernanda Castillo",
+    "description": "Business owner approves; IAM engineers administer (SOD-05)",
+    "entitlements": [
+      "SF-ADMIN"
+    ],
+    "expectedMembers": 2,
+    "membershipType": "Assigned (role-assignable, PIM-eligible)",
+    "members": [
+      "DT01015",
+      "DT01016"
+    ]
+  },
+  {
+    "roleId": "PR-GH-OWNER",
+    "groupName": "GRP-ROLE-PIM-GH-OWNER",
+    "layer": "Privileged",
+    "owner": "Carlos Gutiérrez",
+    "description": "Eligible through PIM; activated just-in-time (Phase 06)",
+    "entitlements": [
+      "GH-ORG-OWNER"
+    ],
+    "expectedMembers": 2,
+    "membershipType": "Assigned (role-assignable, PIM-eligible)",
+    "members": [
+      "DT01030",
+      "DT01017"
+    ]
+  },
+  {
+    "roleId": "PR-WP-ADMIN",
+    "groupName": "GRP-ROLE-PIM-WP-ADMIN",
+    "layer": "Privileged",
+    "owner": "Ngozi Balogun",
+    "description": "Eligible through PIM; activated just-in-time (Phase 06)",
+    "entitlements": [
+      "WP-ADMIN"
+    ],
+    "expectedMembers": 2,
+    "membershipType": "Assigned (role-assignable, PIM-eligible)",
+    "members": [
+      "DT01016",
+      "DT01027"
+    ]
+  },
+  {
+    "roleId": "PR-ATL-ADMIN",
+    "groupName": "GRP-ROLE-PIM-ATL-ADMIN",
+    "layer": "Privileged",
+    "owner": "Yaw Darko",
+    "description": "Eligible through PIM; activated just-in-time (Phase 06)",
+    "entitlements": [
+      "ATL-ORG-ADMIN"
+    ],
+    "expectedMembers": 1,
+    "membershipType": "Assigned (role-assignable, PIM-eligible)",
+    "members": [
+      "DT01016"
+    ]
+  },
+  {
+    "roleId": "PR-KC-ADMIN",
+    "groupName": "GRP-ROLE-PIM-KC-ADMIN",
+    "layer": "Privileged",
+    "owner": "Lucía Herrera",
+    "description": "Eligible through PIM; activated just-in-time (Phase 06)",
+    "entitlements": [
+      "KC-REALM-ADMIN"
+    ],
+    "expectedMembers": 1,
+    "membershipType": "Assigned (role-assignable, PIM-eligible)",
+    "members": [
+      "DT01015"
+    ]
+  },
+  {
+    "roleId": "PR-AZ-OWNER",
+    "groupName": "GRP-ROLE-PIM-AZ-OWNER",
+    "layer": "Privileged",
+    "owner": "Babatunde Bakare",
+    "description": "Replaced by least-privilege roles in Phase 09",
+    "entitlements": [
+      "AZ-OWNER"
+    ],
+    "expectedMembers": 1,
+    "membershipType": "Assigned (role-assignable, PIM-eligible)",
+    "members": [
+      "DT01018"
+    ]
+  },
+  {
+    "roleId": "PR-LOG-ADMIN",
+    "groupName": "GRP-ROLE-PIM-LOG-ADMIN",
+    "layer": "Privileged",
+    "owner": "Oliver Hughes",
+    "description": "Eligible through PIM; activated just-in-time (Phase 06)",
+    "entitlements": [
+      "AZ-LOG-CONTRIB"
+    ],
+    "expectedMembers": 1,
+    "membershipType": "Assigned (role-assignable, PIM-eligible)",
+    "members": [
+      "DT01020"
+    ]
+  },
+  {
+    "roleId": "RQ-GH-REPO-ADMIN",
+    "groupName": "GRP-AP-GH-REPO-ADMIN",
+    "layer": "Requestable",
+    "owner": "Carlos Gutiérrez",
+    "description": "Incompatible with AZ-PROD-DEPLOY (SOD-02); access package with approval and expiry (Phase 12)",
+    "entitlements": [
+      "GH-REPO-ADMIN"
+    ],
+    "expectedMembers": 0,
+    "membershipType": "Access package"
+  },
+  {
+    "roleId": "RQ-AZ-PROD-READER",
+    "groupName": "GRP-AP-AZ-PROD-READER",
+    "layer": "Requestable",
+    "owner": "Babatunde Bakare",
+    "description": "For engineers investigating production issues; access package with approval and expiry (Phase 12)",
+    "entitlements": [
+      "AZ-PROD-READER"
+    ],
+    "expectedMembers": 0,
+    "membershipType": "Access package"
+  },
+  {
+    "roleId": "RQ-EXP-AUDITOR",
+    "groupName": "GRP-AP-EXP-AUDITOR",
+    "layer": "Requestable",
+    "owner": "Rachel Okafor",
+    "description": "Internal or external audit engagements; access package with approval and expiry (Phase 12)",
+    "entitlements": [
+      "EXP-AUDITOR"
+    ],
+    "expectedMembers": 0,
+    "membershipType": "Access package"
+  },
+  {
+    "roleId": "RQ-CONF-SPACE-FIN",
+    "groupName": "GRP-AP-CONF-SPACE-FIN",
+    "layer": "Requestable",
+    "owner": "Kwame Asante",
+    "description": "e.g. Sales Ops commission planning; access package with approval and expiry (Phase 12)",
+    "entitlements": [
+      "CONF-SPACE-FIN"
+    ],
+    "expectedMembers": 0,
+    "membershipType": "Access package"
+  },
+  {
+    "roleId": "RQ-SF-READONLY",
+    "groupName": "GRP-AP-SF-READONLY",
+    "layer": "Requestable",
+    "owner": "Fernanda Castillo",
+    "description": "For staff outside sales roles who need reports; access package with approval and expiry (Phase 12)",
+    "entitlements": [
+      "SF-READONLY"
+    ],
+    "expectedMembers": 0,
+    "membershipType": "Access package"
+  }
+]

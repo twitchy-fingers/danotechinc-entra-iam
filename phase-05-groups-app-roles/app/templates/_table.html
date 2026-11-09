@@ -1,0 +1,12 @@
+{% if claims %}<div class="wrap"><table>
+<tr><th>Claim</th><th>Submitted by</th><th>Amount</th><th>Description</th><th>Status</th><th>Approved</th><th>Reviewed</th><th>Paid</th>{% if action %}<th></th>{% endif %}</tr>
+{% for c in claims %}<tr>
+  <td>{{ c.id }}</td><td>{{ c.submitter_name }}</td><td>{{ "%.2f"|format(c.amount) }} {{ c.currency }}</td>
+  <td>{{ c.category }}: {{ c.description }}</td><td><span class="chip">{{ c.status }}</span></td>
+  <td class="muted">{{ c.approved_by_name or "" }}</td><td class="muted">{{ c.reviewed_by_name or "" }}</td><td class="muted">{{ c.paid_by_name or "" }}</td>
+  {% if action %}<td>
+    <form class="inline" method="post" action="{{ url_for('act', cid=c.id, action=action) }}"><button>{{ action|capitalize }}</button></form>
+    {% if action in ("approve", "review") %}<form class="inline" method="post" action="{{ url_for('act', cid=c.id, action='reject') }}"><button class="secondary">Reject</button></form>{% endif %}
+  </td>{% endif %}
+</tr>{% endfor %}
+</table></div>{% else %}<p class="muted">Nothing here.</p>{% endif %}

@@ -1,0 +1,20 @@
+ChangeId,EffectiveDate,EmployeeId,Person,Field,NewValue,Reason
+CHG-001,2026-11-07,DT01115,Sofía Reyes,EmploymentStatus,Terminated,Leaver: last day was 6 Nov
+CHG-002,2026-11-09,DT01102,Niamh Jones,EmploymentStatus,Active,Joiner: start confirmed by manager
+CHG-003,2026-11-09,DT01101,Nicole Reed,EmploymentStatus,Active,Joiner: HR confirms she started on 2 Nov (fixes DQ-15 warning)
+CHG-004,2026-11-10,DT01121,Miguel Hernández,JobCode,FIN-FPA,Mover: transfer from Sales Operations to Finance FP&A
+CHG-004,2026-11-10,DT01121,Miguel Hernández,JobTitle,Financial Analyst,Mover
+CHG-004,2026-11-10,DT01121,Miguel Hernández,JobFamily,Finance,Mover
+CHG-004,2026-11-10,DT01121,Miguel Hernández,Department,Finance,Mover
+CHG-004,2026-11-10,DT01121,Miguel Hernández,DepartmentCode,FIN,Mover
+CHG-004,2026-11-10,DT01121,Miguel Hernández,CostCenter,CC2000,Mover
+CHG-004,2026-11-10,DT01121,Miguel Hernández,Division,Corporate,Mover
+CHG-004,2026-11-10,DT01121,Miguel Hernández,ManagerEmployeeId,DT01004,Mover: now reports to the CFO
+CHG-004,2026-11-10,DT01121,Miguel Hernández,ManagerUPN,kwame.asante@danotechinc.onmicrosoft.com,Mover
+CHG-005,2026-11-11,DT01192,Aisha Okonkwo,EndDate,2027-01-31,Contract renewal: capped at 12 months (fixes DQ-20 warning)
+CHG-006,2026-11-11,DT01196,Musa Afolabi,EndDate,2027-03-31,Contract renewal: capped at 12 months (fixes DQ-20 warning)
+CHG-007,2026-11-14,DT01080,Ebere Bello,EmploymentStatus,Terminated,Leaver: last day was 13 Nov
+CHG-008,2026-11-16,DT01144,Valeria Morales,EmploymentStatus,Active,Joiner: start confirmed by manager
+CHG-009,2026-11-16,DT01155,Danielle Brown,EndDate,2026-11-17,Intern: internship ends early by agreement
+CHG-010,2026-11-18,DT01155,Danielle Brown,EmploymentStatus,Terminated,Leaver: last day was 17 Nov
+CHG-011,2026-11-21,DT01157,María Castillo,EmploymentStatus,Terminated,Leaver: last day was 20 Nov

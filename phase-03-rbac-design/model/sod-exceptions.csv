@@ -1,0 +1,2 @@
+ExceptionId,RuleId,EmployeeId,Person,Justification,CompensatingControl,ApprovedBy,Expires
+EXC-001,SOD-01,DT01022,Rachel Okafor,"The Financial Controller is the backup payment releaser when AP is unavailable, and also approves her direct reports' expenses.",Danotech Expenses blocks paying a claim you approved. The CFO reviews every payment Rachel releases in the monthly close.,Kwame Asante (CFO); Oliver Hughes (CISO),2027-05-05
