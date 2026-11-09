@@ -1,0 +1,19 @@
+{
+  "displayName": "WF-02 Joiner - day one Temporary Access Pass",
+  "description": "On the hire date, generate a one-time Temporary Access Pass and email it to the joiner's manager, who hands it over in person. The joiner uses it once to register a passkey. No password is ever shared.",
+  "category": "joiner",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+    "scope": { "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet", "rule": "(companyName eq 'DanotechInc')" },
+    "trigger": { "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger", "timeBasedAttribute": "employeeHireDate", "offsetInDays": 0 }
+  },
+  "tasks": [
+    { "taskName": "Generate Temporary Access Pass and send via email to user's manager", "isEnabled": true, "continueOnError": false,
+      "arguments": [
+        { "name": "tapLifetimeMinutes", "value": "1440" },
+        { "name": "tapIsUsableOnce", "value": "true" }
+      ] }
+  ]
+}

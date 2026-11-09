@@ -1,0 +1,59 @@
+RoleId,RoleName,Layer,Description,GroupName,Owner,Departments,JobCodes,JobLevels,EmployeeTypes,PeopleManager,Members,Entitlements
+BR-WORKFORCE,All workforce,Birthright,"Everything every employee, contractor and intern gets on day one",GRP-DYN-ALL-Workforce,Adaeze Nwosu,,,,Employee|Contractor|Intern,,,CONF-USER;JSM-PORTAL;EXP-SUBMITTER
+DR-EXE,Executive Office department,Department,Department-wide access for Executive Office; employees only because the space is High sensitivity,GRP-DYN-DEPT-Executive,Daniel Opara,EXE,,,Employee,,,CONF-SPACE-EXE
+DR-FIN,Finance department,Department,Department-wide access for Finance,GRP-DYN-DEPT-Finance,Kwame Asante,FIN,,,Employee|Contractor|Intern,,,CONF-SPACE-FIN
+DR-HR,Human Resources department,Department,Department-wide access for Human Resources; employees only because the space is High sensitivity,GRP-DYN-DEPT-HumanResources,Folasade Adeyemi,HR,,,Employee,,,CONF-SPACE-HR
+DR-LEG,Legal & Compliance department,Department,Department-wide access for Legal & Compliance; employees only because the space is High sensitivity,GRP-DYN-DEPT-Legal,Akosua Boateng,LEG,,,Employee,,,CONF-SPACE-LEG
+DR-OPS,Operations department,Department,Department-wide access for Operations,GRP-DYN-DEPT-Operations,Jamal Washington,OPS,,,Employee|Contractor|Intern,,,CONF-SPACE-OPS
+DR-MKT,Marketing department,Department,Department-wide access for Marketing,GRP-DYN-DEPT-Marketing,Charlotte Davies,MKT,,,Employee|Contractor|Intern,,,CONF-SPACE-MKT
+DR-SAL,Sales department,Department,Department-wide access for Sales,GRP-DYN-DEPT-Sales,Marcus Thompson,SAL,,,Employee|Contractor|Intern,,,CONF-SPACE-SAL
+DR-CS,Customer Success department,Department,Department-wide access for Customer Success,GRP-DYN-DEPT-CustomerSuccess,Lucía Herrera,CS,,,Employee|Contractor|Intern,,,CONF-SPACE-CS
+DR-ENG,Engineering department,Department,Department-wide access for Engineering,GRP-DYN-DEPT-Engineering,Valeria Mendoza,ENG,,,Employee|Contractor|Intern,,,CONF-SPACE-ENG
+DR-IT,Information Technology department,Department,Department-wide access for Information Technology,GRP-DYN-DEPT-IT,Chukwuemeka Eze,IT,,,Employee|Contractor|Intern,,,CONF-SPACE-IT
+DR-SEC,Information Security department,Department,Department-wide access for Information Security; employees only because the space is High sensitivity,GRP-DYN-DEPT-Security,Oliver Hughes,SEC,,,Employee,,,CONF-SPACE-SEC
+JR-EXEC-OFFICE,Executive office,Job,,GRP-DYN-JOB-EXEC-OFFICE,Daniel Opara,,EXE-CEO|EXE-COS|EXE-EA,,Employee|Contractor|Intern,,,JIRA-BUSINESS
+JR-EXEC-INSIGHT,Executive revenue insight,Job,,GRP-DYN-JOB-EXEC-INSIGHT,Daniel Opara,,EXE-CEO|EXE-COS|FIN-CFO,,Employee,,,SF-READONLY
+JR-FIN-AP,Accounts payable,Job,,GRP-DYN-JOB-FIN-AP,Rachel Okafor,,FIN-AP,,Employee,,,EXP-FIN-PAY;JIRA-BUSINESS
+JR-FIN-ACCOUNTING,Accounting,Job,,GRP-DYN-JOB-FIN-ACCOUNTING,Rachel Okafor,,FIN-ACCT|FIN-ACCT-SR,,Employee|Contractor|Intern,,,EXP-FIN-REVIEW;SF-READONLY;JIRA-BUSINESS
+JR-FIN-CONTROLLER,Financial controller,Job,,GRP-DYN-JOB-FIN-CONTROLLER,Kwame Asante,,FIN-CTRL,,Employee,,,EXP-FIN-REVIEW;EXP-FIN-PAY;SF-READONLY;JIRA-BUSINESS
+JR-FIN-FPA,Financial planning and analysis,Job,,GRP-DYN-JOB-FIN-FPA,Kwame Asante,,FIN-FPA|FIN-CFO,,Employee,,,EXP-AUDITOR;SF-READONLY;JIRA-BUSINESS
+JR-FIN-PAYROLL,Payroll,Job,,GRP-DYN-JOB-FIN-PAYROLL,Rachel Okafor,,FIN-PAY,,Employee,,,HRIS-PAYROLL;JIRA-BUSINESS
+JR-HR-PEOPLE,HR people team,Job,,GRP-DYN-JOB-HR-PEOPLE,Folasade Adeyemi,,HR-CHRO|HR-OPS-MGR|HR-HRBP|HR-GEN|HR-TA|HR-HRIS,,Employee,,,HRIS-READ;JIRA-BUSINESS
+JR-HR-HRIS,HR data maintenance,Job,,GRP-DYN-JOB-HR-HRIS,Tunde Afolabi,,HR-HRIS|HR-OPS-MGR,,Employee,,,HRIS-WRITE
+JR-LEGAL,Legal team,Job,,GRP-DYN-JOB-LEGAL,Akosua Boateng,,LEG-GC|LEG-CNSL|LEG-COMP|LEG-PRIV|LEG-PARA,,Employee|Contractor|Intern,,,JIRA-BUSINESS
+JR-LEGAL-COMPLIANCE,Compliance and privacy,Job,,GRP-DYN-JOB-LEGAL-COMPLIANCE,Akosua Boateng,,LEG-GC|LEG-COMP|LEG-PRIV,,Employee,,,EXP-AUDITOR;SF-READONLY
+JR-OPS,Operations team,Job,,GRP-DYN-JOB-OPS,Jamal Washington,,OPS-VP|OPS-BIZ|OPS-PROC|OPS-FAC|OPS-VEND,,Employee|Contractor|Intern,,,JIRA-BUSINESS
+JR-MKT,Marketing team,Job,,GRP-DYN-JOB-MKT,Charlotte Davies,,MKT-CMO|MKT-DIR|MKT-MGR|MKT-CONT|MKT-DIG|MKT-DES|MKT-WEB|MKT-ANL|MKT-EVT,,Employee|Contractor|Intern,,,SF-MKT-USER;JIRA-BUSINESS;WP-AUTHOR
+JR-MKT-WEB,Website publishing,Job,,GRP-DYN-JOB-MKT-WEB,Ngozi Balogun,,MKT-CMO|MKT-DIR|MKT-WEB,,Employee,,,WP-EDITOR
+JR-SAL-SELLER,Sellers,Job,,GRP-DYN-JOB-SAL-SELLER,Marcus Thompson,,SAL-AE|SAL-SDR|SAL-SE,,Employee|Contractor|Intern,,,SF-SALES-USER
+JR-SAL-LEADER,Sales leadership and operations,Job,,GRP-DYN-JOB-SAL-LEADER,Marcus Thompson,,SAL-CRO|SAL-DIR|SAL-OPS-MGR|SAL-OPS,,Employee,,,SF-SALES-MGR
+JR-CS,Customer success,Job,,GRP-DYN-JOB-CS,Lucía Herrera,,CS-VP|CS-CSM|CS-SUP|CS-IMP,,Employee|Contractor|Intern,,,SF-SVC-USER;JIRA-SM-AGENT;KC-PORTAL-AGENT
+JR-ENG-DEV,Software engineering,Job,,GRP-DYN-JOB-ENG-DEV,Valeria Mendoza,,ENG-CTO|ENG-DIR|ENG-EM|ENG-SWE|ENG-SWE-SR|ENG-QA,,Employee|Contractor|Intern,,,GH-MEMBER;GH-TEAM-ENG;JIRA-SW-USER;AZ-DEV-CONTRIB
+JR-ENG-PLATFORM,Platform engineering (DevOps and SRE),Job,,GRP-DYN-JOB-ENG-PLATFORM,Carlos Gutiérrez,,ENG-DEVOPS|ENG-SRE,,Employee,,,GH-MEMBER;GH-TEAM-PLATFORM;JIRA-SW-USER;AZ-DEV-CONTRIB;AZ-PROD-READER;AZ-PROD-DEPLOY
+JR-ENG-DATA,Data and ML engineering,Job,,GRP-DYN-JOB-ENG-DATA,Siobhan Kelly,,ENG-DATA|ENG-ML,,Employee|Contractor|Intern,,,GH-MEMBER;GH-TEAM-DATA;JIRA-SW-USER;AZ-DEV-CONTRIB
+JR-ENG-PRODUCT,Product management and design,Job,,GRP-DYN-JOB-ENG-PRODUCT,Yaw Darko,,ENG-PM|ENG-UX,,Employee|Contractor|Intern,,,GH-MEMBER;JIRA-SW-USER;SF-READONLY
+JR-IT-LEADER,IT leadership,Job,,GRP-DYN-JOB-IT-LEADER,Chukwuemeka Eze,,IT-CIO,,Employee,,,JIRA-SM-AGENT;AZ-PROD-READER
+JR-IT-IAM,Identity and access management,Job,,GRP-DYN-JOB-IT-IAM,Adaeze Nwosu,,IT-IAM-MGR|IT-IAM-ENG,,Employee,,,JIRA-SM-AGENT;GH-MEMBER;AZ-LOG-READER;ENTRA-GLOBAL-READER
+JR-IT-CLOUD,Cloud and infrastructure,Job,,GRP-DYN-JOB-IT-CLOUD,Babatunde Bakare,,IT-INF-MGR|IT-CLOUD|IT-SYSADM,,Employee|Contractor|Intern,,,JIRA-SM-AGENT;GH-MEMBER;GH-TEAM-PLATFORM;AZ-DEV-CONTRIB;AZ-PROD-READER
+JR-IT-SERVICEDESK,Service desk,Job,,GRP-DYN-JOB-IT-SERVICEDESK,Grace Robinson,,IT-SD-LEAD|IT-SD,,Employee|Contractor|Intern,,,JIRA-SM-AGENT
+JR-SEC-SOC,Security operations,Job,,GRP-DYN-JOB-SEC-SOC,Priya Sharma,,SEC-SOC-MGR|SEC-SOC|SEC-DET|SEC-VULN,,Employee,,,AZ-LOG-READER;ENTRA-SEC-READER;GH-TEAM-SEC;JIRA-SM-AGENT
+JR-SEC-SOC-LIMITED,Security operations (contractor),Job,,GRP-DYN-JOB-SEC-SOC-LIMITED,Priya Sharma,,SEC-SOC,,Contractor,,,AZ-LOG-READER;JIRA-SM-AGENT
+JR-SEC-GRC,"Governance, risk and compliance",Job,,GRP-DYN-JOB-SEC-GRC,Nana Agyeman,,SEC-CISO|SEC-GRC-MGR|SEC-GRC,,Employee,,,EXP-AUDITOR;AZ-LOG-READER;ENTRA-GLOBAL-READER
+JR-PEOPLE-MANAGER,People managers,Job,Anyone with direct reports (derived IsPeopleManager),GRP-DYN-JOB-PeopleManagers,Folasade Adeyemi,,,,Employee,Yes,,EXP-APPROVER
+PR-GLOBAL-ADMIN,Global Administrator,Privileged,"Plus 2 break-glass accounts (not HR records, permanent)",GRP-ROLE-PIM-GLOBAL-ADMIN,Oliver Hughes,,,,Employee,,DT01001,ENTRA-GA
+PR-PRIV-ROLE-ADMIN,Privileged Role Administrator,Privileged,Eligible through PIM; activated just-in-time (Phase 06),GRP-ROLE-PIM-PRIV-ROLE-ADMIN,Oliver Hughes,,,,Employee,,DT01014,ENTRA-PRIV-ROLE-ADMIN
+PR-IAM-ADMIN,IAM administrators,Privileged,Eligible through PIM; activated just-in-time (Phase 06),GRP-ROLE-PIM-IAM-ADMIN,Adaeze Nwosu,,,,Employee,,DT01014|DT01015|DT01016|DT01017,ENTRA-USER-ADMIN;ENTRA-CA-ADMIN;ENTRA-APP-ADMIN;ENTRA-IG-ADMIN
+PR-HELPDESK,Helpdesk administrators,Privileged,Service desk contractor DT01192 deliberately excluded (policy AC-07),GRP-ROLE-PIM-HELPDESK,Grace Robinson,,,,Employee,,DT01019|DT01190|DT01191|DT01193,ENTRA-HELPDESK-ADMIN
+PR-SEC-OPERATOR,Security operators,Privileged,Eligible through PIM; activated just-in-time (Phase 06),GRP-ROLE-PIM-SEC-OPERATOR,Priya Sharma,,,,Employee,,DT01020|DT01197,ENTRA-SEC-OPERATOR
+PR-SF-ADMIN,Salesforce administrators,Privileged,Business owner approves; IAM engineers administer (SOD-05),GRP-ROLE-PIM-SF-ADMIN,Fernanda Castillo,,,,Employee,,DT01015|DT01016,SF-ADMIN
+PR-GH-OWNER,GitHub organization owners,Privileged,Eligible through PIM; activated just-in-time (Phase 06),GRP-ROLE-PIM-GH-OWNER,Carlos Gutiérrez,,,,Employee,,DT01030|DT01017,GH-ORG-OWNER
+PR-WP-ADMIN,WordPress administrators,Privileged,Eligible through PIM; activated just-in-time (Phase 06),GRP-ROLE-PIM-WP-ADMIN,Ngozi Balogun,,,,Employee,,DT01016|DT01027,WP-ADMIN
+PR-ATL-ADMIN,Atlassian administrators,Privileged,Eligible through PIM; activated just-in-time (Phase 06),GRP-ROLE-PIM-ATL-ADMIN,Yaw Darko,,,,Employee,,DT01016,ATL-ORG-ADMIN
+PR-KC-ADMIN,Keycloak realm administrators,Privileged,Eligible through PIM; activated just-in-time (Phase 06),GRP-ROLE-PIM-KC-ADMIN,Lucía Herrera,,,,Employee,,DT01015,KC-REALM-ADMIN
+PR-AZ-OWNER,Azure subscription owners,Privileged,Replaced by least-privilege roles in Phase 09,GRP-ROLE-PIM-AZ-OWNER,Babatunde Bakare,,,,Employee,,DT01018,AZ-OWNER
+PR-LOG-ADMIN,Log workspace administrators,Privileged,Eligible through PIM; activated just-in-time (Phase 06),GRP-ROLE-PIM-LOG-ADMIN,Oliver Hughes,,,,Employee,,DT01020,AZ-LOG-CONTRIB
+RQ-GH-REPO-ADMIN,Repository admin (time-limited),Requestable,Incompatible with AZ-PROD-DEPLOY (SOD-02); access package with approval and expiry (Phase 12),GRP-AP-GH-REPO-ADMIN,Carlos Gutiérrez,,,,Employee,,,GH-REPO-ADMIN
+RQ-AZ-PROD-READER,Production read access,Requestable,For engineers investigating production issues; access package with approval and expiry (Phase 12),GRP-AP-AZ-PROD-READER,Babatunde Bakare,,,,Employee,,,AZ-PROD-READER
+RQ-EXP-AUDITOR,Expense audit access (time-limited),Requestable,Internal or external audit engagements; access package with approval and expiry (Phase 12),GRP-AP-EXP-AUDITOR,Rachel Okafor,,,,Employee,,,EXP-AUDITOR
+RQ-CONF-SPACE-FIN,Finance space for non-Finance staff,Requestable,e.g. Sales Ops commission planning; access package with approval and expiry (Phase 12),GRP-AP-CONF-SPACE-FIN,Kwame Asante,,,,Employee,,,CONF-SPACE-FIN
+RQ-SF-READONLY,Salesforce read-only reporting,Requestable,For staff outside sales roles who need reports; access package with approval and expiry (Phase 12),GRP-AP-SF-READONLY,Fernanda Castillo,,,,Employee,,,SF-READONLY

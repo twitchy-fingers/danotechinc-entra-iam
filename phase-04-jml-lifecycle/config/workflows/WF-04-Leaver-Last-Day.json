@@ -1,0 +1,17 @@
+{
+  "displayName": "WF-04 Leaver - end of last day",
+  "description": "At the first run after the leaver's last day ends: disable the account, revoke all sessions, and tell the manager. Runs even if the HR feed is late, so disabling never depends on one system alone.",
+  "category": "leaver",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+    "scope": { "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet", "rule": "(companyName eq 'DanotechInc')" },
+    "trigger": { "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger", "timeBasedAttribute": "employeeLeaveDateTime", "offsetInDays": 1 }
+  },
+  "tasks": [
+    { "taskName": "Disable user account", "isEnabled": true, "continueOnError": false, "arguments": [] },
+    { "taskName": "Revoke all refresh tokens for user", "isEnabled": true, "continueOnError": true, "arguments": [] },
+    { "taskName": "Send email to user's manager after their last day", "isEnabled": true, "continueOnError": true, "arguments": [] }
+  ]
+}

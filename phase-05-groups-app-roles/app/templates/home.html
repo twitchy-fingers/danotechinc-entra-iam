@@ -1,0 +1,17 @@
+{% extends "base.html" %}{% block body %}
+<div class="card">
+  <h1>Welcome, {{ session.user.name }}</h1>
+  <p class="muted">{{ session.user.upn }} · Manager: {{ session.user.manager_name or "none recorded" }}</p>
+</div>
+<div class="card">
+  <h2>Your roles, straight from your token</h2>
+  <div class="wrap"><table>
+    <tr><th>App role</th><th>Lets you</th><th>You have it?</th><th>Granted by role (Phase 03)</th><th>Entra ID group</th></tr>
+    {% for role, info in role_info.items() %}
+    <tr><td><code>{{ role }}</code></td><td>{{ info[0] }}</td>
+        <td>{% if role in my_roles %}<span class="yes">Yes</span>{% else %}<span class="no">No</span>{% endif %}</td>
+        <td>{{ info[1] }}</td><td class="muted">{{ info[2] }}</td></tr>
+    {% endfor %}
+  </table></div>
+</div>
+{% endblock %}
