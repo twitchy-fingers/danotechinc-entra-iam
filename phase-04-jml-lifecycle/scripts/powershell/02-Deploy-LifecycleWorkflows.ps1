@@ -32,11 +32,24 @@ $defs = (Invoke-MgGraphRequest -Method GET -Uri 'v1.0/identityGovernance/lifecyc
 $live = (Invoke-MgGraphRequest -Method GET -Uri 'v1.0/identityGovernance/lifecycleWorkflows/workflows?$expand=tasks').value
 $existing = $live | ForEach-Object { $_.displayName }
 
+function Get-TriggerInfo($t) {
+    # Normalises the older (timeBasedAttribute/offsetInDays) and newer
+    # (attribute/operator.offsetInDays + eventTiming) trigger formats.
+    if (-not $t) { return @{} }
+    if ($t.attribute) {
+        $offset = [int]$t.operator.offsetInDays
+        if ($t.operator.eventTiming -eq 'before') { $offset = -$offset }
+        return @{ attribute = $t.attribute; offset = $offset }
+    }
+    return @{ attribute = $t.timeBasedAttribute; offset = $t.offsetInDays }
+}
+
 function Compare-Workflow($wf, $liveWf) {
     $diffs = @()
-    $t, $lt = $wf.executionConditions.trigger, $liveWf.executionConditions.trigger
-    if ($t.timeBasedAttribute -and $t.timeBasedAttribute -ne $lt.timeBasedAttribute) { $diffs += "trigger attribute is '$($lt.timeBasedAttribute)', expected '$($t.timeBasedAttribute)'" }
-    if ($null -ne $t.offsetInDays -and $t.offsetInDays -ne $lt.offsetInDays) { $diffs += "offset is $($lt.offsetInDays) days, expected $($t.offsetInDays)" }
+        $t  = Get-TriggerInfo $wf.executionConditions.trigger
+    $lt = Get-TriggerInfo $liveWf.executionConditions.trigger
+    if ($t.attribute -and $t.attribute -ne $lt.attribute) { $diffs += "trigger attribute is '$($lt.attribute)', expected '$($t.attribute)'" }
+    if ($null -ne $t.offset -and $t.offset -ne $lt.offset) { $diffs += "offset is $($lt.offset) days, expected $($t.offset)" }
     $rule, $lrule = $wf.executionConditions.scope.rule, $liveWf.executionConditions.scope.rule
     if (($rule -replace '\s', '') -ne ($lrule -replace '\s', '')) { $diffs += "scope is '$lrule', expected '$rule'" }
     $want = @($wf.tasks | ForEach-Object { (Resolve-Task $_.taskName).id })
@@ -56,7 +69,7 @@ function Resolve-Task([string] $name) {
     $like = @($defs | Where-Object { $_.displayName -like "*$name*" })
     if ($like.Count -eq 1) { return $like[0] }
     Write-Host "Task '$name' not found. Available task names:" -ForegroundColor Red
-    $defs | Sort-Object displayName | ForEach-Object { "  - $($_.displayName)" }
+    $defs | Sort-Object displayName | ForEach-Object { Write-Host "  - $($_.displayName)" }
     throw "Fix the taskName in the workflow JSON."
 }
 
@@ -64,7 +77,8 @@ $created = @()
 foreach ($file in Get-ChildItem $WorkflowFolder -Filter 'WF-*.json' | Sort-Object Name) {
     $wf = Get-Content $file.FullName -Raw | ConvertFrom-Json -AsHashtable
     if ($existing -contains $wf.displayName) {
-        $liveWf = $live | Where-Object displayName -eq $wf.displayName | Select-Object -First 1
+        $liveId = ($live | Where-Object {$_.displayName -eq $wf.displayName} | Select-Object -First 1).id
+        $liveWf = Invoke-MgGraphRequest -Method GET -Uri "v1.0/identityGovernance/lifecycleWorkflows/Workflows/$($liveId)?`$expand=tasks"
         $diffs = @(Compare-Workflow $wf $liveWf)
         if ($diffs) {
             Write-Host "Exists, DIFFERS from definition: $($wf.displayName)" -ForegroundColor Red
