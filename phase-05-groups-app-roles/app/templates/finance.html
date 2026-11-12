@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block body %}
+{% if "Expenses.Review" in session.user.roles %}
+<div class="card"><h1>Finance review</h1><p class="muted">Approved claims awaiting a policy and receipt check. You can't review a claim you submitted or approved.</p>
+{% with claims=review, action="review" %}{% include "_table.html" %}{% endwith %}</div>{% endif %}
+{% if "Expenses.Pay" in session.user.roles %}
+<div class="card"><h1>Payment release</h1><p class="muted">Reviewed claims ready to pay. You can't pay a claim you submitted, approved (SOD-01) or reviewed.</p>
+{% with claims=pay, action="pay" %}{% include "_table.html" %}{% endwith %}</div>{% endif %}
+{% endblock %}
