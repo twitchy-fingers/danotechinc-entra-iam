@@ -2,6 +2,7 @@ ChangeId,EffectiveDate,EmployeeId,Person,Field,NewValue,Reason
 CHG-001,2026-11-07,DT01115,Sofía Reyes,EmploymentStatus,Terminated,Leaver: last day was 6 Nov
 CHG-002,2026-11-09,DT01102,Niamh Jones,EmploymentStatus,Active,Joiner: start confirmed by manager
 CHG-003,2026-11-09,DT01101,Nicole Reed,EmploymentStatus,Active,Joiner: HR confirms she started on 2 Nov (fixes DQ-15 warning)
+CHG-003b,2026-11-09,DT01101,Nicole Reed,HireDate,2026-11-02,Correction: CHG-003 set her Active but left the old start date (DQ-15)
 CHG-004,2026-11-10,DT01121,Miguel Hernández,JobCode,FIN-FPA,Mover: transfer from Sales Operations to Finance FP&A
 CHG-004,2026-11-10,DT01121,Miguel Hernández,JobTitle,Financial Analyst,Mover
 CHG-004,2026-11-10,DT01121,Miguel Hernández,JobFamily,Finance,Mover
