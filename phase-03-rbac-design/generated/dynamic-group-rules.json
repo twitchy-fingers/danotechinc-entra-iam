@@ -12,7 +12,7 @@
     ],
     "expectedMembers": 194,
     "membershipType": "Dynamic",
-    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.employeeType -in [\"Employee\",\"Contractor\",\"Intern\"])"
+    "membershipRule": "(user.accountEnabled -eq true) -and (user.companyName -eq \"DanotechInc\") -and (user.userPrincipalName -notStartsWith "adm.")"
   },
   {
     "roleId": "DR-EXE",
