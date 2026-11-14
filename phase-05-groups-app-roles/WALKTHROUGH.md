@@ -41,7 +41,7 @@ Scripts run from `phase-05-groups-app-roles\scripts\powershell\`.
 1. Open [`phase-03-rbac-design/generated/dynamic-group-rules.json`](../phase-03-rbac-design/generated/dynamic-group-rules.json) and copy the `membershipRule` of `GRP-DYN-ALL-Workforce`:
 
    ```text
-   (user.accountEnabled -eq true) -and (user.companyName -eq "DanotechInc") -and (user.employeeType -in ["Employee","Contractor","Intern"])
+   (user.accountEnabled -eq true) -and (user.companyName -eq "DanotechInc") -and (user.userPrincipalName -notStartsWith "adm.")
    ```
 
 2. [Entra admin center](https://entra.microsoft.com) as `adm.daniel.opara` → **Groups → All groups → New group**:
