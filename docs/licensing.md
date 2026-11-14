@@ -10,7 +10,7 @@ Recorded in Phase 00 and re-verified with `phase-01-tenant-foundation/scripts/po
 
 | Product | Total seats | Assigned | Trial? | Expiry / next lifecycle date |
 |---|---|---|---|---|
-| Microsoft Entra ID P2 |25 | 1| Yes |2026-11-20 |
+| Microsoft Entra ID P2 |25 | 1| Yes |2026-12-22 |
 | Microsoft Entra Suite |25 |0 | Yes | 2026-12-22|
 
 ## Licence-dependent phases
