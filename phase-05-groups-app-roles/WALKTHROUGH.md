@@ -274,7 +274,7 @@ Sign in to the [Azure portal](https://portal.azure.com) as `adm.daniel.opara`.
    | `SCM_DO_BUILD_DURING_DEPLOYMENT` | `true` |
 
    App settings are encrypted at rest and injected as environment variables at runtime. The secret never appears in code, in GitHub or in the deployment package.
-2. **Settings → Configuration → General settings:** **Startup Command** `gunicorn --bind=0.0.0.0 --timeout 600 app:app`; **HTTPS Only: On** (on some portal versions this toggle is under **Custom domains**) → **Save**.
+2. **Settings → Configuration → Stack settings:** **Startup Command** `gunicorn --bind=0.0.0.0 --timeout 600 app:app`; **HTTPS Only: On** (on some portal versions this toggle is under **General Settings**) → **Save**.
 
 ### 9d. Add the cloud redirect URI (Entra portal)
 
