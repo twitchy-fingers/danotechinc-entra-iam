@@ -103,6 +103,7 @@ Back on the mapping page, edit or add mappings so they match the [README mapping
 |---|---|---|
 | `externalId` → `employeeId` | **Match objects using this attribute: Yes**, precedence **1** | The join key. Existing accounts are updated, never duplicated |
 | `userName` → `userPrincipalName` | **Apply this mapping: Only during object creation** | The contract says UPNs aren't regenerated on a name change |
+| `…danotech…:EmployeeType` → `extensionAttribute5` | **Always** | Same reason |
 | `…danotech…:MailNickname` → `mailNickname` | **Only during object creation** | Same reason |
 | `…danotech…:JobCode` → `extensionAttribute1` (and `JobLevel` → `2`, `JobFamily` → `3`, `PeopleManager` → `4`) | Always | These drive every dynamic group in Phase 05 |
 | `…danotech…:HireDate` → `employeeHireDate` and `LeaveDate` → `employeeLeaveDateTime` | Always | Lifecycle Workflow triggers |
