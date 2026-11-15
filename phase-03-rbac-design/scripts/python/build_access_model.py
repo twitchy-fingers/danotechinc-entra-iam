@@ -76,7 +76,7 @@ def dynamic_rule(role, dept_names):
     if split(role["JobLevels"]):
         parts.append(f"(user.extensionAttribute2 -in {q(split(role['JobLevels']))})")
     if split(role["EmployeeTypes"]):
-        parts.append(f"(user.employeeType -in {q(split(role['EmployeeTypes']))})")
+        parts.append(f"(user.extensionAttribute5 -in {q(split(role['EmployeeTypes']))})")
     if role["PeopleManager"] == "Yes":
         parts.append('(user.extensionAttribute4 -eq "PeopleManager")')
     return " -and ".join(parts)
