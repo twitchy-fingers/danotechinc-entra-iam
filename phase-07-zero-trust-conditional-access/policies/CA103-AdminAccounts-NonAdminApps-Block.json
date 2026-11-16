@@ -1,0 +1,31 @@
+{
+  "displayName": "CA103-AdminAccounts-NonAdminApps-Block",
+  "state": "enabledForReportingButNotEnforced",
+  "conditions": {
+    "users": {
+      "includeGroups": [
+        "{{ADMIN_ACCOUNTS_GROUP_ID}}"
+      ],
+      "excludeGroups": [
+        "{{BREAKGLASS_GROUP_ID}}"
+      ]
+    },
+    "applications": {
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [
+        "{{ADMIN_ALLOWED_APP_IDS}}"
+      ]
+    },
+    "clientAppTypes": [
+      "all"
+    ]
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "displayName": "CA300-Guests-AllApps-RequireMFA",
+  "state": "enabledForReportingButNotEnforced",
+  "conditions": {
+    "users": {
+      "includeGuestsOrExternalUsers": {
+        "guestOrExternalUserTypes": "internalGuest,b2bCollaborationGuest,b2bCollaborationMember,b2bDirectConnectUser,otherExternalUser,serviceProvider",
+        "externalTenants": {
+          "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+          "membershipKind": "all"
+        }
+      },
+      "excludeGroups": [
+        "{{BREAKGLASS_GROUP_ID}}"
+      ]
+    },
+    "applications": {
+      "includeApplications": [
+        "All"
+      ]
+    },
+    "clientAppTypes": [
+      "all"
+    ]
+  },
+  "grantControls": {
+    "operator": "OR",
+    "authenticationStrength": {
+      "id": "00000000-0000-0000-0000-000000000002"
+    }
+  }
+}

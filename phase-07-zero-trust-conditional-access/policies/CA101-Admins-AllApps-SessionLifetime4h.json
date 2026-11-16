@@ -1,0 +1,35 @@
+{
+  "displayName": "CA101-Admins-AllApps-SessionLifetime4h",
+  "state": "enabledForReportingButNotEnforced",
+  "conditions": {
+    "users": {
+      "includeGroups": [
+        "{{ADMIN_ACCOUNTS_GROUP_ID}}"
+      ],
+      "excludeGroups": [
+        "{{BREAKGLASS_GROUP_ID}}"
+      ]
+    },
+    "applications": {
+      "includeApplications": [
+        "All"
+      ]
+    },
+    "clientAppTypes": [
+      "all"
+    ]
+  },
+  "sessionControls": {
+    "signInFrequency": {
+      "isEnabled": true,
+      "value": 4,
+      "type": "hours",
+      "authenticationType": "primaryAndSecondaryAuthentication",
+      "frequencyInterval": "timeBased"
+    },
+    "persistentBrowser": {
+      "isEnabled": true,
+      "mode": "never"
+    }
+  }
+}

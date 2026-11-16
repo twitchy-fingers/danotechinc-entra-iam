@@ -1,0 +1,36 @@
+{
+  "displayName": "CA002-AllUsers-AllApps-BlockOutsideOperatingCountries",
+  "state": "enabledForReportingButNotEnforced",
+  "conditions": {
+    "users": {
+      "includeGroups": [
+        "{{RING0_GROUP_ID}}"
+      ],
+      "excludeGroups": [
+        "{{BREAKGLASS_GROUP_ID}}"
+      ]
+    },
+    "applications": {
+      "includeApplications": [
+        "All"
+      ]
+    },
+    "clientAppTypes": [
+      "all"
+    ],
+    "locations": {
+      "includeLocations": [
+        "All"
+      ],
+      "excludeLocations": [
+        "{{NL_OPERATING_COUNTRIES_ID}}"
+      ]
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+# DanotechInc partner portal identity broker (lab): Keycloak on http://localhost:8080
+# Start:  docker compose --env-file "$HOME\danotech-secrets\keycloak.env" up -d
+# start-dev = HTTP, in-memory-friendly dev mode. Never use it in production.
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.0
+    command: ["start-dev"]
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      # Temporary bootstrap admin for the "master" realm. Replace with a permanent admin, then remove.
+      KC_BOOTSTRAP_ADMIN_USERNAME: ${KC_BOOTSTRAP_ADMIN_USERNAME:?set KC_BOOTSTRAP_ADMIN_USERNAME}
+      KC_BOOTSTRAP_ADMIN_PASSWORD: ${KC_BOOTSTRAP_ADMIN_PASSWORD:?set KC_BOOTSTRAP_ADMIN_PASSWORD}
+    volumes:
+      - kc-data:/opt/keycloak/data
+
+volumes:
+  kc-data:

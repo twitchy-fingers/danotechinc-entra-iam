@@ -1,0 +1,123 @@
+{
+  "notes": "Objects referenced by the Phase 07 policies. Built in the portal (first of their kind) and found by name at deploy time.",
+  "namedLocation": {
+    "name": "NL-Operating-Countries",
+    "countries": [
+      "US",
+      "GB",
+      "NG",
+      "GH",
+      "MX"
+    ],
+    "includeUnknownCountriesAndRegions": false,
+    "builtIn": "portal"
+  },
+  "authenticationStrength": {
+    "name": "AS-Onboarding-Passkey-or-TAP",
+    "allowedCombinations": [
+      "temporaryAccessPassOneTime",
+      "fido2",
+      "windowsHelloForBusiness",
+      "x509CertificateMultiFactor",
+      "deviceBasedPush",
+      "password,microsoftAuthenticatorPush"
+    ],
+    "purpose": "Only used to register security information. Joiners use their one-time TAP; people with a passkey use it; during the passkey rollout, people who only have Authenticator push (password + push) can still add a passkey. Remove 'password,microsoftAuthenticatorPush' once passkey adoption reaches 100%.",
+    "builtIn": "portal"
+  },
+  "authenticationContext": {
+    "id": "c1",
+    "displayName": "Tier 0 privileged activation",
+    "description": "Required when activating Global Administrator or Privileged Role Administrator in PIM. CA102 demands a phishing-resistant passkey every time.",
+    "builtIn": "portal"
+  },
+  "groups": {
+    "breakGlass": "GRP-CA-Exclude-BreakGlass",
+    "adminAccounts": "GRP-DYN-ALL-AdminAccounts",
+    "adminOnboarding": {
+      "name": "GRP-CA-Exclude-AdminOnboarding",
+      "description": "TEMPORARY exclusion from CA100 while a new admin account registers its first passkey with a TAP. Remove the same day. Flagged by 05-Test-ConditionalAccess.ps1 if not empty."
+    },
+    "ring0": {
+      "name": "GRP-ASG-CA-Ring0",
+      "description": "Conditional Access rollout ring 0: the IAM team. New workforce policies are enforced here first.",
+      "members": [
+        "adaeze.nwosu@danotechinc.onmicrosoft.com",
+        "kofi.owusu@danotechinc.onmicrosoft.com",
+        "diego.ramirez@danotechinc.onmicrosoft.com",
+        "emily.carter@danotechinc.onmicrosoft.com"
+      ]
+    }
+  },
+  "rollout": {
+    "ringManagedPolicies": [
+      "CA002",
+      "CA004",
+      "CA200",
+      "CA201"
+    ],
+    "rings": {
+      "0": {
+        "includeGroups": [
+          "GRP-ASG-CA-Ring0"
+        ],
+        "who": "IAM team (4)"
+      },
+      "1": {
+        "includeGroups": [
+          "GRP-ASG-CA-Ring0",
+          "GRP-DYN-DEPT-IT",
+          "GRP-DYN-DEPT-Security"
+        ],
+        "who": "IT and Information Security (26)"
+      },
+      "2": {
+        "includeGroups": [
+          "GRP-ASG-CA-Ring0",
+          "GRP-DYN-DEPT-IT",
+          "GRP-DYN-DEPT-Security",
+          "GRP-LIC-EntraSuite"
+        ],
+        "who": "+ the licensed cohort, spanning every department and office"
+      },
+      "3": {
+        "includeUsers": [
+          "All"
+        ],
+        "who": "Everyone except break-glass"
+      }
+    }
+  },
+  "adminAllowedApps": [
+    {
+      "name": "Microsoft Admin Portals",
+      "appId": "MicrosoftAdminPortals",
+      "addedIn": "07"
+    },
+    {
+      "name": "Windows Azure Service Management API",
+      "appId": "797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "addedIn": "07"
+    },
+    {
+      "name": "Microsoft Graph Command Line Tools",
+      "appId": "14d82eec-204b-4c2f-b7e8-296a70dab67e",
+      "addedIn": "07"
+    },
+    {
+      "name": "Microsoft Azure CLI",
+      "appId": "04b07795-8ddb-461a-bbee-02f9e1bf7b46",
+      "addedIn": "07"
+    },
+    {
+      "name": "Microsoft Azure PowerShell",
+      "appId": "1950a258-227b-4e31-a9cf-717495945fc2",
+      "addedIn": "07"
+    },
+    {
+      "name": "My Signins (security info registration)",
+      "appId": "19db86c3-b2b9-44cc-b339-36da233a3be2",
+      "addedIn": "07"
+    }
+  ]
+}

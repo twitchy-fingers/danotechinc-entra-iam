@@ -1,0 +1,94 @@
+{
+  "notes": "Every application federated with Entra ID in Phase 08. Scripts read this file; the walkthrough builds the apps in the portal.",
+  "pilotGroups": [
+    { "name": "GRP-ASG-APP-Salesforce-Pilot", "owner": "Fernanda Castillo",
+      "description": "Salesforce SSO + SCIM pilot. Developer Edition has only a few user licences, so the pilot replaces the production role groups.",
+      "members": ["niamh.jones@danotechinc.onmicrosoft.com", "brandon.collins@danotechinc.onmicrosoft.com"] },
+    { "name": "GRP-ASG-APP-GitHub-Pilot", "owner": "Carlos Gutiérrez",
+      "description": "GitHub organization SSO + SCIM pilot. Each member needs a personal GitHub account to link.",
+      "members": ["carlos.gutierrez@danotechinc.onmicrosoft.com", "valeria.morales@danotechinc.onmicrosoft.com"] },
+    { "name": "GRP-ASG-APP-Okta-Kestrel-Pilot", "owner": "Lucía Herrera",
+      "description": "DanotechInc staff who may sign in to Kestrel Logistics' Okta org with their Entra ID account.",
+      "members": ["lucia.herrera@danotechinc.onmicrosoft.com", "femi.okonkwo@danotechinc.onmicrosoft.com"] }
+  ],
+  "apps": [
+    {
+      "key": "salesforce", "displayName": "Salesforce - SSO", "type": "gallery", "gallery": "Salesforce",
+      "protocols": ["SAML 2.0", "SCIM (outbound provisioning)"], "businessOwner": "Fernanda Castillo", "technicalOwner": "Kofi Owusu",
+      "nameId": "user.userprincipalname -> Salesforce Federation ID",
+      "provisioning": true,
+      "productionDesign": [
+        { "group": "GRP-DYN-JOB-SAL-SELLER", "appRole": "Standard User", "entitlement": "SF-SALES-USER" },
+        { "group": "GRP-DYN-JOB-SAL-LEADER", "appRole": "Standard User + Sales Manager permission set", "entitlement": "SF-SALES-MGR" },
+        { "group": "GRP-DYN-JOB-CS", "appRole": "Service user profile", "entitlement": "SF-SVC-USER" },
+        { "group": "GRP-ROLE-PIM-SF-ADMIN", "appRole": "System Administrator", "entitlement": "SF-ADMIN" }
+      ],
+      "labAssignments": [ { "group": "GRP-ASG-APP-Salesforce-Pilot", "appRole": "Standard User" } ],
+      "adminViaPimGroup": false
+    },
+    {
+      "key": "github", "displayName": "GitHub - SSO", "type": "gallery", "gallery": "GitHub Enterprise Cloud - Organization",
+      "protocols": ["SAML 2.0", "SCIM (outbound provisioning)"], "businessOwner": "Carlos Gutiérrez", "technicalOwner": "Emily Carter",
+      "nameId": "user.userprincipalname (must equal the SCIM userName)",
+      "provisioning": true,
+      "productionDesign": [
+        { "group": "GRP-DYN-JOB-ENG-DEV", "appRole": "User + team sync: engineering", "entitlement": "GH-TEAM-ENG" },
+        { "group": "GRP-DYN-JOB-ENG-PLATFORM", "appRole": "User + team sync: platform", "entitlement": "GH-TEAM-PLATFORM" },
+        { "group": "GRP-DYN-JOB-ENG-DATA", "appRole": "User + team sync: data", "entitlement": "GH-TEAM-DATA" }
+      ],
+      "labAssignments": [ { "group": "GRP-ASG-APP-GitHub-Pilot", "appRole": "User" } ],
+      "adminViaPimGroup": false,
+      "adminNote": "Organization owner is a GitHub-side role for organization-level SAML. Just-in-time owner rights need Enterprise Managed Users (out of scope)."
+    },
+    {
+      "key": "wordpress", "displayName": "app-danotech-wordpress", "type": "appRegistration",
+      "protocols": ["OIDC (authorization code)"], "businessOwner": "Ngozi Balogun", "technicalOwner": "Diego Ramírez",
+      "redirectUri": "http://localhost:8081/openid-connect-authorize",
+      "appRoles": [
+        { "value": "WordPress.Author", "displayName": "WordPress author", "entitlement": "WP-AUTHOR" },
+        { "value": "WordPress.Editor", "displayName": "WordPress editor", "entitlement": "WP-EDITOR" },
+        { "value": "WordPress.Admin", "displayName": "WordPress administrator (just-in-time)", "entitlement": "WP-ADMIN" }
+      ],
+      "labAssignments": [
+        { "group": "GRP-DYN-JOB-MKT", "appRole": "WordPress.Author" },
+        { "group": "GRP-DYN-JOB-MKT-WEB", "appRole": "WordPress.Editor" },
+        { "group": "GRP-ROLE-PIM-WP-ADMIN", "appRole": "WordPress.Admin" }
+      ],
+      "adminViaPimGroup": true
+    },
+    {
+      "key": "keycloak", "displayName": "app-danotech-keycloak-broker", "type": "appRegistration",
+      "protocols": ["OIDC", "Identity brokering (Keycloak trusts Entra ID)"], "businessOwner": "Lucía Herrera", "technicalOwner": "Kofi Owusu",
+      "redirectUri": "http://localhost:8080/realms/danotech-partners/broker/entra-id/endpoint",
+      "appRoles": [
+        { "value": "Portal.Agent", "displayName": "Partner portal agent", "entitlement": "KC-PORTAL-AGENT" },
+        { "value": "Realm.Admin", "displayName": "Partner portal realm administrator (just-in-time)", "entitlement": "KC-REALM-ADMIN" }
+      ],
+      "labAssignments": [
+        { "group": "GRP-DYN-JOB-CS", "appRole": "Portal.Agent" },
+        { "group": "GRP-ROLE-PIM-KC-ADMIN", "appRole": "Realm.Admin" }
+      ],
+      "adminViaPimGroup": true
+    },
+    {
+      "key": "okta", "displayName": "app-danotech-okta-federation", "type": "appRegistration",
+      "protocols": ["OIDC federation (Entra ID as the identity provider for an Okta org)"], "businessOwner": "Lucía Herrera", "technicalOwner": "Kofi Owusu",
+      "redirectUri": "https://<your-okta-org>.okta.com/oauth2/v1/authorize/callback",
+      "appRoles": [ { "value": "Kestrel.User", "displayName": "Kestrel Logistics portal user" } ],
+      "labAssignments": [ { "group": "GRP-ASG-APP-Okta-Kestrel-Pilot", "appRole": "Kestrel.User" } ],
+      "adminViaPimGroup": false
+    },
+    {
+      "key": "finance-export", "displayName": "app-danotech-finance-export", "type": "appRegistration",
+      "protocols": ["OAuth 2.0 client credentials (certificate)"], "businessOwner": "Rachel Okafor", "technicalOwner": "Emily Carter",
+      "calls": "app-danotech-expenses API, application permission Claims.Read.All",
+      "labAssignments": [], "adminViaPimGroup": false
+    },
+    {
+      "key": "atlassian", "displayName": "Atlassian Cloud - SSO", "type": "designOnly", "gallery": "Atlassian Cloud",
+      "protocols": ["SAML 2.0", "SCIM"], "businessOwner": "Yaw Darko", "technicalOwner": "Diego Ramírez",
+      "blocker": "Atlassian SAML SSO and SCIM require Atlassian Guard and a verified domain. danotechinc.onmicrosoft.com can't be verified by DanotechInc (ADR-0001).",
+      "labAssignments": [], "adminViaPimGroup": false
+    }
+  ]
+}

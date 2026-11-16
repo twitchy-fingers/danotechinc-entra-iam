@@ -1,0 +1,15 @@
+// What WOULD a report-only policy have done?
+// Run in log-danotech-identity-prd-eus (Phase 01) before moving a policy to the next ring.
+// reportOnlyFailure     = the user would have been BLOCKED (or failed the grant)
+// reportOnlyInterrupted = the user would have been asked for more (e.g. a passkey)
+let lookback = 7d;
+SigninLogs
+| where TimeGenerated > ago(lookback)
+| mv-expand Policy = ConditionalAccessPolicies
+| extend PolicyName = tostring(Policy.displayName), Result = tostring(Policy.result)
+| where Result in ("reportOnlyFailure", "reportOnlyInterrupted")
+| summarize SignIns = count(), Users = dcount(UserPrincipalName),
+            SampleUsers = make_set(UserPrincipalName, 10), Apps = make_set(AppDisplayName, 10),
+            Countries = make_set(tostring(LocationDetails.countryOrRegion), 10)
+          by PolicyName, Result
+| order by PolicyName asc, SignIns desc

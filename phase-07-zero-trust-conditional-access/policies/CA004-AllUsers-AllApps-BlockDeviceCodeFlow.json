@@ -1,0 +1,31 @@
+{
+  "displayName": "CA004-AllUsers-AllApps-BlockDeviceCodeFlow",
+  "state": "enabledForReportingButNotEnforced",
+  "conditions": {
+    "users": {
+      "includeGroups": [
+        "{{RING0_GROUP_ID}}"
+      ],
+      "excludeGroups": [
+        "{{BREAKGLASS_GROUP_ID}}"
+      ]
+    },
+    "applications": {
+      "includeApplications": [
+        "All"
+      ]
+    },
+    "clientAppTypes": [
+      "all"
+    ],
+    "authenticationFlows": {
+      "transferMethods": "deviceCodeFlow"
+    }
+  },
+  "grantControls": {
+    "operator": "OR",
+    "builtInControls": [
+      "block"
+    ]
+  }
+}

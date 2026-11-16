@@ -1,0 +1,34 @@
+# DanotechInc corporate website (lab): WordPress + MariaDB on http://localhost:8081
+# Start:  docker compose --env-file "$HOME\danotech-secrets\wordpress.env" up -d
+# The env file lives OUTSIDE the repository (copy .env.example).
+services:
+  db:
+    image: mariadb:11
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: ${WP_DB_PASSWORD:?set WP_DB_PASSWORD}
+      MARIADB_RANDOM_ROOT_PASSWORD: "1"
+    volumes:
+      - wp-db:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:6
+    restart: unless-stopped
+    depends_on: [db]
+    ports:
+      - "8081:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: ${WP_DB_PASSWORD}
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - wp-content:/var/www/html/wp-content
+      # The role-mapping plugin is mounted read-only from the repository (reviewed code, not a download)
+      - ./mu-plugins:/var/www/html/wp-content/mu-plugins:ro
+
+volumes:
+  wp-db:
+  wp-content:

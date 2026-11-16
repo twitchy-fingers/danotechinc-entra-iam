@@ -1,0 +1,613 @@
+{
+  "notes": "Generated from phase-03-rbac-design/model/roles.csv (Privileged layer). Change the model, not this file.",
+  "breakGlassGroup": "GRP-CA-Exclude-BreakGlass",
+  "adminAccountsGroup": {
+    "name": "GRP-DYN-ALL-AdminAccounts",
+    "rule": "(user.employeeType -eq \"AdminAccount\")"
+  },
+  "administrativeUnit": {
+    "name": "AU-Workforce",
+    "rule": "(user.companyName -eq \"DanotechInc\") -and (user.employeeType -ne \"AdminAccount\")"
+  },
+  "licensedAdminAccounts": [
+    "adm.daniel.opara@danotechinc.onmicrosoft.com",
+    "adm.adaeze.nwosu@danotechinc.onmicrosoft.com",
+    "adm.kofi.owusu@danotechinc.onmicrosoft.com"
+  ],
+  "roleSettingProfiles": {
+    "T0-Approval": {
+      "maxActivation": "PT2H",
+      "activationRequires": [
+        "MultiFactorAuthentication",
+        "Justification",
+        "Ticketing"
+      ],
+      "approval": true,
+      "eligibilityMax": "P180D",
+      "activeAssignmentMax": "P30D"
+    },
+    "T1-SelfActivate": {
+      "maxActivation": "PT4H",
+      "activationRequires": [
+        "MultiFactorAuthentication",
+        "Justification"
+      ],
+      "approval": false,
+      "eligibilityMax": "P180D",
+      "activeAssignmentMax": "P30D"
+    },
+    "T2-Helpdesk": {
+      "maxActivation": "PT8H",
+      "activationRequires": [
+        "MultiFactorAuthentication",
+        "Justification"
+      ],
+      "approval": false,
+      "eligibilityMax": "P180D",
+      "activeAssignmentMax": "P30D"
+    },
+    "App-Admin-Group": {
+      "maxActivation": "PT4H",
+      "activationRequires": [
+        "MultiFactorAuthentication",
+        "Justification"
+      ],
+      "approval": false,
+      "eligibilityMax": "P180D",
+      "activeAssignmentMax": "P30D"
+    }
+  },
+  "roleSettings": [
+    {
+      "role": "Global Administrator",
+      "roleTemplateId": "62e90394-69f5-4237-9190-012177145e10",
+      "profile": "T0-Approval",
+      "approvers": [
+        "oliver.hughes@danotechinc.onmicrosoft.com",
+        "adaeze.nwosu@danotechinc.onmicrosoft.com"
+      ],
+      "builtInPortal": true
+    },
+    {
+      "role": "Privileged Role Administrator",
+      "roleTemplateId": "e8611ab8-c189-46e8-94e1-60213ab1f814",
+      "profile": "T0-Approval",
+      "approvers": [
+        "oliver.hughes@danotechinc.onmicrosoft.com",
+        "daniel.opara@danotechinc.onmicrosoft.com"
+      ]
+    },
+    {
+      "role": "User Administrator",
+      "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+      "profile": "T1-SelfActivate"
+    },
+    {
+      "role": "Conditional Access Administrator",
+      "roleTemplateId": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+      "profile": "T1-SelfActivate"
+    },
+    {
+      "role": "Application Administrator",
+      "roleTemplateId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+      "profile": "T1-SelfActivate"
+    },
+    {
+      "role": "Identity Governance Administrator",
+      "roleTemplateId": "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e",
+      "profile": "T1-SelfActivate"
+    },
+    {
+      "role": "Security Operator",
+      "roleTemplateId": "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+      "profile": "T1-SelfActivate"
+    },
+    {
+      "role": "Helpdesk Administrator",
+      "roleTemplateId": "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+      "profile": "T2-Helpdesk"
+    }
+  ],
+  "activationNotifyUpn": "oliver.hughes@danotechinc.onmicrosoft.com",
+  "standingReaderRoles": [
+    {
+      "role": "Global Reader",
+      "roleTemplateId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+      "fromGroups": [
+        "GRP-DYN-JOB-IT-IAM",
+        "GRP-DYN-JOB-SEC-GRC"
+      ]
+    },
+    {
+      "role": "Security Reader",
+      "roleTemplateId": "5d6b6bb7-de71-4623-b4af-96380a352509",
+      "fromGroups": [
+        "GRP-DYN-JOB-SEC-SOC"
+      ]
+    }
+  ],
+  "admins": [
+    {
+      "employeeId": "DT01001",
+      "person": "Daniel Opara",
+      "jobTitle": "Chief Executive Officer",
+      "usageLocation": "US",
+      "dailyUpn": "daniel.opara@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.daniel.opara@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Daniel Opara",
+      "modelRoles": [
+        "PR-GLOBAL-ADMIN"
+      ],
+      "tier": "T0"
+    },
+    {
+      "employeeId": "DT01014",
+      "person": "Adaeze Nwosu",
+      "jobTitle": "IAM Manager",
+      "usageLocation": "NG",
+      "dailyUpn": "adaeze.nwosu@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.adaeze.nwosu@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Adaeze Nwosu",
+      "modelRoles": [
+        "PR-PRIV-ROLE-ADMIN",
+        "PR-IAM-ADMIN"
+      ],
+      "tier": "T0"
+    },
+    {
+      "employeeId": "DT01015",
+      "person": "Kofi Owusu",
+      "jobTitle": "Senior IAM Engineer",
+      "usageLocation": "GH",
+      "dailyUpn": "kofi.owusu@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.kofi.owusu@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Kofi Owusu",
+      "modelRoles": [
+        "PR-IAM-ADMIN",
+        "PR-SF-ADMIN",
+        "PR-KC-ADMIN"
+      ],
+      "tier": "T1"
+    },
+    {
+      "employeeId": "DT01016",
+      "person": "Diego Ramírez",
+      "jobTitle": "IAM Engineer",
+      "usageLocation": "MX",
+      "dailyUpn": "diego.ramirez@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.diego.ramirez@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Diego Ramírez",
+      "modelRoles": [
+        "PR-IAM-ADMIN",
+        "PR-SF-ADMIN",
+        "PR-WP-ADMIN",
+        "PR-ATL-ADMIN"
+      ],
+      "tier": "T1"
+    },
+    {
+      "employeeId": "DT01017",
+      "person": "Emily Carter",
+      "jobTitle": "IAM Engineer",
+      "usageLocation": "US",
+      "dailyUpn": "emily.carter@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.emily.carter@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Emily Carter",
+      "modelRoles": [
+        "PR-IAM-ADMIN",
+        "PR-GH-OWNER"
+      ],
+      "tier": "T1"
+    },
+    {
+      "employeeId": "DT01018",
+      "person": "Babatunde Bakare",
+      "jobTitle": "Cloud & Infrastructure Manager",
+      "usageLocation": "NG",
+      "dailyUpn": "babatunde.bakare@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.babatunde.bakare@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Babatunde Bakare",
+      "modelRoles": [
+        "PR-AZ-OWNER"
+      ],
+      "tier": "Azure (Phase 09)"
+    },
+    {
+      "employeeId": "DT01019",
+      "person": "Grace Robinson",
+      "jobTitle": "Service Desk Lead",
+      "usageLocation": "US",
+      "dailyUpn": "grace.robinson@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.grace.robinson@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Grace Robinson",
+      "modelRoles": [
+        "PR-HELPDESK"
+      ],
+      "tier": "T2"
+    },
+    {
+      "employeeId": "DT01020",
+      "person": "Priya Sharma",
+      "jobTitle": "Security Operations Manager",
+      "usageLocation": "GB",
+      "dailyUpn": "priya.sharma@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.priya.sharma@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Priya Sharma",
+      "modelRoles": [
+        "PR-SEC-OPERATOR",
+        "PR-LOG-ADMIN"
+      ],
+      "tier": "T1"
+    },
+    {
+      "employeeId": "DT01027",
+      "person": "Ngozi Balogun",
+      "jobTitle": "Director of Digital Marketing",
+      "usageLocation": "GB",
+      "dailyUpn": "ngozi.balogun@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.ngozi.balogun@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Ngozi Balogun",
+      "modelRoles": [
+        "PR-WP-ADMIN"
+      ],
+      "tier": "App"
+    },
+    {
+      "employeeId": "DT01030",
+      "person": "Carlos Gutiérrez",
+      "jobTitle": "Engineering Manager - DevOps & SRE",
+      "usageLocation": "MX",
+      "dailyUpn": "carlos.gutierrez@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.carlos.gutierrez@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Carlos Gutiérrez",
+      "modelRoles": [
+        "PR-GH-OWNER"
+      ],
+      "tier": "App"
+    },
+    {
+      "employeeId": "DT01190",
+      "person": "Tobiloba Akinola",
+      "jobTitle": "Service Desk Analyst",
+      "usageLocation": "NG",
+      "dailyUpn": "tobiloba.akinola@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.tobiloba.akinola@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Tobiloba Akinola",
+      "modelRoles": [
+        "PR-HELPDESK"
+      ],
+      "tier": "T2"
+    },
+    {
+      "employeeId": "DT01191",
+      "person": "Ximena García",
+      "jobTitle": "Service Desk Analyst",
+      "usageLocation": "MX",
+      "dailyUpn": "ximena.garcia@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.ximena.garcia@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Ximena García",
+      "modelRoles": [
+        "PR-HELPDESK"
+      ],
+      "tier": "T2"
+    },
+    {
+      "employeeId": "DT01193",
+      "person": "Jamal Davis",
+      "jobTitle": "Service Desk Analyst",
+      "usageLocation": "US",
+      "dailyUpn": "jamal.davis@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.jamal.davis@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Jamal Davis",
+      "modelRoles": [
+        "PR-HELPDESK"
+      ],
+      "tier": "T2"
+    },
+    {
+      "employeeId": "DT01197",
+      "person": "Ashley Johnson",
+      "jobTitle": "Detection Engineer",
+      "usageLocation": "GB",
+      "dailyUpn": "ashley.johnson@danotechinc.onmicrosoft.com",
+      "adminUpn": "adm.ashley.johnson@danotechinc.onmicrosoft.com",
+      "displayName": "ADM - Ashley Johnson",
+      "modelRoles": [
+        "PR-SEC-OPERATOR"
+      ],
+      "tier": "T1"
+    }
+  ],
+  "directoryEligibility": [
+    {
+      "modelRole": "PR-GLOBAL-ADMIN",
+      "entitlement": "ENTRA-GA",
+      "role": "Global Administrator",
+      "roleTemplateId": "62e90394-69f5-4237-9190-012177145e10",
+      "tier": "T0",
+      "adminUpn": "adm.daniel.opara@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-PRIV-ROLE-ADMIN",
+      "entitlement": "ENTRA-PRIV-ROLE-ADMIN",
+      "role": "Privileged Role Administrator",
+      "roleTemplateId": "e8611ab8-c189-46e8-94e1-60213ab1f814",
+      "tier": "T0",
+      "adminUpn": "adm.adaeze.nwosu@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-USER-ADMIN",
+      "role": "User Administrator",
+      "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+      "tier": "T1",
+      "adminUpn": "adm.adaeze.nwosu@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-CA-ADMIN",
+      "role": "Conditional Access Administrator",
+      "roleTemplateId": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+      "tier": "T1",
+      "adminUpn": "adm.adaeze.nwosu@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-APP-ADMIN",
+      "role": "Application Administrator",
+      "roleTemplateId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+      "tier": "T1",
+      "adminUpn": "adm.adaeze.nwosu@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-IG-ADMIN",
+      "role": "Identity Governance Administrator",
+      "roleTemplateId": "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e",
+      "tier": "T1",
+      "adminUpn": "adm.adaeze.nwosu@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-USER-ADMIN",
+      "role": "User Administrator",
+      "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+      "tier": "T1",
+      "adminUpn": "adm.kofi.owusu@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-CA-ADMIN",
+      "role": "Conditional Access Administrator",
+      "roleTemplateId": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+      "tier": "T1",
+      "adminUpn": "adm.kofi.owusu@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-APP-ADMIN",
+      "role": "Application Administrator",
+      "roleTemplateId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+      "tier": "T1",
+      "adminUpn": "adm.kofi.owusu@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-IG-ADMIN",
+      "role": "Identity Governance Administrator",
+      "roleTemplateId": "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e",
+      "tier": "T1",
+      "adminUpn": "adm.kofi.owusu@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-USER-ADMIN",
+      "role": "User Administrator",
+      "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+      "tier": "T1",
+      "adminUpn": "adm.diego.ramirez@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-CA-ADMIN",
+      "role": "Conditional Access Administrator",
+      "roleTemplateId": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+      "tier": "T1",
+      "adminUpn": "adm.diego.ramirez@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-APP-ADMIN",
+      "role": "Application Administrator",
+      "roleTemplateId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+      "tier": "T1",
+      "adminUpn": "adm.diego.ramirez@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-IG-ADMIN",
+      "role": "Identity Governance Administrator",
+      "roleTemplateId": "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e",
+      "tier": "T1",
+      "adminUpn": "adm.diego.ramirez@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-USER-ADMIN",
+      "role": "User Administrator",
+      "roleTemplateId": "fe930be7-5e62-47db-91af-98c3a49a38b1",
+      "tier": "T1",
+      "adminUpn": "adm.emily.carter@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-CA-ADMIN",
+      "role": "Conditional Access Administrator",
+      "roleTemplateId": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+      "tier": "T1",
+      "adminUpn": "adm.emily.carter@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-APP-ADMIN",
+      "role": "Application Administrator",
+      "roleTemplateId": "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+      "tier": "T1",
+      "adminUpn": "adm.emily.carter@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-IAM-ADMIN",
+      "entitlement": "ENTRA-IG-ADMIN",
+      "role": "Identity Governance Administrator",
+      "roleTemplateId": "45d8d3c5-c802-45c6-b32a-1d70b5e1e86e",
+      "tier": "T1",
+      "adminUpn": "adm.emily.carter@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-HELPDESK",
+      "entitlement": "ENTRA-HELPDESK-ADMIN",
+      "role": "Helpdesk Administrator",
+      "roleTemplateId": "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+      "tier": "T2",
+      "adminUpn": "adm.grace.robinson@danotechinc.onmicrosoft.com",
+      "scope": "AU-Workforce"
+    },
+    {
+      "modelRole": "PR-HELPDESK",
+      "entitlement": "ENTRA-HELPDESK-ADMIN",
+      "role": "Helpdesk Administrator",
+      "roleTemplateId": "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+      "tier": "T2",
+      "adminUpn": "adm.tobiloba.akinola@danotechinc.onmicrosoft.com",
+      "scope": "AU-Workforce"
+    },
+    {
+      "modelRole": "PR-HELPDESK",
+      "entitlement": "ENTRA-HELPDESK-ADMIN",
+      "role": "Helpdesk Administrator",
+      "roleTemplateId": "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+      "tier": "T2",
+      "adminUpn": "adm.ximena.garcia@danotechinc.onmicrosoft.com",
+      "scope": "AU-Workforce"
+    },
+    {
+      "modelRole": "PR-HELPDESK",
+      "entitlement": "ENTRA-HELPDESK-ADMIN",
+      "role": "Helpdesk Administrator",
+      "roleTemplateId": "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+      "tier": "T2",
+      "adminUpn": "adm.jamal.davis@danotechinc.onmicrosoft.com",
+      "scope": "AU-Workforce"
+    },
+    {
+      "modelRole": "PR-SEC-OPERATOR",
+      "entitlement": "ENTRA-SEC-OPERATOR",
+      "role": "Security Operator",
+      "roleTemplateId": "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+      "tier": "T1",
+      "adminUpn": "adm.priya.sharma@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    },
+    {
+      "modelRole": "PR-SEC-OPERATOR",
+      "entitlement": "ENTRA-SEC-OPERATOR",
+      "role": "Security Operator",
+      "roleTemplateId": "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+      "tier": "T1",
+      "adminUpn": "adm.ashley.johnson@danotechinc.onmicrosoft.com",
+      "scope": "Tenant"
+    }
+  ],
+  "pimGroups": [
+    {
+      "modelRole": "PR-SF-ADMIN",
+      "groupName": "GRP-ROLE-PIM-SF-ADMIN",
+      "grants": "Salesforce System Administrator",
+      "entitlement": "SF-ADMIN",
+      "owner": "Fernanda Castillo",
+      "eligibleMembers": [
+        "adm.kofi.owusu@danotechinc.onmicrosoft.com",
+        "adm.diego.ramirez@danotechinc.onmicrosoft.com"
+      ],
+      "connectedIn": "Phase 08"
+    },
+    {
+      "modelRole": "PR-GH-OWNER",
+      "groupName": "GRP-ROLE-PIM-GH-OWNER",
+      "grants": "GitHub organization owner",
+      "entitlement": "GH-ORG-OWNER",
+      "owner": "Carlos Gutiérrez",
+      "eligibleMembers": [
+        "adm.carlos.gutierrez@danotechinc.onmicrosoft.com",
+        "adm.emily.carter@danotechinc.onmicrosoft.com"
+      ],
+      "connectedIn": "Phase 08"
+    },
+    {
+      "modelRole": "PR-WP-ADMIN",
+      "groupName": "GRP-ROLE-PIM-WP-ADMIN",
+      "grants": "WordPress administrator",
+      "entitlement": "WP-ADMIN",
+      "owner": "Ngozi Balogun",
+      "eligibleMembers": [
+        "adm.diego.ramirez@danotechinc.onmicrosoft.com",
+        "adm.ngozi.balogun@danotechinc.onmicrosoft.com"
+      ],
+      "connectedIn": "Phase 08"
+    },
+    {
+      "modelRole": "PR-ATL-ADMIN",
+      "groupName": "GRP-ROLE-PIM-ATL-ADMIN",
+      "grants": "Atlassian organization admin",
+      "entitlement": "ATL-ORG-ADMIN",
+      "owner": "Yaw Darko",
+      "eligibleMembers": [
+        "adm.diego.ramirez@danotechinc.onmicrosoft.com"
+      ],
+      "connectedIn": "Phase 08"
+    },
+    {
+      "modelRole": "PR-KC-ADMIN",
+      "groupName": "GRP-ROLE-PIM-KC-ADMIN",
+      "grants": "Keycloak realm administrator",
+      "entitlement": "KC-REALM-ADMIN",
+      "owner": "Lucía Herrera",
+      "eligibleMembers": [
+        "adm.kofi.owusu@danotechinc.onmicrosoft.com"
+      ],
+      "connectedIn": "Phase 08"
+    }
+  ],
+  "deferredToPhase09": [
+    {
+      "modelRole": "PR-AZ-OWNER",
+      "entitlement": "AZ-OWNER",
+      "adminUpn": "adm.babatunde.bakare@danotechinc.onmicrosoft.com",
+      "phase": "09"
+    },
+    {
+      "modelRole": "PR-LOG-ADMIN",
+      "entitlement": "AZ-LOG-CONTRIB",
+      "adminUpn": "adm.priya.sharma@danotechinc.onmicrosoft.com",
+      "phase": "09"
+    }
+  ]
+}

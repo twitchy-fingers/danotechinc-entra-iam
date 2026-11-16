@@ -1,0 +1,17 @@
+// Sign-ins to every Phase 08 application, by protocol and outcome.
+// AuthenticationProtocol is empty for most interactive sign-ins; the app tells you the protocol:
+//   Salesforce - SSO, GitHub - SSO          -> SAML 2.0
+//   app-danotech-wordpress, -keycloak-broker -> OIDC
+//   app-danotech-okta-federation            -> OIDC federation
+//   app-danotech-finance-export             -> OAuth client credentials (service principal sign-in)
+let apps = dynamic(["Salesforce - SSO", "GitHub - SSO", "app-danotech-wordpress", "app-danotech-keycloak-broker",
+                    "app-danotech-okta-federation", "app-danotech-expenses"]);
+union isfuzzy=true
+    (SigninLogs | extend Kind = "user"),
+    (AADServicePrincipalSignInLogs | extend Kind = "app-only", UserPrincipalName = ServicePrincipalName)
+| where TimeGenerated > ago(14d)
+| where AppDisplayName in (apps) or ResourceDisplayName == "app-danotech-expenses" or ServicePrincipalName == "app-danotech-finance-export"
+| summarize SignIns = count(), Failures = countif(ResultType != "0"), Users = dcount(UserPrincipalName),
+            TopFailure = take_anyif(ResultDescription, ResultType != "0")
+          by AppDisplayName, ResourceDisplayName, Kind
+| order by SignIns desc
