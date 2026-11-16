@@ -1,0 +1,39 @@
+{
+  "displayName": "CA200-Workforce-AllApps-SignInRiskMediumHigh-RequireMFA",
+  "state": "enabledForReportingButNotEnforced",
+  "conditions": {
+    "users": {
+      "includeGroups": [
+        "{{RING0_GROUP_ID}}"
+      ],
+      "excludeGroups": [
+        "{{BREAKGLASS_GROUP_ID}}"
+      ]
+    },
+    "applications": {
+      "includeApplications": [
+        "All"
+      ]
+    },
+    "clientAppTypes": [
+      "all"
+    ],
+    "signInRiskLevels": [
+      "high",
+      "medium"
+    ]
+  },
+  "grantControls": {
+    "operator": "OR",
+    "authenticationStrength": {
+      "id": "00000000-0000-0000-0000-000000000002"
+    }
+  },
+  "sessionControls": {
+    "signInFrequency": {
+      "isEnabled": true,
+      "authenticationType": "primaryAndSecondaryAuthentication",
+      "frequencyInterval": "everyTime"
+    }
+  }
+}

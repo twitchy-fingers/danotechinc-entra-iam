@@ -1,0 +1,7 @@
+// Who tried to use a federated app without being assigned? (AADSTS50105)
+// Expected entries: an admin account at a business app, a non-pilot user at Okta or GitHub.
+SigninLogs
+| where TimeGenerated > ago(14d)
+| where ResultType == "50105"
+| project TimeGenerated, UserPrincipalName, AppDisplayName, IPAddress, Country = tostring(LocationDetails.countryOrRegion)
+| order by TimeGenerated desc

@@ -1,0 +1,35 @@
+{
+  "displayName": "CA102-Admins-AuthContextC1-PhishingResistantEveryTime",
+  "state": "enabledForReportingButNotEnforced",
+  "conditions": {
+    "users": {
+      "includeGroups": [
+        "{{ADMIN_ACCOUNTS_GROUP_ID}}"
+      ],
+      "excludeGroups": [
+        "{{BREAKGLASS_GROUP_ID}}"
+      ]
+    },
+    "applications": {
+      "includeAuthenticationContextClassReferences": [
+        "c1"
+      ]
+    },
+    "clientAppTypes": [
+      "all"
+    ]
+  },
+  "grantControls": {
+    "operator": "OR",
+    "authenticationStrength": {
+      "id": "00000000-0000-0000-0000-000000000004"
+    }
+  },
+  "sessionControls": {
+    "signInFrequency": {
+      "isEnabled": true,
+      "authenticationType": "primaryAndSecondaryAuthentication",
+      "frequencyInterval": "everyTime"
+    }
+  }
+}

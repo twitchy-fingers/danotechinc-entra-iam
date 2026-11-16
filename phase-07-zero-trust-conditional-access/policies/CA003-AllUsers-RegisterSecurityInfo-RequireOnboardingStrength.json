@@ -1,0 +1,28 @@
+{
+  "displayName": "CA003-AllUsers-RegisterSecurityInfo-RequireOnboardingStrength",
+  "state": "enabledForReportingButNotEnforced",
+  "conditions": {
+    "users": {
+      "includeUsers": [
+        "All"
+      ],
+      "excludeGroups": [
+        "{{BREAKGLASS_GROUP_ID}}"
+      ]
+    },
+    "applications": {
+      "includeUserActions": [
+        "urn:user:registersecurityinfo"
+      ]
+    },
+    "clientAppTypes": [
+      "all"
+    ]
+  },
+  "grantControls": {
+    "operator": "OR",
+    "authenticationStrength": {
+      "id": "{{AS_ONBOARDING_ID}}"
+    }
+  }
+}

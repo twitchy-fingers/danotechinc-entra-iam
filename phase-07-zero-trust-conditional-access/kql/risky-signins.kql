@@ -1,0 +1,12 @@
+// Risky sign-ins and what Conditional Access did about them (CA200 / CA201).
+// Use after the risk test in walkthrough Step 12. Phase 15 builds triage on top of this.
+SigninLogs
+| where TimeGenerated > ago(7d)
+| where RiskLevelDuringSignIn in ("medium", "high") or RiskState in ("atRisk", "confirmedCompromised")
+| extend CA = ConditionalAccessPolicies
+| mv-expand CA
+| where tostring(CA.displayName) startswith "CA20"
+| project TimeGenerated, UserPrincipalName, RiskLevelDuringSignIn, RiskEventTypes_V2, IPAddress,
+          Country = tostring(LocationDetails.countryOrRegion), Policy = tostring(CA.displayName),
+          PolicyResult = tostring(CA.result), ResultType, AppDisplayName
+| order by TimeGenerated desc
