@@ -143,7 +143,7 @@ The **Value** is what appears in the token's `roles` claim and what the app chec
 
 ### 5c. API permission and admin consent
 
-1. **API permissions:** `Microsoft Graph → User.Read (Delegated)` is usually already listed. If not: **Add a permission → Microsoft Graph → Delegated → User.Read**.
+1. **API permissions:** `Microsoft Graph → User.Read (Delegated)` is usually already listed. If not: **Add these permissions → Microsoft Graph → Delegated → User.Read, User.ReadBasic.All**.
 2. **Grant admin consent for DanotechInc → Yes**.
 
 **Why admin consent:** Phase 01 turned off user consent, so no user can grant an app access to their data. That's an admin decision, made once here and visible in the audit log.
