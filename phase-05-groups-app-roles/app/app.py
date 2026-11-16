@@ -33,7 +33,7 @@ CLIENT_ID = os.environ.get("CLIENT_ID", "")
 CLIENT_SECRET = os.environ.get("CLIENT_SECRET", "")
 REDIRECT_URI = os.environ.get("REDIRECT_URI", "http://localhost:5000/auth/callback")
 AUTHORITY = f"https://login.microsoftonline.com/{TENANT_ID}"
-GRAPH_SCOPES = ["User.Read"]  # delegated: read the signed-in user's own profile and manager
+GRAPH_SCOPES = ["User.Read", "User.ReadBasic.All"]  # delegated: read the signed-in user's own profile and manager
 
 # App role values, as defined in config/expenses-app-roles.json
 ROLE_SUBMIT, ROLE_APPROVE, ROLE_REVIEW, ROLE_PAY, ROLE_AUDIT = (
@@ -149,6 +149,9 @@ def callback():
                      headers={"Authorization": f"Bearer {result['access_token']}"}, timeout=10)
     if r.ok:
         manager_oid, manager_name = r.json().get("id"), r.json().get("displayName")
+    else:
+        app.logger.warning("Manager lookup failed for %s: HTTP %s %s",
+                           claims.get("preferred_username"), r.status_code, r.text[:300])
 
     session["user"] = {
         "oid": claims.get("oid"), "name": claims.get("name"), "upn": claims.get("preferred_username"),
