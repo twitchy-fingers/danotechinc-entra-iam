@@ -78,13 +78,13 @@ Phases are ordered the way a real program rolls out: secure the tenant, establis
 |---|---|---|---|
 | 00 | [Program charter and governance](phase-00-program-charter/) | Scope, RACI, naming standards, repo workflow, decision log | Ready |
 | 01 | [Tenant foundation and hardening](phase-01-tenant-foundation/) | Break-glass accounts, hardened defaults, baseline CA, automation identity, log pipeline | Ready |
-| 02 | [Identity source and HR data model](phase-02-identity-data-model/) | HR schema, attribute mapping, data quality rules | Planned |
-| 03 | [RBAC design](phase-03-rbac-design/) | Business roles, permission matrix, access policy | Planned |
-| 04 | [JML lifecycle automation](phase-04-jml-lifecycle/) | HR-driven joiner/mover/leaver automation | Planned |
-| 05 | [Groups, app roles and OIDC test app](phase-05-groups-app-roles/) | Dynamic and assigned groups, app roles, a working OIDC app | Planned |
-| 06 | [Privileged access](phase-06-privileged-access/) | Separate admin accounts, PIM just-in-time roles, approvals | Planned |
-| 07 | [Authentication and Zero Trust Conditional Access](phase-07-zero-trust-conditional-access/) | Passkeys, authentication strengths, risk-based policies | Planned |
-| 08 | [SSO and federation](phase-08-sso-federation/) | SAML, OIDC, OAuth, SCIM and identity brokering across 6 systems | Planned |
+| 02 | [Identity source and HR data model](phase-02-identity-data-model/) | HR schema, attribute mapping, data quality rules | Ready |
+| 03 | [RBAC design](phase-03-rbac-design/) | Business roles, permission matrix, access policy | Ready |
+| 04 | [JML lifecycle automation](phase-04-jml-lifecycle/) | HR-driven joiner/mover/leaver automation | Ready |
+| 05 | [Groups, app roles and OIDC test app](phase-05-groups-app-roles/) | Dynamic and assigned groups, app roles, a working OIDC app | Ready |
+| 06 | [Privileged access](phase-06-privileged-access/) | Separate admin accounts, PIM just-in-time roles, approvals | Ready |
+| 07 | [Authentication and Zero Trust Conditional Access](phase-07-zero-trust-conditional-access/) | Passkeys, authentication strengths, risk-based policies | Ready |
+| 08 | [SSO and federation](phase-08-sso-federation/) | SAML, OIDC, OAuth, SCIM and identity brokering across 6 systems | Ready |
 | 09 | [Cloud IAM](phase-09-cloud-iam/) | Least-privilege Azure custom roles | Planned |
 | 10 | [Non-human identities](phase-10-non-human-identities/) | Managed identities, GitHub Actions workload identity federation | Planned |
 | 11 | [Agent-to-tool authorization](phase-11-agent-authorization/) | AI agent with scoped tool access and human approval | Planned |

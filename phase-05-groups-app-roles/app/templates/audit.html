@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% block body %}
+<div class="card"><h1>All claims</h1><p class="muted">Read-only. Auditors can see everything and change nothing.</p>{% with action=None %}{% include "_table.html" %}{% endwith %}</div>
+<div class="card"><h2>Activity log (latest 200)</h2><div class="wrap"><table>
+<tr><th>Time (UTC)</th><th>Who</th><th>Action</th><th>Claim</th><th>Outcome</th><th>Detail</th></tr>
+{% for e in events %}<tr><td class="muted">{{ e.ts }}</td><td>{{ e.actor_name }}</td><td>{{ e.action }}</td><td>{{ e.claim_id or "" }}</td>
+<td>{% if e.outcome == "Denied" %}<span style="color:var(--bad)">Denied</span>{% else %}{{ e.outcome }}{% endif %}</td><td class="muted">{{ e.detail }}</td></tr>{% endfor %}
+</table></div></div>
+{% endblock %}

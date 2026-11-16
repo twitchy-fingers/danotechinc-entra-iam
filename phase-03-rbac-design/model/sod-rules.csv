@@ -1,0 +1,7 @@
+RuleId,Name,SideA,SideB,Severity,Risk
+SOD-01,Approve vs pay expenses,EXP-APPROVER,EXP-FIN-PAY,High,"One person could approve a claim and release the payment for it, enabling fraudulent claims."
+SOD-02,Deploy to production vs bypass code review,AZ-PROD-DEPLOY,GH-REPO-ADMIN|GH-ORG-OWNER,High,"One person could disable branch protection, merge unreviewed code and deploy it to production."
+SOD-03,Change HR records vs administer identities,HRIS-WRITE,ENTRA-USER-ADMIN|ENTRA-GA,Critical,"One person could create a fictitious employee in HR and then control their account: a ""ghost employee""."
+SOD-04,Administer the tenant vs control the audit trail,AZ-LOG-CONTRIB|AZ-OWNER,ENTRA-GA|ENTRA-PRIV-ROLE-ADMIN,Critical,A tenant administrator who can also delete logs could act and then erase the evidence.
+SOD-05,Administer Salesforce vs sell,SF-ADMIN,SF-SALES-USER|SF-SALES-MGR,Medium,"An admin who also sells could change opportunity, quota or commission data in their own favour."
+SOD-06,Change HR records vs run payroll,HRIS-WRITE,HRIS-PAYROLL,Critical,One person could add an employee and pay them.

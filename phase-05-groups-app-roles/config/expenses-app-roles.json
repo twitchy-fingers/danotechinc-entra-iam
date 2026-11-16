@@ -1,0 +1,52 @@
+{
+  "applicationName": "Danotech Expenses",
+  "appRegistrationName": "app-danotech-expenses",
+  "notes": "Create these five app roles in the portal (walkthrough Step 5). Entra ID generates each role's ID; the app and the scripts use the VALUE, which must match exactly. entitlementId links each role to the Phase 03 entitlement catalogue.",
+  "appRoles": [
+    {
+      "entitlementId": "EXP-SUBMITTER",
+      "value": "Expenses.Submit",
+      "displayName": "Submit expense claims",
+      "description": "Submit and track your own expense claims.",
+      "allowedMemberTypes": [
+        "User"
+      ]
+    },
+    {
+      "entitlementId": "EXP-APPROVER",
+      "value": "Expenses.Approve",
+      "displayName": "Approve team expense claims",
+      "description": "Approve or reject claims from your direct reports.",
+      "allowedMemberTypes": [
+        "User"
+      ]
+    },
+    {
+      "entitlementId": "EXP-FIN-REVIEW",
+      "value": "Expenses.Review",
+      "displayName": "Finance review",
+      "description": "Check approved claims against policy and receipts.",
+      "allowedMemberTypes": [
+        "User"
+      ]
+    },
+    {
+      "entitlementId": "EXP-FIN-PAY",
+      "value": "Expenses.Pay",
+      "displayName": "Release payments",
+      "description": "Release reviewed claims for payment.",
+      "allowedMemberTypes": [
+        "User"
+      ]
+    },
+    {
+      "entitlementId": "EXP-AUDITOR",
+      "value": "Expenses.Audit",
+      "displayName": "Audit expenses (read-only)",
+      "description": "Read all claims and the activity log. No changes.",
+      "allowedMemberTypes": [
+        "User"
+      ]
+    }
+  ]
+}

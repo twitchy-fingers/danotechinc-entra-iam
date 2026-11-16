@@ -1,0 +1,15 @@
+{% extends "base.html" %}{% block body %}
+<div class="card">
+  <h1>ID token inspector</h1>
+  <p class="muted">Selected claims from the ID token issued at sign-in. The ID token tells this app who you are and which app roles you hold. The separate access token (for Microsoft Graph) was used once to read your manager and then discarded; it's never stored.</p>
+  <pre>{{ claims | tojson(indent=2) }}</pre>
+  <table>
+    <tr><th>Claim</th><th>Meaning</th></tr>
+    <tr><td><code>aud</code></td><td>Audience: this app's client ID. A token for another app would be rejected.</td></tr>
+    <tr><td><code>iss</code></td><td>Issuer: DanotechInc's Entra ID tenant.</td></tr>
+    <tr><td><code>oid</code></td><td>Your immutable object ID. The app keys everything on this, never on your name or email.</td></tr>
+    <tr><td><code>roles</code></td><td>App roles assigned to you through group membership.</td></tr>
+    <tr><td><code>amr</code></td><td>How you authenticated (e.g. <code>mfa</code>, <code>fido</code>, <code>rsa</code>).</td></tr>
+  </table>
+</div>
+{% endblock %}

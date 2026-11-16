@@ -1,0 +1,15 @@
+{
+  "displayName": "WF-05 Leaver - delete account after 7 days",
+  "description": "Seven days after the last day, delete the account. Deleted users stay restorable for 30 days, which covers mistakes. 7 days is a lab choice; production would typically use 30 or more.",
+  "category": "leaver",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+    "scope": { "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet", "rule": "(companyName eq 'DanotechInc')" },
+    "trigger": { "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger", "timeBasedAttribute": "employeeLeaveDateTime", "offsetInDays": 7 }
+  },
+  "tasks": [
+    { "taskName": "Delete user", "isEnabled": true, "continueOnError": false, "arguments": [] }
+  ]
+}

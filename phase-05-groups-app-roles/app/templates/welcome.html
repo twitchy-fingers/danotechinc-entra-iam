@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% block body %}
+<div class="card">
+  <h1>Danotech Expenses</h1>
+  <p class="muted">Internal expense claims for DanotechInc staff. Sign in with your DanotechInc account.</p>
+  <p><a href="{{ url_for('login') }}"><button>Sign in with Microsoft</button></a></p>
+</div>
+<div class="card">
+  <h2>How this app decides what you can do</h2>
+  <p>This app has no user list of its own. When you sign in, Microsoft Entra ID issues an <b>ID token</b> containing your <b>app roles</b>. Roles are assigned to groups, and the groups are populated automatically from your HR record (job code, department, whether you manage people). Change jobs in HR, and your access here changes at your next sign-in.</p>
+</div>
+{% endblock %}

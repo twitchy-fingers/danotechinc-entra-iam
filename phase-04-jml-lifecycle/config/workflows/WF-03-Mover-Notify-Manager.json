@@ -1,0 +1,16 @@
+{
+  "displayName": "WF-03 Mover - notify manager of job change",
+  "description": "When a person's department or job title changes, notify the manager. Access itself changes automatically through dynamic groups (Phase 05); this workflow makes the change visible to a human.",
+  "category": "mover",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+    "scope": { "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet", "rule": "(companyName eq 'DanotechInc')" },
+    "trigger": { "@odata.type": "#microsoft.graph.identityGovernance.attributeChangeTrigger",
+                 "triggerAttributes": [ { "name": "department" }, { "name": "jobTitle" } ] }
+  },
+  "tasks": [
+    { "taskName": "Send email to notify manager of user move", "isEnabled": true, "continueOnError": false, "arguments": [] }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "displayName": "WF-01 Joiner - pre-hire reminder (T-7)",
+  "description": "Seven days before a joiner starts, remind their manager so equipment, a buddy and day-one plans are ready.",
+  "category": "joiner",
+  "isEnabled": true,
+  "isSchedulingEnabled": true,
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+    "scope": { "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet", "rule": "(companyName eq 'DanotechInc')" },
+    "trigger": { "@odata.type": "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger", "timeBasedAttribute": "employeeHireDate", "offsetInDays": -7 }
+  },
+  "tasks": [
+    { "taskName": "Send onboarding reminder email", "isEnabled": true, "continueOnError": false, "arguments": [] }
+  ]
+}

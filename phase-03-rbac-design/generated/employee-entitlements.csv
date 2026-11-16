@@ -1,0 +1,1428 @@
+EmployeeId,DisplayName,Application,EntitlementId,Sensitivity,GrantedByRoles
+DT01001,Daniel Opara,Atlassian Cloud,CONF-SPACE-EXE,High,DR-EXE
+DT01001,Daniel Opara,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01001,Daniel Opara,Microsoft Entra ID,ENTRA-GA,Privileged,PR-GLOBAL-ADMIN
+DT01001,Daniel Opara,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01001,Daniel Opara,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01001,Daniel Opara,Atlassian Cloud,JIRA-BUSINESS,Low,JR-EXEC-OFFICE
+DT01001,Daniel Opara,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01001,Daniel Opara,Salesforce,SF-READONLY,Medium,JR-EXEC-INSIGHT
+DT01002,Sophie Bennett,Atlassian Cloud,CONF-SPACE-EXE,High,DR-EXE
+DT01002,Sophie Bennett,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01002,Sophie Bennett,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01002,Sophie Bennett,Atlassian Cloud,JIRA-BUSINESS,Low,JR-EXEC-OFFICE
+DT01002,Sophie Bennett,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01002,Sophie Bennett,Salesforce,SF-READONLY,Medium,JR-EXEC-INSIGHT
+DT01003,Keisha Morgan,Atlassian Cloud,CONF-SPACE-EXE,High,DR-EXE
+DT01003,Keisha Morgan,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01003,Keisha Morgan,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01003,Keisha Morgan,Atlassian Cloud,JIRA-BUSINESS,Low,JR-EXEC-OFFICE
+DT01003,Keisha Morgan,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01004,Kwame Asante,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01004,Kwame Asante,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01004,Kwame Asante,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01004,Kwame Asante,Danotech Expenses,EXP-AUDITOR,Medium,JR-FIN-FPA
+DT01004,Kwame Asante,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01004,Kwame Asante,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-FPA
+DT01004,Kwame Asante,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01004,Kwame Asante,Salesforce,SF-READONLY,Medium,JR-EXEC-INSIGHT;JR-FIN-FPA
+DT01005,Folasade Adeyemi,Atlassian Cloud,CONF-SPACE-HR,High,DR-HR
+DT01005,Folasade Adeyemi,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01005,Folasade Adeyemi,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01005,Folasade Adeyemi,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01005,Folasade Adeyemi,HR System,HRIS-READ,High,JR-HR-PEOPLE
+DT01005,Folasade Adeyemi,Atlassian Cloud,JIRA-BUSINESS,Low,JR-HR-PEOPLE
+DT01005,Folasade Adeyemi,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01006,Akosua Boateng,Atlassian Cloud,CONF-SPACE-LEG,High,DR-LEG
+DT01006,Akosua Boateng,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01006,Akosua Boateng,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01006,Akosua Boateng,Danotech Expenses,EXP-AUDITOR,Medium,JR-LEGAL-COMPLIANCE
+DT01006,Akosua Boateng,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01006,Akosua Boateng,Atlassian Cloud,JIRA-BUSINESS,Low,JR-LEGAL
+DT01006,Akosua Boateng,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01006,Akosua Boateng,Salesforce,SF-READONLY,Medium,JR-LEGAL-COMPLIANCE
+DT01007,Jamal Washington,Atlassian Cloud,CONF-SPACE-OPS,Low,DR-OPS
+DT01007,Jamal Washington,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01007,Jamal Washington,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01007,Jamal Washington,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01007,Jamal Washington,Atlassian Cloud,JIRA-BUSINESS,Low,JR-OPS
+DT01007,Jamal Washington,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01008,Charlotte Davies,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01008,Charlotte Davies,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01008,Charlotte Davies,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01008,Charlotte Davies,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01008,Charlotte Davies,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01008,Charlotte Davies,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01008,Charlotte Davies,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01008,Charlotte Davies,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01008,Charlotte Davies,WordPress,WP-EDITOR,Medium,JR-MKT-WEB
+DT01009,Marcus Thompson,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01009,Marcus Thompson,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01009,Marcus Thompson,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01009,Marcus Thompson,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01009,Marcus Thompson,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01009,Marcus Thompson,Salesforce,SF-SALES-MGR,Medium,JR-SAL-LEADER
+DT01010,Lucía Herrera,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01010,Lucía Herrera,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01010,Lucía Herrera,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01010,Lucía Herrera,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01010,Lucía Herrera,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01010,Lucía Herrera,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01010,Lucía Herrera,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01010,Lucía Herrera,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01011,Valeria Mendoza,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01011,Valeria Mendoza,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01011,Valeria Mendoza,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01011,Valeria Mendoza,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01011,Valeria Mendoza,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01011,Valeria Mendoza,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01011,Valeria Mendoza,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01011,Valeria Mendoza,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01011,Valeria Mendoza,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01012,Chukwuemeka Eze,Azure,AZ-PROD-READER,Medium,JR-IT-LEADER
+DT01012,Chukwuemeka Eze,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01012,Chukwuemeka Eze,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01012,Chukwuemeka Eze,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01012,Chukwuemeka Eze,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01012,Chukwuemeka Eze,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-LEADER
+DT01012,Chukwuemeka Eze,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01013,Oliver Hughes,Azure,AZ-LOG-READER,Medium,JR-SEC-GRC
+DT01013,Oliver Hughes,Atlassian Cloud,CONF-SPACE-SEC,High,DR-SEC
+DT01013,Oliver Hughes,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01013,Oliver Hughes,Microsoft Entra ID,ENTRA-GLOBAL-READER,High,JR-SEC-GRC
+DT01013,Oliver Hughes,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01013,Oliver Hughes,Danotech Expenses,EXP-AUDITOR,Medium,JR-SEC-GRC
+DT01013,Oliver Hughes,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01013,Oliver Hughes,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01014,Adaeze Nwosu,Azure,AZ-LOG-READER,Medium,JR-IT-IAM
+DT01014,Adaeze Nwosu,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01014,Adaeze Nwosu,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01014,Adaeze Nwosu,Microsoft Entra ID,ENTRA-APP-ADMIN,Privileged,PR-IAM-ADMIN
+DT01014,Adaeze Nwosu,Microsoft Entra ID,ENTRA-CA-ADMIN,Privileged,PR-IAM-ADMIN
+DT01014,Adaeze Nwosu,Microsoft Entra ID,ENTRA-GLOBAL-READER,High,JR-IT-IAM
+DT01014,Adaeze Nwosu,Microsoft Entra ID,ENTRA-IG-ADMIN,Privileged,PR-IAM-ADMIN
+DT01014,Adaeze Nwosu,Microsoft Entra ID,ENTRA-PRIV-ROLE-ADMIN,Privileged,PR-PRIV-ROLE-ADMIN
+DT01014,Adaeze Nwosu,Microsoft Entra ID,ENTRA-USER-ADMIN,Privileged,PR-IAM-ADMIN
+DT01014,Adaeze Nwosu,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01014,Adaeze Nwosu,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01014,Adaeze Nwosu,GitHub,GH-MEMBER,Low,JR-IT-IAM
+DT01014,Adaeze Nwosu,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-IAM
+DT01014,Adaeze Nwosu,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01015,Kofi Owusu,Azure,AZ-LOG-READER,Medium,JR-IT-IAM
+DT01015,Kofi Owusu,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01015,Kofi Owusu,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01015,Kofi Owusu,Microsoft Entra ID,ENTRA-APP-ADMIN,Privileged,PR-IAM-ADMIN
+DT01015,Kofi Owusu,Microsoft Entra ID,ENTRA-CA-ADMIN,Privileged,PR-IAM-ADMIN
+DT01015,Kofi Owusu,Microsoft Entra ID,ENTRA-GLOBAL-READER,High,JR-IT-IAM
+DT01015,Kofi Owusu,Microsoft Entra ID,ENTRA-IG-ADMIN,Privileged,PR-IAM-ADMIN
+DT01015,Kofi Owusu,Microsoft Entra ID,ENTRA-USER-ADMIN,Privileged,PR-IAM-ADMIN
+DT01015,Kofi Owusu,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01015,Kofi Owusu,GitHub,GH-MEMBER,Low,JR-IT-IAM
+DT01015,Kofi Owusu,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-IAM
+DT01015,Kofi Owusu,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01015,Kofi Owusu,Keycloak Partner Portal,KC-REALM-ADMIN,Privileged,PR-KC-ADMIN
+DT01015,Kofi Owusu,Salesforce,SF-ADMIN,Privileged,PR-SF-ADMIN
+DT01016,Diego Ramírez,Atlassian Cloud,ATL-ORG-ADMIN,Privileged,PR-ATL-ADMIN
+DT01016,Diego Ramírez,Azure,AZ-LOG-READER,Medium,JR-IT-IAM
+DT01016,Diego Ramírez,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01016,Diego Ramírez,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01016,Diego Ramírez,Microsoft Entra ID,ENTRA-APP-ADMIN,Privileged,PR-IAM-ADMIN
+DT01016,Diego Ramírez,Microsoft Entra ID,ENTRA-CA-ADMIN,Privileged,PR-IAM-ADMIN
+DT01016,Diego Ramírez,Microsoft Entra ID,ENTRA-GLOBAL-READER,High,JR-IT-IAM
+DT01016,Diego Ramírez,Microsoft Entra ID,ENTRA-IG-ADMIN,Privileged,PR-IAM-ADMIN
+DT01016,Diego Ramírez,Microsoft Entra ID,ENTRA-USER-ADMIN,Privileged,PR-IAM-ADMIN
+DT01016,Diego Ramírez,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01016,Diego Ramírez,GitHub,GH-MEMBER,Low,JR-IT-IAM
+DT01016,Diego Ramírez,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-IAM
+DT01016,Diego Ramírez,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01016,Diego Ramírez,Salesforce,SF-ADMIN,Privileged,PR-SF-ADMIN
+DT01016,Diego Ramírez,WordPress,WP-ADMIN,Privileged,PR-WP-ADMIN
+DT01017,Emily Carter,Azure,AZ-LOG-READER,Medium,JR-IT-IAM
+DT01017,Emily Carter,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01017,Emily Carter,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01017,Emily Carter,Microsoft Entra ID,ENTRA-APP-ADMIN,Privileged,PR-IAM-ADMIN
+DT01017,Emily Carter,Microsoft Entra ID,ENTRA-CA-ADMIN,Privileged,PR-IAM-ADMIN
+DT01017,Emily Carter,Microsoft Entra ID,ENTRA-GLOBAL-READER,High,JR-IT-IAM
+DT01017,Emily Carter,Microsoft Entra ID,ENTRA-IG-ADMIN,Privileged,PR-IAM-ADMIN
+DT01017,Emily Carter,Microsoft Entra ID,ENTRA-USER-ADMIN,Privileged,PR-IAM-ADMIN
+DT01017,Emily Carter,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01017,Emily Carter,GitHub,GH-MEMBER,Low,JR-IT-IAM
+DT01017,Emily Carter,GitHub,GH-ORG-OWNER,Privileged,PR-GH-OWNER
+DT01017,Emily Carter,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-IAM
+DT01017,Emily Carter,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01018,Babatunde Bakare,Azure,AZ-DEV-CONTRIB,Medium,JR-IT-CLOUD
+DT01018,Babatunde Bakare,Azure,AZ-OWNER,Privileged,PR-AZ-OWNER
+DT01018,Babatunde Bakare,Azure,AZ-PROD-READER,Medium,JR-IT-CLOUD
+DT01018,Babatunde Bakare,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01018,Babatunde Bakare,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01018,Babatunde Bakare,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01018,Babatunde Bakare,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01018,Babatunde Bakare,GitHub,GH-MEMBER,Low,JR-IT-CLOUD
+DT01018,Babatunde Bakare,GitHub,GH-TEAM-PLATFORM,Medium,JR-IT-CLOUD
+DT01018,Babatunde Bakare,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-CLOUD
+DT01018,Babatunde Bakare,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01019,Grace Robinson,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01019,Grace Robinson,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01019,Grace Robinson,Microsoft Entra ID,ENTRA-HELPDESK-ADMIN,Privileged,PR-HELPDESK
+DT01019,Grace Robinson,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01019,Grace Robinson,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01019,Grace Robinson,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-SERVICEDESK
+DT01019,Grace Robinson,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01020,Priya Sharma,Azure,AZ-LOG-CONTRIB,Privileged,PR-LOG-ADMIN
+DT01020,Priya Sharma,Azure,AZ-LOG-READER,Medium,JR-SEC-SOC
+DT01020,Priya Sharma,Atlassian Cloud,CONF-SPACE-SEC,High,DR-SEC
+DT01020,Priya Sharma,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01020,Priya Sharma,Microsoft Entra ID,ENTRA-SEC-OPERATOR,Privileged,PR-SEC-OPERATOR
+DT01020,Priya Sharma,Microsoft Entra ID,ENTRA-SEC-READER,High,JR-SEC-SOC
+DT01020,Priya Sharma,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01020,Priya Sharma,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01020,Priya Sharma,GitHub,GH-TEAM-SEC,Medium,JR-SEC-SOC
+DT01020,Priya Sharma,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-SEC-SOC
+DT01020,Priya Sharma,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01021,Nana Agyeman,Azure,AZ-LOG-READER,Medium,JR-SEC-GRC
+DT01021,Nana Agyeman,Atlassian Cloud,CONF-SPACE-SEC,High,DR-SEC
+DT01021,Nana Agyeman,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01021,Nana Agyeman,Microsoft Entra ID,ENTRA-GLOBAL-READER,High,JR-SEC-GRC
+DT01021,Nana Agyeman,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01021,Nana Agyeman,Danotech Expenses,EXP-AUDITOR,Medium,JR-SEC-GRC
+DT01021,Nana Agyeman,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01021,Nana Agyeman,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01022,Rachel Okafor,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01022,Rachel Okafor,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01022,Rachel Okafor,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01022,Rachel Okafor,Danotech Expenses,EXP-FIN-PAY,High,JR-FIN-CONTROLLER
+DT01022,Rachel Okafor,Danotech Expenses,EXP-FIN-REVIEW,Medium,JR-FIN-CONTROLLER
+DT01022,Rachel Okafor,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01022,Rachel Okafor,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-CONTROLLER
+DT01022,Rachel Okafor,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01022,Rachel Okafor,Salesforce,SF-READONLY,Medium,JR-FIN-CONTROLLER
+DT01023,Tunde Afolabi,Atlassian Cloud,CONF-SPACE-HR,High,DR-HR
+DT01023,Tunde Afolabi,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01023,Tunde Afolabi,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01023,Tunde Afolabi,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01023,Tunde Afolabi,HR System,HRIS-READ,High,JR-HR-PEOPLE
+DT01023,Tunde Afolabi,HR System,HRIS-WRITE,High,JR-HR-HRIS
+DT01023,Tunde Afolabi,Atlassian Cloud,JIRA-BUSINESS,Low,JR-HR-PEOPLE
+DT01023,Tunde Afolabi,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01024,Brandon Collins,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01024,Brandon Collins,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01024,Brandon Collins,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01024,Brandon Collins,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01024,Brandon Collins,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01024,Brandon Collins,Salesforce,SF-SALES-MGR,Medium,JR-SAL-LEADER
+DT01025,Harriet Walsh,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01025,Harriet Walsh,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01025,Harriet Walsh,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01025,Harriet Walsh,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01025,Harriet Walsh,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01025,Harriet Walsh,Salesforce,SF-SALES-MGR,Medium,JR-SAL-LEADER
+DT01026,Fernanda Castillo,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01026,Fernanda Castillo,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01026,Fernanda Castillo,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01026,Fernanda Castillo,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01026,Fernanda Castillo,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01026,Fernanda Castillo,Salesforce,SF-SALES-MGR,Medium,JR-SAL-LEADER
+DT01027,Ngozi Balogun,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01027,Ngozi Balogun,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01027,Ngozi Balogun,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01027,Ngozi Balogun,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01027,Ngozi Balogun,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01027,Ngozi Balogun,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01027,Ngozi Balogun,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01027,Ngozi Balogun,WordPress,WP-ADMIN,Privileged,PR-WP-ADMIN
+DT01027,Ngozi Balogun,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01027,Ngozi Balogun,WordPress,WP-EDITOR,Medium,JR-MKT-WEB
+DT01028,Arjun Iyer,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01028,Arjun Iyer,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01028,Arjun Iyer,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01028,Arjun Iyer,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01028,Arjun Iyer,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01028,Arjun Iyer,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01028,Arjun Iyer,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01028,Arjun Iyer,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01028,Arjun Iyer,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01029,Yaw Darko,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01029,Yaw Darko,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01029,Yaw Darko,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01029,Yaw Darko,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01029,Yaw Darko,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01029,Yaw Darko,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01029,Yaw Darko,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01029,Yaw Darko,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01029,Yaw Darko,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01030,Carlos Gutiérrez,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01030,Carlos Gutiérrez,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01030,Carlos Gutiérrez,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01030,Carlos Gutiérrez,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01030,Carlos Gutiérrez,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01030,Carlos Gutiérrez,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01030,Carlos Gutiérrez,GitHub,GH-ORG-OWNER,Privileged,PR-GH-OWNER
+DT01030,Carlos Gutiérrez,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01030,Carlos Gutiérrez,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01030,Carlos Gutiérrez,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01031,Oluwaseun Ogunleye,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01031,Oluwaseun Ogunleye,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01031,Oluwaseun Ogunleye,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01031,Oluwaseun Ogunleye,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01031,Oluwaseun Ogunleye,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01031,Oluwaseun Ogunleye,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01031,Oluwaseun Ogunleye,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01031,Oluwaseun Ogunleye,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01031,Oluwaseun Ogunleye,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01032,Mariana Torres,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01032,Mariana Torres,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01032,Mariana Torres,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01032,Mariana Torres,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01032,Mariana Torres,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01032,Mariana Torres,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01032,Mariana Torres,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01032,Mariana Torres,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01032,Mariana Torres,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01033,Siobhan Kelly,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01033,Siobhan Kelly,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01033,Siobhan Kelly,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01033,Siobhan Kelly,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01033,Siobhan Kelly,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01033,Siobhan Kelly,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01033,Siobhan Kelly,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01033,Siobhan Kelly,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01033,Siobhan Kelly,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01034,Efua Tetteh,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01034,Efua Tetteh,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01034,Efua Tetteh,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01034,Efua Tetteh,Danotech Expenses,EXP-APPROVER,Medium,JR-PEOPLE-MANAGER
+DT01034,Efua Tetteh,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01034,Efua Tetteh,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01034,Efua Tetteh,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01034,Efua Tetteh,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01034,Efua Tetteh,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01035,Kwabena Kyei,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01035,Kwabena Kyei,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01035,Kwabena Kyei,Danotech Expenses,EXP-FIN-REVIEW,Medium,JR-FIN-ACCOUNTING
+DT01035,Kwabena Kyei,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01035,Kwabena Kyei,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-ACCOUNTING
+DT01035,Kwabena Kyei,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01035,Kwabena Kyei,Salesforce,SF-READONLY,Medium,JR-FIN-ACCOUNTING
+DT01036,Kwame Ansah,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01036,Kwame Ansah,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01036,Kwame Ansah,Danotech Expenses,EXP-FIN-REVIEW,Medium,JR-FIN-ACCOUNTING
+DT01036,Kwame Ansah,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01036,Kwame Ansah,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-ACCOUNTING
+DT01036,Kwame Ansah,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01036,Kwame Ansah,Salesforce,SF-READONLY,Medium,JR-FIN-ACCOUNTING
+DT01037,Ama Antwi,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01037,Ama Antwi,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01037,Ama Antwi,Danotech Expenses,EXP-FIN-REVIEW,Medium,JR-FIN-ACCOUNTING
+DT01037,Ama Antwi,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01037,Ama Antwi,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-ACCOUNTING
+DT01037,Ama Antwi,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01037,Ama Antwi,Salesforce,SF-READONLY,Medium,JR-FIN-ACCOUNTING
+DT01038,Elikem Agyeman,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01038,Elikem Agyeman,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01038,Elikem Agyeman,Danotech Expenses,EXP-FIN-REVIEW,Medium,JR-FIN-ACCOUNTING
+DT01038,Elikem Agyeman,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01038,Elikem Agyeman,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-ACCOUNTING
+DT01038,Elikem Agyeman,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01038,Elikem Agyeman,Salesforce,SF-READONLY,Medium,JR-FIN-ACCOUNTING
+DT01039,Taylor Coleman,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01039,Taylor Coleman,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01039,Taylor Coleman,Danotech Expenses,EXP-FIN-REVIEW,Medium,JR-FIN-ACCOUNTING
+DT01039,Taylor Coleman,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01039,Taylor Coleman,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-ACCOUNTING
+DT01039,Taylor Coleman,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01039,Taylor Coleman,Salesforce,SF-READONLY,Medium,JR-FIN-ACCOUNTING
+DT01040,Kwesi Owusu,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01040,Kwesi Owusu,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01040,Kwesi Owusu,Danotech Expenses,EXP-FIN-REVIEW,Medium,JR-FIN-ACCOUNTING
+DT01040,Kwesi Owusu,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01040,Kwesi Owusu,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-ACCOUNTING
+DT01040,Kwesi Owusu,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01040,Kwesi Owusu,Salesforce,SF-READONLY,Medium,JR-FIN-ACCOUNTING
+DT01041,Kwabena Ofori,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01041,Kwabena Ofori,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01041,Kwabena Ofori,Danotech Expenses,EXP-FIN-REVIEW,Medium,JR-FIN-ACCOUNTING
+DT01041,Kwabena Ofori,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01041,Kwabena Ofori,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-ACCOUNTING
+DT01041,Kwabena Ofori,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01041,Kwabena Ofori,Salesforce,SF-READONLY,Medium,JR-FIN-ACCOUNTING
+DT01042,Ama Amoah,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01042,Ama Amoah,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01042,Ama Amoah,Danotech Expenses,EXP-FIN-PAY,High,JR-FIN-AP
+DT01042,Ama Amoah,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01042,Ama Amoah,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-AP
+DT01042,Ama Amoah,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01043,Edem Tetteh,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01043,Edem Tetteh,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01043,Edem Tetteh,Danotech Expenses,EXP-FIN-PAY,High,JR-FIN-AP
+DT01043,Edem Tetteh,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01043,Edem Tetteh,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-AP
+DT01043,Edem Tetteh,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01044,Damilola Uzor,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01044,Damilola Uzor,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01044,Damilola Uzor,Danotech Expenses,EXP-FIN-PAY,High,JR-FIN-AP
+DT01044,Damilola Uzor,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01044,Damilola Uzor,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-AP
+DT01044,Damilola Uzor,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01045,Kwesi Tetteh,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01045,Kwesi Tetteh,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01045,Kwesi Tetteh,Danotech Expenses,EXP-FIN-PAY,High,JR-FIN-AP
+DT01045,Kwesi Tetteh,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01045,Kwesi Tetteh,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-AP
+DT01045,Kwesi Tetteh,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01046,Tyler Williams,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01046,Tyler Williams,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01046,Tyler Williams,Danotech Expenses,EXP-AUDITOR,Medium,JR-FIN-FPA
+DT01046,Tyler Williams,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01046,Tyler Williams,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-FPA
+DT01046,Tyler Williams,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01046,Tyler Williams,Salesforce,SF-READONLY,Medium,JR-FIN-FPA
+DT01047,Javier Flores,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01047,Javier Flores,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01047,Javier Flores,Danotech Expenses,EXP-AUDITOR,Medium,JR-FIN-FPA
+DT01047,Javier Flores,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01047,Javier Flores,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-FPA
+DT01047,Javier Flores,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01047,Javier Flores,Salesforce,SF-READONLY,Medium,JR-FIN-FPA
+DT01048,Ryan Baker,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01048,Ryan Baker,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01048,Ryan Baker,Danotech Expenses,EXP-AUDITOR,Medium,JR-FIN-FPA
+DT01048,Ryan Baker,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01048,Ryan Baker,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-FPA
+DT01048,Ryan Baker,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01048,Ryan Baker,Salesforce,SF-READONLY,Medium,JR-FIN-FPA
+DT01049,Tyler Hayes,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01049,Tyler Hayes,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01049,Tyler Hayes,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01049,Tyler Hayes,HR System,HRIS-PAYROLL,High,JR-FIN-PAYROLL
+DT01049,Tyler Hayes,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-PAYROLL
+DT01049,Tyler Hayes,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01050,Edem Agyeman,Atlassian Cloud,CONF-SPACE-FIN,Medium,DR-FIN
+DT01050,Edem Agyeman,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01050,Edem Agyeman,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01050,Edem Agyeman,HR System,HRIS-PAYROLL,High,JR-FIN-PAYROLL
+DT01050,Edem Agyeman,Atlassian Cloud,JIRA-BUSINESS,Low,JR-FIN-PAYROLL
+DT01050,Edem Agyeman,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01051,Rory Holmes,Atlassian Cloud,CONF-SPACE-HR,High,DR-HR
+DT01051,Rory Holmes,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01051,Rory Holmes,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01051,Rory Holmes,HR System,HRIS-READ,High,JR-HR-PEOPLE
+DT01051,Rory Holmes,Atlassian Cloud,JIRA-BUSINESS,Low,JR-HR-PEOPLE
+DT01051,Rory Holmes,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01052,Chidinma Lawal,Atlassian Cloud,CONF-SPACE-HR,High,DR-HR
+DT01052,Chidinma Lawal,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01052,Chidinma Lawal,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01052,Chidinma Lawal,HR System,HRIS-READ,High,JR-HR-PEOPLE
+DT01052,Chidinma Lawal,Atlassian Cloud,JIRA-BUSINESS,Low,JR-HR-PEOPLE
+DT01052,Chidinma Lawal,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01053,Kevin Brooks,Atlassian Cloud,CONF-SPACE-HR,High,DR-HR
+DT01053,Kevin Brooks,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01053,Kevin Brooks,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01053,Kevin Brooks,HR System,HRIS-READ,High,JR-HR-PEOPLE
+DT01053,Kevin Brooks,Atlassian Cloud,JIRA-BUSINESS,Low,JR-HR-PEOPLE
+DT01053,Kevin Brooks,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01054,Sophie Price,Atlassian Cloud,CONF-SPACE-HR,High,DR-HR
+DT01054,Sophie Price,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01054,Sophie Price,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01054,Sophie Price,HR System,HRIS-READ,High,JR-HR-PEOPLE
+DT01054,Sophie Price,Atlassian Cloud,JIRA-BUSINESS,Low,JR-HR-PEOPLE
+DT01054,Sophie Price,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01055,Ama Boateng,Atlassian Cloud,CONF-SPACE-HR,High,DR-HR
+DT01055,Ama Boateng,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01055,Ama Boateng,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01055,Ama Boateng,HR System,HRIS-READ,High,JR-HR-PEOPLE
+DT01055,Ama Boateng,Atlassian Cloud,JIRA-BUSINESS,Low,JR-HR-PEOPLE
+DT01055,Ama Boateng,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01056,Aisha Adeyemi,Atlassian Cloud,CONF-SPACE-HR,High,DR-HR
+DT01056,Aisha Adeyemi,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01056,Aisha Adeyemi,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01056,Aisha Adeyemi,HR System,HRIS-READ,High,JR-HR-PEOPLE
+DT01056,Aisha Adeyemi,Atlassian Cloud,JIRA-BUSINESS,Low,JR-HR-PEOPLE
+DT01056,Aisha Adeyemi,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01057,Nkechi Ogunleye,Atlassian Cloud,CONF-SPACE-HR,High,DR-HR
+DT01057,Nkechi Ogunleye,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01057,Nkechi Ogunleye,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01057,Nkechi Ogunleye,HR System,HRIS-READ,High,JR-HR-PEOPLE
+DT01057,Nkechi Ogunleye,Atlassian Cloud,JIRA-BUSINESS,Low,JR-HR-PEOPLE
+DT01057,Nkechi Ogunleye,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01058,Keisha Anderson,Atlassian Cloud,CONF-SPACE-HR,High,DR-HR
+DT01058,Keisha Anderson,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01058,Keisha Anderson,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01058,Keisha Anderson,HR System,HRIS-READ,High,JR-HR-PEOPLE
+DT01058,Keisha Anderson,Atlassian Cloud,JIRA-BUSINESS,Low,JR-HR-PEOPLE
+DT01058,Keisha Anderson,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01059,Temitope Akinola,Atlassian Cloud,CONF-SPACE-HR,High,DR-HR
+DT01059,Temitope Akinola,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01059,Temitope Akinola,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01059,Temitope Akinola,HR System,HRIS-READ,High,JR-HR-PEOPLE
+DT01059,Temitope Akinola,Atlassian Cloud,JIRA-BUSINESS,Low,JR-HR-PEOPLE
+DT01059,Temitope Akinola,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01060,Halima Ibekwe,Atlassian Cloud,CONF-SPACE-HR,High,DR-HR
+DT01060,Halima Ibekwe,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01060,Halima Ibekwe,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01060,Halima Ibekwe,HR System,HRIS-READ,High,JR-HR-PEOPLE
+DT01060,Halima Ibekwe,HR System,HRIS-WRITE,High,JR-HR-HRIS
+DT01060,Halima Ibekwe,Atlassian Cloud,JIRA-BUSINESS,Low,JR-HR-PEOPLE
+DT01060,Halima Ibekwe,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01061,Uchenna Adeyemi,Atlassian Cloud,CONF-SPACE-LEG,High,DR-LEG
+DT01061,Uchenna Adeyemi,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01061,Uchenna Adeyemi,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01061,Uchenna Adeyemi,Atlassian Cloud,JIRA-BUSINESS,Low,JR-LEGAL
+DT01061,Uchenna Adeyemi,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01062,Ananya Gupta,Atlassian Cloud,CONF-SPACE-LEG,High,DR-LEG
+DT01062,Ananya Gupta,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01062,Ananya Gupta,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01062,Ananya Gupta,Atlassian Cloud,JIRA-BUSINESS,Low,JR-LEGAL
+DT01062,Ananya Gupta,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01063,Jordan Johnson,Atlassian Cloud,CONF-SPACE-LEG,High,DR-LEG
+DT01063,Jordan Johnson,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01063,Jordan Johnson,Danotech Expenses,EXP-AUDITOR,Medium,JR-LEGAL-COMPLIANCE
+DT01063,Jordan Johnson,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01063,Jordan Johnson,Atlassian Cloud,JIRA-BUSINESS,Low,JR-LEGAL
+DT01063,Jordan Johnson,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01063,Jordan Johnson,Salesforce,SF-READONLY,Medium,JR-LEGAL-COMPLIANCE
+DT01064,Oluwaseun Eze,Atlassian Cloud,CONF-SPACE-LEG,High,DR-LEG
+DT01064,Oluwaseun Eze,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01064,Oluwaseun Eze,Danotech Expenses,EXP-AUDITOR,Medium,JR-LEGAL-COMPLIANCE
+DT01064,Oluwaseun Eze,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01064,Oluwaseun Eze,Atlassian Cloud,JIRA-BUSINESS,Low,JR-LEGAL
+DT01064,Oluwaseun Eze,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01064,Oluwaseun Eze,Salesforce,SF-READONLY,Medium,JR-LEGAL-COMPLIANCE
+DT01065,Callum Smith,Atlassian Cloud,CONF-SPACE-LEG,High,DR-LEG
+DT01065,Callum Smith,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01065,Callum Smith,Danotech Expenses,EXP-AUDITOR,Medium,JR-LEGAL-COMPLIANCE
+DT01065,Callum Smith,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01065,Callum Smith,Atlassian Cloud,JIRA-BUSINESS,Low,JR-LEGAL
+DT01065,Callum Smith,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01065,Callum Smith,Salesforce,SF-READONLY,Medium,JR-LEGAL-COMPLIANCE
+DT01066,Nicole Young,Atlassian Cloud,CONF-SPACE-LEG,High,DR-LEG
+DT01066,Nicole Young,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01066,Nicole Young,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01066,Nicole Young,Atlassian Cloud,JIRA-BUSINESS,Low,JR-LEGAL
+DT01066,Nicole Young,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01067,Ananya Khan,Atlassian Cloud,CONF-SPACE-OPS,Low,DR-OPS
+DT01067,Ananya Khan,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01067,Ananya Khan,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01067,Ananya Khan,Atlassian Cloud,JIRA-BUSINESS,Low,JR-OPS
+DT01067,Ananya Khan,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01068,Marcus Wilson,Atlassian Cloud,CONF-SPACE-OPS,Low,DR-OPS
+DT01068,Marcus Wilson,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01068,Marcus Wilson,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01068,Marcus Wilson,Atlassian Cloud,JIRA-BUSINESS,Low,JR-OPS
+DT01068,Marcus Wilson,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01069,Hannah Washington,Atlassian Cloud,CONF-SPACE-OPS,Low,DR-OPS
+DT01069,Hannah Washington,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01069,Hannah Washington,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01069,Hannah Washington,Atlassian Cloud,JIRA-BUSINESS,Low,JR-OPS
+DT01069,Hannah Washington,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01070,Kayla Miller,Atlassian Cloud,CONF-SPACE-OPS,Low,DR-OPS
+DT01070,Kayla Miller,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01070,Kayla Miller,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01070,Kayla Miller,Atlassian Cloud,JIRA-BUSINESS,Low,JR-OPS
+DT01070,Kayla Miller,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01071,Brianna Brown,Atlassian Cloud,CONF-SPACE-OPS,Low,DR-OPS
+DT01071,Brianna Brown,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01071,Brianna Brown,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01071,Brianna Brown,Atlassian Cloud,JIRA-BUSINESS,Low,JR-OPS
+DT01071,Brianna Brown,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01072,Akosua Mensah,Atlassian Cloud,CONF-SPACE-OPS,Low,DR-OPS
+DT01072,Akosua Mensah,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01072,Akosua Mensah,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01072,Akosua Mensah,Atlassian Cloud,JIRA-BUSINESS,Low,JR-OPS
+DT01072,Akosua Mensah,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01073,Akosua Ofori,Atlassian Cloud,CONF-SPACE-OPS,Low,DR-OPS
+DT01073,Akosua Ofori,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01073,Akosua Ofori,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01073,Akosua Ofori,Atlassian Cloud,JIRA-BUSINESS,Low,JR-OPS
+DT01073,Akosua Ofori,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01074,Daniela Pérez,Atlassian Cloud,CONF-SPACE-OPS,Low,DR-OPS
+DT01074,Daniela Pérez,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01074,Daniela Pérez,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01074,Daniela Pérez,Atlassian Cloud,JIRA-BUSINESS,Low,JR-OPS
+DT01074,Daniela Pérez,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01075,Megan Coleman,Atlassian Cloud,CONF-SPACE-OPS,Low,DR-OPS
+DT01075,Megan Coleman,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01075,Megan Coleman,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01075,Megan Coleman,Atlassian Cloud,JIRA-BUSINESS,Low,JR-OPS
+DT01075,Megan Coleman,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01076,Isla Kelly,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01076,Isla Kelly,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01076,Isla Kelly,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01076,Isla Kelly,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01076,Isla Kelly,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01076,Isla Kelly,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01076,Isla Kelly,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01077,Olivia Thomas,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01077,Olivia Thomas,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01077,Olivia Thomas,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01077,Olivia Thomas,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01077,Olivia Thomas,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01077,Olivia Thomas,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01077,Olivia Thomas,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01078,Emily Price,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01078,Emily Price,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01078,Emily Price,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01078,Emily Price,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01078,Emily Price,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01078,Emily Price,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01078,Emily Price,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01079,Poppy Clarke,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01079,Poppy Clarke,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01079,Poppy Clarke,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01079,Poppy Clarke,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01079,Poppy Clarke,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01079,Poppy Clarke,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01079,Poppy Clarke,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01080,Ebere Bello,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01080,Ebere Bello,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01080,Ebere Bello,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01080,Ebere Bello,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01080,Ebere Bello,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01080,Ebere Bello,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01080,Ebere Bello,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01081,Lauren Collins,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01081,Lauren Collins,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01081,Lauren Collins,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01081,Lauren Collins,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01081,Lauren Collins,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01081,Lauren Collins,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01081,Lauren Collins,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01082,Ashley King,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01082,Ashley King,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01082,Ashley King,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01082,Ashley King,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01082,Ashley King,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01082,Ashley King,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01082,Ashley King,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01083,Bukola Afolabi,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01083,Bukola Afolabi,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01083,Bukola Afolabi,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01083,Bukola Afolabi,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01083,Bukola Afolabi,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01083,Bukola Afolabi,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01083,Bukola Afolabi,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01084,Andrés Mendoza,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01084,Andrés Mendoza,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01084,Andrés Mendoza,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01084,Andrés Mendoza,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01084,Andrés Mendoza,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01084,Andrés Mendoza,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01084,Andrés Mendoza,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01085,Brittany Reed,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01085,Brittany Reed,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01085,Brittany Reed,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01085,Brittany Reed,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01085,Brittany Reed,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01085,Brittany Reed,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01085,Brittany Reed,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01086,Funmilayo Abubakar,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01086,Funmilayo Abubakar,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01086,Funmilayo Abubakar,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01086,Funmilayo Abubakar,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01086,Funmilayo Abubakar,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01086,Funmilayo Abubakar,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01086,Funmilayo Abubakar,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01087,José Sánchez,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01087,José Sánchez,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01087,José Sánchez,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01087,José Sánchez,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01087,José Sánchez,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01087,José Sánchez,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01087,José Sánchez,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01088,José González,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01088,José González,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01088,José González,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01088,José González,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01088,José González,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01088,José González,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01088,José González,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01089,Andrés Hernández,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01089,Andrés Hernández,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01089,Andrés Hernández,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01089,Andrés Hernández,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01089,Andrés Hernández,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01089,Andrés Hernández,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01089,Andrés Hernández,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01090,Oliver Taylor,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01090,Oliver Taylor,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01090,Oliver Taylor,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01090,Oliver Taylor,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01090,Oliver Taylor,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01090,Oliver Taylor,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01090,Oliver Taylor,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01090,Oliver Taylor,WordPress,WP-EDITOR,Medium,JR-MKT-WEB
+DT01091,James Brooks,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01091,James Brooks,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01091,James Brooks,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01091,James Brooks,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01091,James Brooks,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01091,James Brooks,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01091,James Brooks,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01091,James Brooks,WordPress,WP-EDITOR,Medium,JR-MKT-WEB
+DT01092,Yaa Addo,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01092,Yaa Addo,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01092,Yaa Addo,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01092,Yaa Addo,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01092,Yaa Addo,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01092,Yaa Addo,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01092,Yaa Addo,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01093,Kobina Addo,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01093,Kobina Addo,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01093,Kobina Addo,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01093,Kobina Addo,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01093,Kobina Addo,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01093,Kobina Addo,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01093,Kobina Addo,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01094,Freya Lewis,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01094,Freya Lewis,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01094,Freya Lewis,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01094,Freya Lewis,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01094,Freya Lewis,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01094,Freya Lewis,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01094,Freya Lewis,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01095,Amelia Shaw,Atlassian Cloud,CONF-SPACE-MKT,Low,DR-MKT
+DT01095,Amelia Shaw,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01095,Amelia Shaw,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01095,Amelia Shaw,Atlassian Cloud,JIRA-BUSINESS,Low,JR-MKT
+DT01095,Amelia Shaw,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01095,Amelia Shaw,Salesforce,SF-MKT-USER,Medium,JR-MKT
+DT01095,Amelia Shaw,WordPress,WP-AUTHOR,Low,JR-MKT
+DT01096,Amaka Bello,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01096,Amaka Bello,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01096,Amaka Bello,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01096,Amaka Bello,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01096,Amaka Bello,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01097,Miguel Rivera,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01097,Miguel Rivera,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01097,Miguel Rivera,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01097,Miguel Rivera,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01097,Miguel Rivera,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01098,Jamal Hayes,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01098,Jamal Hayes,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01098,Jamal Hayes,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01098,Jamal Hayes,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01098,Jamal Hayes,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01099,Neha Menon,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01099,Neha Menon,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01099,Neha Menon,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01099,Neha Menon,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01099,Neha Menon,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01100,Brianna Williams,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01100,Brianna Williams,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01100,Brianna Williams,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01100,Brianna Williams,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01100,Brianna Williams,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01101,Nicole Reed,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01101,Nicole Reed,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01101,Nicole Reed,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01101,Nicole Reed,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01101,Nicole Reed,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01102,Niamh Jones,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01102,Niamh Jones,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01102,Niamh Jones,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01102,Niamh Jones,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01102,Niamh Jones,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01103,Brianna Parker,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01103,Brianna Parker,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01103,Brianna Parker,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01103,Brianna Parker,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01103,Brianna Parker,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01104,Malik Baker,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01104,Malik Baker,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01104,Malik Baker,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01104,Malik Baker,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01104,Malik Baker,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01105,Daniela Martínez,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01105,Daniela Martínez,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01105,Daniela Martínez,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01105,Daniela Martínez,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01105,Daniela Martínez,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01106,Tobiloba Okoro,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01106,Tobiloba Okoro,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01106,Tobiloba Okoro,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01106,Tobiloba Okoro,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01106,Tobiloba Okoro,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01107,Afia Agyeman,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01107,Afia Agyeman,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01107,Afia Agyeman,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01107,Afia Agyeman,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01107,Afia Agyeman,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01108,Chiamaka Ogunleye,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01108,Chiamaka Ogunleye,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01108,Chiamaka Ogunleye,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01108,Chiamaka Ogunleye,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01108,Chiamaka Ogunleye,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01109,Poppy Jones,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01109,Poppy Jones,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01109,Poppy Jones,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01109,Poppy Jones,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01109,Poppy Jones,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01110,Emily Bennett,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01110,Emily Bennett,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01110,Emily Bennett,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01110,Emily Bennett,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01110,Emily Bennett,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01111,Arjun Nair,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01111,Arjun Nair,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01111,Arjun Nair,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01111,Arjun Nair,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01111,Arjun Nair,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01112,Andre King,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01112,Andre King,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01112,Andre King,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01112,Andre King,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01112,Andre King,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01113,Renata Ortiz,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01113,Renata Ortiz,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01113,Renata Ortiz,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01113,Renata Ortiz,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01113,Renata Ortiz,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01114,Brandon Brooks,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01114,Brandon Brooks,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01114,Brandon Brooks,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01114,Brandon Brooks,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01114,Brandon Brooks,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01115,Sofía Reyes,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01115,Sofía Reyes,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01115,Sofía Reyes,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01115,Sofía Reyes,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01115,Sofía Reyes,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01116,Itzel Flores,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01116,Itzel Flores,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01116,Itzel Flores,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01116,Itzel Flores,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01116,Itzel Flores,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01117,Danielle Brooks,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01117,Danielle Brooks,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01117,Danielle Brooks,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01117,Danielle Brooks,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01117,Danielle Brooks,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01118,Zainab Chukwu,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01118,Zainab Chukwu,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01118,Zainab Chukwu,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01118,Zainab Chukwu,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01118,Zainab Chukwu,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01119,Olivia Walsh,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01119,Olivia Walsh,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01119,Olivia Walsh,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01119,Olivia Walsh,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01119,Olivia Walsh,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01120,Nicole Williams,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01120,Nicole Williams,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01120,Nicole Williams,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01120,Nicole Williams,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01120,Nicole Williams,Salesforce,SF-SALES-USER,Medium,JR-SAL-SELLER
+DT01121,Miguel Hernández,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01121,Miguel Hernández,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01121,Miguel Hernández,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01121,Miguel Hernández,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01121,Miguel Hernández,Salesforce,SF-SALES-MGR,Medium,JR-SAL-LEADER
+DT01122,Carlos Martínez,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01122,Carlos Martínez,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01122,Carlos Martínez,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01122,Carlos Martínez,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01122,Carlos Martínez,Salesforce,SF-SALES-MGR,Medium,JR-SAL-LEADER
+DT01123,Marcus Washington,Atlassian Cloud,CONF-SPACE-SAL,Medium,DR-SAL
+DT01123,Marcus Washington,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01123,Marcus Washington,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01123,Marcus Washington,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01123,Marcus Washington,Salesforce,SF-SALES-MGR,Medium,JR-SAL-LEADER
+DT01124,Femi Okonkwo,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01124,Femi Okonkwo,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01124,Femi Okonkwo,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01124,Femi Okonkwo,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01124,Femi Okonkwo,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01124,Femi Okonkwo,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01124,Femi Okonkwo,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01125,Olumide Ojo,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01125,Olumide Ojo,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01125,Olumide Ojo,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01125,Olumide Ojo,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01125,Olumide Ojo,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01125,Olumide Ojo,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01125,Olumide Ojo,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01126,Daniela García,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01126,Daniela García,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01126,Daniela García,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01126,Daniela García,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01126,Daniela García,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01126,Daniela García,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01126,Daniela García,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01127,Alejandro Rodríguez,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01127,Alejandro Rodríguez,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01127,Alejandro Rodríguez,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01127,Alejandro Rodríguez,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01127,Alejandro Rodríguez,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01127,Alejandro Rodríguez,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01127,Alejandro Rodríguez,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01128,Harriet Kelly,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01128,Harriet Kelly,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01128,Harriet Kelly,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01128,Harriet Kelly,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01128,Harriet Kelly,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01128,Harriet Kelly,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01128,Harriet Kelly,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01129,Camila Martínez,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01129,Camila Martínez,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01129,Camila Martínez,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01129,Camila Martínez,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01129,Camila Martínez,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01129,Camila Martínez,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01129,Camila Martínez,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01130,Luis Rivera,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01130,Luis Rivera,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01130,Luis Rivera,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01130,Luis Rivera,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01130,Luis Rivera,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01130,Luis Rivera,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01130,Luis Rivera,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01131,Fernanda García,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01131,Fernanda García,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01131,Fernanda García,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01131,Fernanda García,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01131,Fernanda García,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01131,Fernanda García,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01131,Fernanda García,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01132,Daniela Morales,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01132,Daniela Morales,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01132,Daniela Morales,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01132,Daniela Morales,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01132,Daniela Morales,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01132,Daniela Morales,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01132,Daniela Morales,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01133,Chiamaka Okafor,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01133,Chiamaka Okafor,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01133,Chiamaka Okafor,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01133,Chiamaka Okafor,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01133,Chiamaka Okafor,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01133,Chiamaka Okafor,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01133,Chiamaka Okafor,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01134,Eduardo Vargas,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01134,Eduardo Vargas,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01134,Eduardo Vargas,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01134,Eduardo Vargas,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01134,Eduardo Vargas,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01134,Eduardo Vargas,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01134,Eduardo Vargas,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01135,Javier Sánchez,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01135,Javier Sánchez,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01135,Javier Sánchez,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01135,Javier Sánchez,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01135,Javier Sánchez,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01135,Javier Sánchez,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01135,Javier Sánchez,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01136,Kelechi Onyeka,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01136,Kelechi Onyeka,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01136,Kelechi Onyeka,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01136,Kelechi Onyeka,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01136,Kelechi Onyeka,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01136,Kelechi Onyeka,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01136,Kelechi Onyeka,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01137,Sophie Evans,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01137,Sophie Evans,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01137,Sophie Evans,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01137,Sophie Evans,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01137,Sophie Evans,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01137,Sophie Evans,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01137,Sophie Evans,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01138,Poppy Price,Atlassian Cloud,CONF-SPACE-CS,Medium,DR-CS
+DT01138,Poppy Price,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01138,Poppy Price,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01138,Poppy Price,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-CS
+DT01138,Poppy Price,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01138,Poppy Price,Keycloak Partner Portal,KC-PORTAL-AGENT,Medium,JR-CS
+DT01138,Poppy Price,Salesforce,SF-SVC-USER,Medium,JR-CS
+DT01139,Kwame Osei,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01139,Kwame Osei,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01139,Kwame Osei,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01139,Kwame Osei,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01139,Kwame Osei,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01139,Kwame Osei,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01139,Kwame Osei,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01139,Kwame Osei,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01140,Madison Robinson,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01140,Madison Robinson,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01140,Madison Robinson,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01140,Madison Robinson,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01140,Madison Robinson,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01140,Madison Robinson,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01140,Madison Robinson,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01140,Madison Robinson,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01141,Olumide Lawal,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01141,Olumide Lawal,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01141,Olumide Lawal,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01141,Olumide Lawal,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01141,Olumide Lawal,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01141,Olumide Lawal,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01141,Olumide Lawal,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01141,Olumide Lawal,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01142,Daniela Hernández,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01142,Daniela Hernández,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01142,Daniela Hernández,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01142,Daniela Hernández,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01142,Daniela Hernández,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01142,Daniela Hernández,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01142,Daniela Hernández,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01142,Daniela Hernández,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01143,James Carter,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01143,James Carter,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01143,James Carter,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01143,James Carter,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01143,James Carter,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01143,James Carter,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01143,James Carter,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01143,James Carter,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01144,Valeria Morales,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01144,Valeria Morales,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01144,Valeria Morales,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01144,Valeria Morales,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01144,Valeria Morales,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01144,Valeria Morales,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01144,Valeria Morales,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01144,Valeria Morales,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01145,Efua Appiah,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01145,Efua Appiah,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01145,Efua Appiah,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01145,Efua Appiah,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01145,Efua Appiah,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01145,Efua Appiah,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01145,Efua Appiah,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01145,Efua Appiah,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01146,Yetunde Afolabi,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01146,Yetunde Afolabi,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01146,Yetunde Afolabi,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01146,Yetunde Afolabi,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01146,Yetunde Afolabi,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01146,Yetunde Afolabi,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01146,Yetunde Afolabi,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01146,Yetunde Afolabi,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01147,Halima Akinola,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01147,Halima Akinola,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01147,Halima Akinola,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01147,Halima Akinola,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01147,Halima Akinola,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01147,Halima Akinola,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01147,Halima Akinola,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01147,Halima Akinola,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01148,Nii Amoah,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01148,Nii Amoah,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01148,Nii Amoah,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01148,Nii Amoah,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01148,Nii Amoah,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01148,Nii Amoah,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01148,Nii Amoah,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01148,Nii Amoah,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01149,Musa Lawal,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01149,Musa Lawal,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01149,Musa Lawal,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01149,Musa Lawal,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01149,Musa Lawal,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01149,Musa Lawal,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01149,Musa Lawal,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01149,Musa Lawal,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01150,Yetunde Nnaji,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01150,Yetunde Nnaji,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01150,Yetunde Nnaji,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01150,Yetunde Nnaji,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01150,Yetunde Nnaji,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01150,Yetunde Nnaji,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01150,Yetunde Nnaji,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01150,Yetunde Nnaji,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01151,Andrés Flores,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01151,Andrés Flores,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01151,Andrés Flores,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01151,Andrés Flores,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01151,Andrés Flores,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01151,Andrés Flores,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01151,Andrés Flores,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01151,Andrés Flores,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01152,Oliver Clarke,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01152,Oliver Clarke,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01152,Oliver Clarke,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01152,Oliver Clarke,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01152,Oliver Clarke,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01152,Oliver Clarke,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01152,Oliver Clarke,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01152,Oliver Clarke,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01153,Jack Taylor,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01153,Jack Taylor,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01153,Jack Taylor,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01153,Jack Taylor,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01153,Jack Taylor,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01153,Jack Taylor,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01153,Jack Taylor,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01153,Jack Taylor,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01154,Valeria Castillo,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01154,Valeria Castillo,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01154,Valeria Castillo,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01154,Valeria Castillo,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01154,Valeria Castillo,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01154,Valeria Castillo,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01154,Valeria Castillo,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01154,Valeria Castillo,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01155,Danielle Brown,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01155,Danielle Brown,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01155,Danielle Brown,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01155,Danielle Brown,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01155,Danielle Brown,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01155,Danielle Brown,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01155,Danielle Brown,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01155,Danielle Brown,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01156,Jamal Miller,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01156,Jamal Miller,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01156,Jamal Miller,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01156,Jamal Miller,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01156,Jamal Miller,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01156,Jamal Miller,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01156,Jamal Miller,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01156,Jamal Miller,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01157,María Castillo,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01157,María Castillo,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01157,María Castillo,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01157,María Castillo,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01157,María Castillo,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01157,María Castillo,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01157,María Castillo,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01157,María Castillo,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01158,María Flores,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01158,María Flores,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01158,María Flores,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01158,María Flores,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01158,María Flores,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01158,María Flores,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01158,María Flores,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01158,María Flores,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01159,Carlos Castillo,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-PLATFORM
+DT01159,Carlos Castillo,Azure,AZ-PROD-DEPLOY,High,JR-ENG-PLATFORM
+DT01159,Carlos Castillo,Azure,AZ-PROD-READER,Medium,JR-ENG-PLATFORM
+DT01159,Carlos Castillo,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01159,Carlos Castillo,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01159,Carlos Castillo,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01159,Carlos Castillo,GitHub,GH-MEMBER,Low,JR-ENG-PLATFORM
+DT01159,Carlos Castillo,GitHub,GH-TEAM-PLATFORM,Medium,JR-ENG-PLATFORM
+DT01159,Carlos Castillo,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PLATFORM
+DT01159,Carlos Castillo,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01160,Fernanda González,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-PLATFORM
+DT01160,Fernanda González,Azure,AZ-PROD-DEPLOY,High,JR-ENG-PLATFORM
+DT01160,Fernanda González,Azure,AZ-PROD-READER,Medium,JR-ENG-PLATFORM
+DT01160,Fernanda González,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01160,Fernanda González,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01160,Fernanda González,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01160,Fernanda González,GitHub,GH-MEMBER,Low,JR-ENG-PLATFORM
+DT01160,Fernanda González,GitHub,GH-TEAM-PLATFORM,Medium,JR-ENG-PLATFORM
+DT01160,Fernanda González,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PLATFORM
+DT01160,Fernanda González,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01161,Jamal Young,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-PLATFORM
+DT01161,Jamal Young,Azure,AZ-PROD-DEPLOY,High,JR-ENG-PLATFORM
+DT01161,Jamal Young,Azure,AZ-PROD-READER,Medium,JR-ENG-PLATFORM
+DT01161,Jamal Young,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01161,Jamal Young,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01161,Jamal Young,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01161,Jamal Young,GitHub,GH-MEMBER,Low,JR-ENG-PLATFORM
+DT01161,Jamal Young,GitHub,GH-TEAM-PLATFORM,Medium,JR-ENG-PLATFORM
+DT01161,Jamal Young,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PLATFORM
+DT01161,Jamal Young,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01162,Eduardo Flores,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-PLATFORM
+DT01162,Eduardo Flores,Azure,AZ-PROD-DEPLOY,High,JR-ENG-PLATFORM
+DT01162,Eduardo Flores,Azure,AZ-PROD-READER,Medium,JR-ENG-PLATFORM
+DT01162,Eduardo Flores,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01162,Eduardo Flores,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01162,Eduardo Flores,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01162,Eduardo Flores,GitHub,GH-MEMBER,Low,JR-ENG-PLATFORM
+DT01162,Eduardo Flores,GitHub,GH-TEAM-PLATFORM,Medium,JR-ENG-PLATFORM
+DT01162,Eduardo Flores,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PLATFORM
+DT01162,Eduardo Flores,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01163,Nicole Robinson,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-PLATFORM
+DT01163,Nicole Robinson,Azure,AZ-PROD-DEPLOY,High,JR-ENG-PLATFORM
+DT01163,Nicole Robinson,Azure,AZ-PROD-READER,Medium,JR-ENG-PLATFORM
+DT01163,Nicole Robinson,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01163,Nicole Robinson,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01163,Nicole Robinson,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01163,Nicole Robinson,GitHub,GH-MEMBER,Low,JR-ENG-PLATFORM
+DT01163,Nicole Robinson,GitHub,GH-TEAM-PLATFORM,Medium,JR-ENG-PLATFORM
+DT01163,Nicole Robinson,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PLATFORM
+DT01163,Nicole Robinson,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01164,Aditya Khan,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-PLATFORM
+DT01164,Aditya Khan,Azure,AZ-PROD-DEPLOY,High,JR-ENG-PLATFORM
+DT01164,Aditya Khan,Azure,AZ-PROD-READER,Medium,JR-ENG-PLATFORM
+DT01164,Aditya Khan,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01164,Aditya Khan,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01164,Aditya Khan,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01164,Aditya Khan,GitHub,GH-MEMBER,Low,JR-ENG-PLATFORM
+DT01164,Aditya Khan,GitHub,GH-TEAM-PLATFORM,Medium,JR-ENG-PLATFORM
+DT01164,Aditya Khan,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PLATFORM
+DT01164,Aditya Khan,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01165,Ryan Coleman,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-PLATFORM
+DT01165,Ryan Coleman,Azure,AZ-PROD-DEPLOY,High,JR-ENG-PLATFORM
+DT01165,Ryan Coleman,Azure,AZ-PROD-READER,Medium,JR-ENG-PLATFORM
+DT01165,Ryan Coleman,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01165,Ryan Coleman,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01165,Ryan Coleman,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01165,Ryan Coleman,GitHub,GH-MEMBER,Low,JR-ENG-PLATFORM
+DT01165,Ryan Coleman,GitHub,GH-TEAM-PLATFORM,Medium,JR-ENG-PLATFORM
+DT01165,Ryan Coleman,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PLATFORM
+DT01165,Ryan Coleman,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01166,Kwabena Amoah,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DATA
+DT01166,Kwabena Amoah,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01166,Kwabena Amoah,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01166,Kwabena Amoah,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01166,Kwabena Amoah,GitHub,GH-MEMBER,Low,JR-ENG-DATA
+DT01166,Kwabena Amoah,GitHub,GH-TEAM-DATA,Medium,JR-ENG-DATA
+DT01166,Kwabena Amoah,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DATA
+DT01166,Kwabena Amoah,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01167,Meera Kapoor,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DATA
+DT01167,Meera Kapoor,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01167,Meera Kapoor,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01167,Meera Kapoor,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01167,Meera Kapoor,GitHub,GH-MEMBER,Low,JR-ENG-DATA
+DT01167,Meera Kapoor,GitHub,GH-TEAM-DATA,Medium,JR-ENG-DATA
+DT01167,Meera Kapoor,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DATA
+DT01167,Meera Kapoor,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01168,Naa Boateng,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DATA
+DT01168,Naa Boateng,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01168,Naa Boateng,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01168,Naa Boateng,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01168,Naa Boateng,GitHub,GH-MEMBER,Low,JR-ENG-DATA
+DT01168,Naa Boateng,GitHub,GH-TEAM-DATA,Medium,JR-ENG-DATA
+DT01168,Naa Boateng,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DATA
+DT01168,Naa Boateng,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01169,Sanjay Kapoor,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DATA
+DT01169,Sanjay Kapoor,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01169,Sanjay Kapoor,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01169,Sanjay Kapoor,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01169,Sanjay Kapoor,GitHub,GH-MEMBER,Low,JR-ENG-DATA
+DT01169,Sanjay Kapoor,GitHub,GH-TEAM-DATA,Medium,JR-ENG-DATA
+DT01169,Sanjay Kapoor,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DATA
+DT01169,Sanjay Kapoor,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01170,Grace Lewis,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DATA
+DT01170,Grace Lewis,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01170,Grace Lewis,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01170,Grace Lewis,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01170,Grace Lewis,GitHub,GH-MEMBER,Low,JR-ENG-DATA
+DT01170,Grace Lewis,GitHub,GH-TEAM-DATA,Medium,JR-ENG-DATA
+DT01170,Grace Lewis,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DATA
+DT01170,Grace Lewis,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01171,Michael Parker,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DATA
+DT01171,Michael Parker,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01171,Michael Parker,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01171,Michael Parker,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01171,Michael Parker,GitHub,GH-MEMBER,Low,JR-ENG-DATA
+DT01171,Michael Parker,GitHub,GH-TEAM-DATA,Medium,JR-ENG-DATA
+DT01171,Michael Parker,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DATA
+DT01171,Michael Parker,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01172,Keisha Hayes,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DATA
+DT01172,Keisha Hayes,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01172,Keisha Hayes,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01172,Keisha Hayes,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01172,Keisha Hayes,GitHub,GH-MEMBER,Low,JR-ENG-DATA
+DT01172,Keisha Hayes,GitHub,GH-TEAM-DATA,Medium,JR-ENG-DATA
+DT01172,Keisha Hayes,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DATA
+DT01172,Keisha Hayes,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01173,Kofi Addo,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01173,Kofi Addo,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01173,Kofi Addo,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01173,Kofi Addo,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01173,Kofi Addo,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01173,Kofi Addo,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01173,Kofi Addo,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01173,Kofi Addo,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01174,Selorm Amoah,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01174,Selorm Amoah,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01174,Selorm Amoah,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01174,Selorm Amoah,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01174,Selorm Amoah,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01174,Selorm Amoah,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01174,Selorm Amoah,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01174,Selorm Amoah,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01175,Aisha Ojo,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01175,Aisha Ojo,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01175,Aisha Ojo,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01175,Aisha Ojo,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01175,Aisha Ojo,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01175,Aisha Ojo,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01175,Aisha Ojo,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01175,Aisha Ojo,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01176,María Ortiz,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01176,María Ortiz,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01176,María Ortiz,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01176,María Ortiz,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01176,María Ortiz,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01176,María Ortiz,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01176,María Ortiz,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01176,María Ortiz,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01177,Akua Quaye,Azure,AZ-DEV-CONTRIB,Medium,JR-ENG-DEV
+DT01177,Akua Quaye,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01177,Akua Quaye,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01177,Akua Quaye,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01177,Akua Quaye,GitHub,GH-MEMBER,Low,JR-ENG-DEV
+DT01177,Akua Quaye,GitHub,GH-TEAM-ENG,Medium,JR-ENG-DEV
+DT01177,Akua Quaye,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-DEV
+DT01177,Akua Quaye,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01178,Esi Kyei,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01178,Esi Kyei,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01178,Esi Kyei,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01178,Esi Kyei,GitHub,GH-MEMBER,Low,JR-ENG-PRODUCT
+DT01178,Esi Kyei,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PRODUCT
+DT01178,Esi Kyei,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01178,Esi Kyei,Salesforce,SF-READONLY,Medium,JR-ENG-PRODUCT
+DT01179,Jessica Miller,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01179,Jessica Miller,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01179,Jessica Miller,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01179,Jessica Miller,GitHub,GH-MEMBER,Low,JR-ENG-PRODUCT
+DT01179,Jessica Miller,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PRODUCT
+DT01179,Jessica Miller,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01179,Jessica Miller,Salesforce,SF-READONLY,Medium,JR-ENG-PRODUCT
+DT01180,Brittany Robinson,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01180,Brittany Robinson,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01180,Brittany Robinson,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01180,Brittany Robinson,GitHub,GH-MEMBER,Low,JR-ENG-PRODUCT
+DT01180,Brittany Robinson,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PRODUCT
+DT01180,Brittany Robinson,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01180,Brittany Robinson,Salesforce,SF-READONLY,Medium,JR-ENG-PRODUCT
+DT01181,William Price,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01181,William Price,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01181,William Price,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01181,William Price,GitHub,GH-MEMBER,Low,JR-ENG-PRODUCT
+DT01181,William Price,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PRODUCT
+DT01181,William Price,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01181,William Price,Salesforce,SF-READONLY,Medium,JR-ENG-PRODUCT
+DT01182,Andrés Reyes,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01182,Andrés Reyes,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01182,Andrés Reyes,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01182,Andrés Reyes,GitHub,GH-MEMBER,Low,JR-ENG-PRODUCT
+DT01182,Andrés Reyes,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PRODUCT
+DT01182,Andrés Reyes,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01182,Andrés Reyes,Salesforce,SF-READONLY,Medium,JR-ENG-PRODUCT
+DT01183,Ananya Desai,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01183,Ananya Desai,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01183,Ananya Desai,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01183,Ananya Desai,GitHub,GH-MEMBER,Low,JR-ENG-PRODUCT
+DT01183,Ananya Desai,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PRODUCT
+DT01183,Ananya Desai,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01183,Ananya Desai,Salesforce,SF-READONLY,Medium,JR-ENG-PRODUCT
+DT01184,Malik Wright,Atlassian Cloud,CONF-SPACE-ENG,Medium,DR-ENG
+DT01184,Malik Wright,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01184,Malik Wright,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01184,Malik Wright,GitHub,GH-MEMBER,Low,JR-ENG-PRODUCT
+DT01184,Malik Wright,Atlassian Cloud,JIRA-SW-USER,Low,JR-ENG-PRODUCT
+DT01184,Malik Wright,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01184,Malik Wright,Salesforce,SF-READONLY,Medium,JR-ENG-PRODUCT
+DT01185,Femi Uzor,Azure,AZ-DEV-CONTRIB,Medium,JR-IT-CLOUD
+DT01185,Femi Uzor,Azure,AZ-PROD-READER,Medium,JR-IT-CLOUD
+DT01185,Femi Uzor,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01185,Femi Uzor,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01185,Femi Uzor,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01185,Femi Uzor,GitHub,GH-MEMBER,Low,JR-IT-CLOUD
+DT01185,Femi Uzor,GitHub,GH-TEAM-PLATFORM,Medium,JR-IT-CLOUD
+DT01185,Femi Uzor,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-CLOUD
+DT01185,Femi Uzor,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01186,Naa Ofori,Azure,AZ-DEV-CONTRIB,Medium,JR-IT-CLOUD
+DT01186,Naa Ofori,Azure,AZ-PROD-READER,Medium,JR-IT-CLOUD
+DT01186,Naa Ofori,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01186,Naa Ofori,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01186,Naa Ofori,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01186,Naa Ofori,GitHub,GH-MEMBER,Low,JR-IT-CLOUD
+DT01186,Naa Ofori,GitHub,GH-TEAM-PLATFORM,Medium,JR-IT-CLOUD
+DT01186,Naa Ofori,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-CLOUD
+DT01186,Naa Ofori,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01187,Amaka Eze,Azure,AZ-DEV-CONTRIB,Medium,JR-IT-CLOUD
+DT01187,Amaka Eze,Azure,AZ-PROD-READER,Medium,JR-IT-CLOUD
+DT01187,Amaka Eze,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01187,Amaka Eze,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01187,Amaka Eze,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01187,Amaka Eze,GitHub,GH-MEMBER,Low,JR-IT-CLOUD
+DT01187,Amaka Eze,GitHub,GH-TEAM-PLATFORM,Medium,JR-IT-CLOUD
+DT01187,Amaka Eze,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-CLOUD
+DT01187,Amaka Eze,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01188,Aditya Nair,Azure,AZ-DEV-CONTRIB,Medium,JR-IT-CLOUD
+DT01188,Aditya Nair,Azure,AZ-PROD-READER,Medium,JR-IT-CLOUD
+DT01188,Aditya Nair,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01188,Aditya Nair,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01188,Aditya Nair,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01188,Aditya Nair,GitHub,GH-MEMBER,Low,JR-IT-CLOUD
+DT01188,Aditya Nair,GitHub,GH-TEAM-PLATFORM,Medium,JR-IT-CLOUD
+DT01188,Aditya Nair,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-CLOUD
+DT01188,Aditya Nair,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01189,Esi Appiah,Azure,AZ-DEV-CONTRIB,Medium,JR-IT-CLOUD
+DT01189,Esi Appiah,Azure,AZ-PROD-READER,Medium,JR-IT-CLOUD
+DT01189,Esi Appiah,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01189,Esi Appiah,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01189,Esi Appiah,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01189,Esi Appiah,GitHub,GH-MEMBER,Low,JR-IT-CLOUD
+DT01189,Esi Appiah,GitHub,GH-TEAM-PLATFORM,Medium,JR-IT-CLOUD
+DT01189,Esi Appiah,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-CLOUD
+DT01189,Esi Appiah,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01190,Tobiloba Akinola,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01190,Tobiloba Akinola,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01190,Tobiloba Akinola,Microsoft Entra ID,ENTRA-HELPDESK-ADMIN,Privileged,PR-HELPDESK
+DT01190,Tobiloba Akinola,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01190,Tobiloba Akinola,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-SERVICEDESK
+DT01190,Tobiloba Akinola,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01191,Ximena García,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01191,Ximena García,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01191,Ximena García,Microsoft Entra ID,ENTRA-HELPDESK-ADMIN,Privileged,PR-HELPDESK
+DT01191,Ximena García,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01191,Ximena García,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-SERVICEDESK
+DT01191,Ximena García,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01192,Aisha Okonkwo,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01192,Aisha Okonkwo,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01192,Aisha Okonkwo,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01192,Aisha Okonkwo,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-SERVICEDESK
+DT01192,Aisha Okonkwo,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01193,Jamal Davis,Atlassian Cloud,CONF-SPACE-IT,Medium,DR-IT
+DT01193,Jamal Davis,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01193,Jamal Davis,Microsoft Entra ID,ENTRA-HELPDESK-ADMIN,Privileged,PR-HELPDESK
+DT01193,Jamal Davis,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01193,Jamal Davis,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-IT-SERVICEDESK
+DT01193,Jamal Davis,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01194,Damilola Okafor,Azure,AZ-LOG-READER,Medium,JR-SEC-SOC
+DT01194,Damilola Okafor,Atlassian Cloud,CONF-SPACE-SEC,High,DR-SEC
+DT01194,Damilola Okafor,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01194,Damilola Okafor,Microsoft Entra ID,ENTRA-SEC-READER,High,JR-SEC-SOC
+DT01194,Damilola Okafor,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01194,Damilola Okafor,GitHub,GH-TEAM-SEC,Medium,JR-SEC-SOC
+DT01194,Damilola Okafor,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-SEC-SOC
+DT01194,Damilola Okafor,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01195,Jessica Johnson,Azure,AZ-LOG-READER,Medium,JR-SEC-SOC
+DT01195,Jessica Johnson,Atlassian Cloud,CONF-SPACE-SEC,High,DR-SEC
+DT01195,Jessica Johnson,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01195,Jessica Johnson,Microsoft Entra ID,ENTRA-SEC-READER,High,JR-SEC-SOC
+DT01195,Jessica Johnson,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01195,Jessica Johnson,GitHub,GH-TEAM-SEC,Medium,JR-SEC-SOC
+DT01195,Jessica Johnson,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-SEC-SOC
+DT01195,Jessica Johnson,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01196,Musa Afolabi,Azure,AZ-LOG-READER,Medium,JR-SEC-SOC-LIMITED
+DT01196,Musa Afolabi,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01196,Musa Afolabi,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01196,Musa Afolabi,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-SEC-SOC-LIMITED
+DT01196,Musa Afolabi,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01197,Ashley Johnson,Azure,AZ-LOG-READER,Medium,JR-SEC-SOC
+DT01197,Ashley Johnson,Atlassian Cloud,CONF-SPACE-SEC,High,DR-SEC
+DT01197,Ashley Johnson,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01197,Ashley Johnson,Microsoft Entra ID,ENTRA-SEC-OPERATOR,Privileged,PR-SEC-OPERATOR
+DT01197,Ashley Johnson,Microsoft Entra ID,ENTRA-SEC-READER,High,JR-SEC-SOC
+DT01197,Ashley Johnson,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01197,Ashley Johnson,GitHub,GH-TEAM-SEC,Medium,JR-SEC-SOC
+DT01197,Ashley Johnson,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-SEC-SOC
+DT01197,Ashley Johnson,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01198,Alejandro Ramírez,Azure,AZ-LOG-READER,Medium,JR-SEC-SOC
+DT01198,Alejandro Ramírez,Atlassian Cloud,CONF-SPACE-SEC,High,DR-SEC
+DT01198,Alejandro Ramírez,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01198,Alejandro Ramírez,Microsoft Entra ID,ENTRA-SEC-READER,High,JR-SEC-SOC
+DT01198,Alejandro Ramírez,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01198,Alejandro Ramírez,GitHub,GH-TEAM-SEC,Medium,JR-SEC-SOC
+DT01198,Alejandro Ramírez,Atlassian Cloud,JIRA-SM-AGENT,Low,JR-SEC-SOC
+DT01198,Alejandro Ramírez,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01199,Nicole Anderson,Azure,AZ-LOG-READER,Medium,JR-SEC-GRC
+DT01199,Nicole Anderson,Atlassian Cloud,CONF-SPACE-SEC,High,DR-SEC
+DT01199,Nicole Anderson,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01199,Nicole Anderson,Microsoft Entra ID,ENTRA-GLOBAL-READER,High,JR-SEC-GRC
+DT01199,Nicole Anderson,Danotech Expenses,EXP-AUDITOR,Medium,JR-SEC-GRC
+DT01199,Nicole Anderson,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01199,Nicole Anderson,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE
+DT01200,Darnell Green,Azure,AZ-LOG-READER,Medium,JR-SEC-GRC
+DT01200,Darnell Green,Atlassian Cloud,CONF-SPACE-SEC,High,DR-SEC
+DT01200,Darnell Green,Atlassian Cloud,CONF-USER,Low,BR-WORKFORCE
+DT01200,Darnell Green,Microsoft Entra ID,ENTRA-GLOBAL-READER,High,JR-SEC-GRC
+DT01200,Darnell Green,Danotech Expenses,EXP-AUDITOR,Medium,JR-SEC-GRC
+DT01200,Darnell Green,Danotech Expenses,EXP-SUBMITTER,Low,BR-WORKFORCE
+DT01200,Darnell Green,Atlassian Cloud,JSM-PORTAL,Low,BR-WORKFORCE

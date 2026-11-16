@@ -1,0 +1,125 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows(tasks())",
+  "value": [
+    {
+      "quarantineDetails": {
+        "quarantinedDateTime": null,
+        "quarantineReason": null,
+        "quarantineType": "notQuarantined"
+      },
+      "isEnabled": true,
+      "settings": {
+        "quarantineConfiguration": {
+          "matchMode": "any",
+          "conditions": []
+        }
+      },
+      "displayName": "WF-02 Joiner - day one Temporary Access Pass",
+      "description": "On hire date, generate a one-time TAP and email it to the joiner's manager.",
+      "version": 1,
+      "id": "007765a0-7fc8-4648-ac52-96b693c75e9c",
+      "isSchedulingEnabled": true,
+      "tasks": [],
+      "createdDateTime": "2026-11-11T01:11:45.2306263Z",
+      "category": "joiner",
+      "tasks@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('007765a0-7fc8-4648-ac52-96b693c75e9c')/tasks",
+      "lastModifiedDateTime": "2026-11-11T01:11:45.230648Z"
+    },
+    {
+      "quarantineDetails": {
+        "quarantinedDateTime": null,
+        "quarantineReason": null,
+        "quarantineType": "notQuarantined"
+      },
+      "isEnabled": true,
+      "settings": {
+        "quarantineConfiguration": {
+          "matchMode": "any",
+          "conditions": []
+        }
+      },
+      "displayName": "WF-01 Joiner - pre-hire reminder (T-7)",
+      "description": "Seven days before a joiner starts, remind their manager so equipment, a buddy and day-one plans are ready.",
+      "version": 2,
+      "id": "a202d770-5fa6-4ace-a3ba-eb8da81d653e",
+      "isSchedulingEnabled": true,
+      "tasks": [],
+      "createdDateTime": "2026-11-11T01:12:35.2192597Z",
+      "category": "joiner",
+      "tasks@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('a202d770-5fa6-4ace-a3ba-eb8da81d653e')/tasks",
+      "lastModifiedDateTime": "2026-11-11T01:29:29.0984439Z"
+    },
+    {
+      "quarantineDetails": {
+        "quarantinedDateTime": null,
+        "quarantineReason": null,
+        "quarantineType": "notQuarantined"
+      },
+      "isEnabled": true,
+      "settings": {
+        "quarantineConfiguration": {
+          "matchMode": "any",
+          "conditions": []
+        }
+      },
+      "displayName": "WF-03 Mover - notify manager of job change",
+      "description": "When a person's department or job title changes, notify the manager. Access itself changes automatically through dynamic groups (Phase 05); this workflow makes the change visible to a human.",
+      "version": 1,
+      "id": "09877c39-e6e4-4873-bbbe-c6a9fcdf87b7",
+      "isSchedulingEnabled": true,
+      "tasks": [],
+      "createdDateTime": "2026-11-11T03:44:17.8318899Z",
+      "category": "mover",
+      "tasks@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('09877c39-e6e4-4873-bbbe-c6a9fcdf87b7')/tasks",
+      "lastModifiedDateTime": "2026-11-11T03:44:17.8318993Z"
+    },
+    {
+      "quarantineDetails": {
+        "quarantinedDateTime": null,
+        "quarantineReason": null,
+        "quarantineType": "notQuarantined"
+      },
+      "isEnabled": true,
+      "settings": {
+        "quarantineConfiguration": {
+          "matchMode": "any",
+          "conditions": []
+        }
+      },
+      "displayName": "WF-04 Leaver - end of last day",
+      "description": "At the first run after the leaver's last day ends: disable the account, revoke all sessions, and tell the manager. Runs even if the HR feed is late, so disabling never depends on one system alone.",
+      "version": 1,
+      "id": "ba81e535-e695-4df1-9969-c5fe619c247f",
+      "isSchedulingEnabled": true,
+      "tasks": [],
+      "createdDateTime": "2026-11-11T03:47:01.6050567Z",
+      "category": "leaver",
+      "tasks@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('ba81e535-e695-4df1-9969-c5fe619c247f')/tasks",
+      "lastModifiedDateTime": "2026-11-11T03:47:01.6050666Z"
+    },
+    {
+      "quarantineDetails": {
+        "quarantinedDateTime": null,
+        "quarantineReason": null,
+        "quarantineType": "notQuarantined"
+      },
+      "isEnabled": true,
+      "settings": {
+        "quarantineConfiguration": {
+          "matchMode": "any",
+          "conditions": []
+        }
+      },
+      "displayName": "WF-05 Leaver - delete account after 7 days",
+      "description": "Seven days after the last day, delete the account. Deleted users stay restorable for 30 days, which covers mistakes. 7 days is a lab choice; production would typically use 30 or more.",
+      "version": 1,
+      "id": "329f6920-011e-4b59-8bcc-05a8ab5d65f2",
+      "isSchedulingEnabled": true,
+      "tasks": [],
+      "createdDateTime": "2026-11-11T03:47:03.2018408Z",
+      "category": "leaver",
+      "tasks@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/lifecycleWorkflows/workflows('329f6920-011e-4b59-8bcc-05a8ab5d65f2')/tasks",
+      "lastModifiedDateTime": "2026-11-11T03:47:03.2018523Z"
+    }
+  ]
+}
