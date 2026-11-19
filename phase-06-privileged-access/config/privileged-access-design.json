@@ -3,7 +3,7 @@
   "breakGlassGroup": "GRP-CA-Exclude-BreakGlass",
   "adminAccountsGroup": {
     "name": "GRP-DYN-ALL-AdminAccounts",
-    "rule": "(user.employeeType -eq \"AdminAccount\")"
+    "rule": "(user.extensionAttribute5 -eq \"AdminAccount\")"
   },
   "administrativeUnit": {
     "name": "AU-Workforce",
