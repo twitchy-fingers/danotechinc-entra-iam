@@ -36,13 +36,14 @@ function New-RandomPassword {
 $rows = @()
 foreach ($a in $design.admins) {
     $u = $null
-    try { $u = Invoke-MgGraphRequest -Method GET -Uri "v1.0/users/$($a.adminUpn)?`$select=id,displayName,employeeId,employeeType,usageLocation,companyName,accountEnabled" } catch {}
+    try { $u = Invoke-MgGraphRequest -Method GET -Uri "v1.0/users/$($a.adminUpn)?`$select=id,displayName,employeeId,employeeType,usageLocation,companyName,accountEnabled, onPremisesExtensionAttributes" } catch {}
     if (-not $u) {
         if ($WhatIf) { $rows += [pscustomobject]@{ Account = $a.adminUpn; Tier = $a.tier; Result = 'Would create' }; continue }
         $nick = $a.adminUpn.Split('@')[0]
         Invoke-MgGraphRequest -Method POST -Uri 'v1.0/users' -Body @{
             accountEnabled = $true; displayName = $a.displayName; userPrincipalName = $a.adminUpn; mailNickname = $nick
             employeeId = $a.employeeId; employeeType = 'AdminAccount'; usageLocation = $a.usageLocation
+            onPremisesExtensionAttributes = @{ extensionAttribute5 = 'AdminAccount' }
             jobTitle = "Privileged administrator account ($($a.tier))"
             passwordProfile = @{ password = (New-RandomPassword); forceChangePasswordNextSignIn = $false }
         } | Out-Null
@@ -52,6 +53,7 @@ foreach ($a in $design.admins) {
     $issues = @()
     if ($u.displayName -ne $a.displayName) { $issues += "displayName '$($u.displayName)'" }
     if ($u.employeeId -ne $a.employeeId)   { $issues += "employeeId '$($u.employeeId)', expected $($a.employeeId)" }
+    if ($u.onPremisesExtensionAttributes.extensionAttribute5 -ne 'AdminAccount') { $issues += "extensionAttribute5 '$($u.onPremisesExtensionAttributes.extensionAttribute5)', expected AdminAccount" }
     if ($u.employeeType -ne 'AdminAccount') { $issues += "employeeType '$($u.employeeType)', expected AdminAccount" }
     if (-not $u.usageLocation)             { $issues += 'usageLocation empty' }
     if ($u.companyName)                    { $issues += "companyName '$($u.companyName)' must be empty" }
@@ -66,7 +68,7 @@ if (-not $WhatIf) {
     if (-not $existing) {
         Invoke-MgGraphRequest -Method POST -Uri 'v1.0/groups' -Body @{
             displayName = $g.name; mailEnabled = $false; securityEnabled = $true; mailNickname = $g.name.ToLower()
-            description = 'Every dedicated admin account (employeeType = AdminAccount). Targeted by Phase 07 admin Conditional Access. Owner: IAM Manager.'
+            description = 'Every dedicated admin account (extensionAttribute5 = AdminAccount). Targeted by Phase 07 admin Conditional Access. Owner: IAM Manager.'
             groupTypes = @('DynamicMembership'); membershipRule = $g.rule; membershipRuleProcessingState = 'On' } | Out-Null
         Write-Host "Created $($g.name)" -ForegroundColor Green
     }
