@@ -1,0 +1,15 @@
+"Check","Finding"
+"PA-05","adm.jamal.davis@danotechinc.onmicrosoft.com is enabled but its owner's daily account is disabled"
+"PA-05","Remediation failed for adm.jamal.davis@danotechinc.onmicrosoft.com: PATCH https://graph.microsoft.com/v1.0/users/88445f03-bb59-4654-a16d-32a958a409ae
+HTTP/2.0 403 Forbidden
+Cache-Control: no-cache
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000
+request-id: e5f2b307-23c0-4a3f-86cf-41767211e2b4
+client-request-id: a7a7fab4-94f9-4d58-8e72-6ca24565ab9e
+x-ms-ags-diagnostic: {""ServerInfo"":{""DataCenter"":""West US"",""Slice"":""E"",""Ring"":""4"",""ScaleUnit"":""004"",""RoleInstance"":""BY3PEPF00065EC3""}}
+x-ms-resource-unit: 1
+Date: Mon, 23 Nov 2026 03:48:16 GMT
+Content-Type: application/json
+
+{""error"":{""code"":""Authorization_RequestDenied"",""message"":""Insufficient privileges to complete the operation."",""innerError"":{""date"":""2026-11-23T03:48:17"",""request-id"":""e5f2b307-23c0-4a3f-86cf-41767211e2b4"",""client-request-id"":""a7a7fab4-94f9-4d58-8e72-6ca24565ab9e""}}}"
