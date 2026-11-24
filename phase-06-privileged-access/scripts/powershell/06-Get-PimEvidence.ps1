@@ -18,14 +18,21 @@ $names = @{}; (Invoke-MgGraphRequest -Method GET -Uri 'v1.0/roleManagement/direc
 
 (Invoke-MgGraphRequest -Method GET -Uri 'v1.0/roleManagement/directory/roleEligibilityScheduleInstances?$expand=principal').value |
     ForEach-Object { [pscustomobject]@{ Account = $_.principal.userPrincipalName; Role = $names[$_.roleDefinitionId]; Scope = $_.directoryScopeId; Ends = $_.endDateTime } } |
-    Sort-Object Role, Account | Export-Csv (Join-Path $ev "$stamp-eligible-assignments.csv") -NoTypeInformation -Encoding utf8
+    Sort-Object Role, Account | Export-Csv (Join-Path $ev "$stamp-eligible-assignments.csv") -Encoding utf8
 
-$since = $Since.ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ')
-(Invoke-MgGraphRequest -Method GET -Uri "v1.0/roleManagement/directory/roleAssignmentScheduleRequests?`$filter=createdDateTime ge $since&`$expand=principal").value |
-    Where-Object action -in 'selfActivate', 'selfDeactivate' |
+$sinceUtc = $Since.ToUniversalTime()
+$requests = @()
+$uri = 'v1.0/roleManagement/directory/roleAssignmentScheduleRequests?$expand=principal'
+while ($uri) {
+    $page = Invoke-MgGraphRequest -Method GET -Uri $uri
+    $requests += $page.value
+    $uri = $page.'@odata.nextLink'
+}
+$requests |
+    Where-Object { $_.action -in 'selfActivate', 'selfDeactivate' -and ([datetime]$_.createdDateTime).ToUniversalTime() -ge $sinceUtc } |
     ForEach-Object { [pscustomobject]@{ Created = $_.createdDateTime; Account = $_.principal.userPrincipalName; Role = $names[$_.roleDefinitionId]; Action = $_.action
         Status = $_.status; Duration = $_.scheduleInfo.expiration.duration; Justification = $_.justification; Ticket = $_.ticketInfo.ticketNumber } } |
-    Sort-Object Created | Export-Csv (Join-Path $ev "$stamp-role-activations.csv") -NoTypeInformation -Encoding utf8
+    Sort-Object Created | Export-Csv (Join-Path $ev "$stamp-role-activations.csv") -Encoding utf8
 
 $rows = foreach ($s in $design.roleSettings) {
     $rules = Get-PimRules (Get-PimPolicyId -ScopeType DirectoryRole -ScopeId '/' -RoleDefinitionId $s.roleTemplateId)
@@ -33,6 +40,6 @@ $rows = foreach ($s in $design.roleSettings) {
         Requires = ($rules['Enablement_EndUser_Assignment'].enabledRules -join ','); AuthContext = $rules['AuthenticationContext_EndUser_Assignment'].claimValue
         Approval = $rules['Approval_EndUser_Assignment'].setting.isApprovalRequired; EligibilityMax = $rules['Expiration_Admin_Eligibility'].maximumDuration }
 }
-$rows | Export-Csv (Join-Path $ev "$stamp-pim-role-settings.csv") -NoTypeInformation -Encoding utf8
+$rows | Export-Csv (Join-Path $ev "$stamp-pim-role-settings.csv") -Encoding utf8
 $rows | Format-Table -AutoSize
 Write-Host "Evidence written to $ev" -ForegroundColor Green
