@@ -67,15 +67,22 @@ foreach ($k in $want.Keys) { if (-not $have.ContainsKey($k)) { Add-Finding 'PA-0
 foreach ($k in $have.Keys) { if (-not $want.ContainsKey($k)) { Add-Finding 'PA-03' "Eligibility not in design: $($k.Split('|')[0]) : $($names[$k.Split('|')[1]]) at $($k.Split('|')[2])" } }
 
 # PA-04 / PA-05 admin accounts vs their owners' daily accounts
+$me = (Invoke-MgGraphRequest -Method GET -Uri 'v1.0/me?$select=id').id
 foreach ($adm in $users.Values | Where-Object employeeType -eq 'AdminAccount') {
-    $daily = $users.Values | Where-Object { $_.employeeId -eq $adm.employeeId -and $_.employeeType -ne 'AdminAccount' } | Select-Object -First 1
+    # Admin accounts may carry the owner's ID or the owner's ID plus -ADM (DT01001 or DT01001-ADM)
+    $ownerId = $adm.employeeId -replace '-ADM$', ''
+    $daily = $users.Values | Where-Object { $_.employeeId -eq $ownerId -and $_.employeeType -ne 'AdminAccount' } | Select-Object -First 1
     if ($daily -and $daily.employeeType -in 'Contractor', 'Intern') { Add-Finding 'PA-04' "$($adm.userPrincipalName) belongs to a $($daily.employeeType)" }
     if ($adm.accountEnabled -and (-not $daily -or -not $daily.accountEnabled)) {
         Add-Finding 'PA-05' "$($adm.userPrincipalName) is enabled but its owner's daily account is $(if ($daily) { 'disabled' } else { 'gone' })"
         if ($Remediate) {
-            Invoke-MgGraphRequest -Method PATCH -Uri "v1.0/users/$($adm.id)" -Body @{ accountEnabled = $false }
-            Invoke-MgGraphRequest -Method POST -Uri "v1.0/users/$($adm.id)/revokeSignInSessions" | Out-Null
-            Write-Host "  remediated: disabled $($adm.userPrincipalName) and revoked its sessions" -ForegroundColor Yellow
+            if ($adm.id -eq $me) { Write-Host "  skipped: won't disable the account running this script ($($adm.userPrincipalName))" -ForegroundColor Red; continue }
+            try {
+                Invoke-MgGraphRequest -Method PATCH -Uri "v1.0/users/$($adm.id)" -Body @{ accountEnabled = $false }
+                Invoke-MgGraphRequest -Method POST -Uri "v1.0/users/$($adm.id)/revokeSignInSessions" | Out-Null
+                Write-Host "  remediated: disabled $($adm.userPrincipalName) and revoked its sessions" -ForegroundColor Yellow
+            } catch {
+                Add-Finding 'PA-05' "Remediation failed for $($adm.userPrincipalName): $($_.ErrorDetails.Message ?? $_.Exception.Message)"            }
         }
     }
 }
@@ -91,3 +98,4 @@ $stamp = Get-Date -Format 'yyyyMMdd'
 $findings | Export-Csv (Join-Path $phase "evidence\$stamp-privileged-access-test.csv") -NoTypeInformation -Encoding utf8
 if ($findings.Count) { $findings | Format-Table -AutoSize -Wrap; Write-Host "$($findings.Count) finding(s)." -ForegroundColor Red; exit 1 }
 Write-Host 'PASS: no standing privileged access outside break-glass; eligibility matches the design; no orphaned admin accounts.' -ForegroundColor Green
+exit 0
