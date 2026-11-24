@@ -1,0 +1,5 @@
+"Created","Account","Role","Action","Status","Duration","Justification","Ticket"
+"11/22/2026 10:57:35 PM","adm.daniel.opara@danotechinc.onmicrosoft.com","Global Administrator","selfActivate","Provisioned","PT2H","Phase 06 test: verify approval flow","Global Admin"
+"11/22/2026 11:52:00 PM","adm.grace.robinson@danotechinc.onmicrosoft.com","Helpdesk Administrator","selfActivate","Provisioned","PT1H","Reset MFA for a user.",""
+"11/23/2026 3:29:43 AM","adm.daniel.opara@danotechinc.onmicrosoft.com","Global Administrator","selfActivate","Provisioned","PT2H","PA-05 remediation: disable orphaned admin account adm.jamal.davis (leaver)","102"
+"11/24/2026 6:30:56 AM","adm.daniel.opara@danotechinc.onmicrosoft.com","Global Administrator","selfActivate","Provisioned","PT2H","Project work.","103"
