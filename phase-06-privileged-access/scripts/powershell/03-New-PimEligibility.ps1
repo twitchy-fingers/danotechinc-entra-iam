@@ -76,7 +76,13 @@ foreach ($g in $design.pimGroups) {
 
     foreach ($upn in $g.eligibleMembers) {
         $u = Get-AdminUser $upn
-        $have = (Invoke-MgGraphRequest -Method GET -Uri "v1.0/identityGovernance/privilegedAccess/group/eligibilitySchedules?`$filter=groupId eq '$($grp.id)' and principalId eq '$($u.id)'").value
+        $have = $null
+        try {
+            $have = (Invoke-MgGraphRequest -Method GET -Uri "v1.0/identityGovernance/privilegedAccess/group/eligibilitySchedules?`$filter=groupId eq '$($grp.id)' and principalId eq '$($u.id)'").value
+        } catch {
+            # A group PIM doesn't manage yet answers 404: nobody is eligible, so carry on and create the first eligibility.
+                        if ("$($_.Exception.Message) $($_.ErrorDetails.Message)" -notmatch 'NotFound|ResourceNotFound|404') { throw }
+        }
         if ($have) { Write-Host "  exists   $upn eligible for $($g.groupName)"; continue }
         Invoke-MgGraphRequest -Method POST -Uri 'v1.0/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests' -Body @{
             accessId = 'member'; principalId = $u.id; groupId = $grp.id; action = 'adminAssign'
